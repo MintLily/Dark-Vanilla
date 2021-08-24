@@ -1,5 +1,5 @@
 # Dark Vanilla
-Standard vanilla look, just a tad darker, with a pick and minty green accent color, and Blurpurple replacement
+Standard vanilla look, just a tad darker, with a pick and minty green accent color, and [Blurpurple](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BlurpleRecolor) replacement
 
 # Discord Installation
 
