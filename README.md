@@ -12,7 +12,9 @@ Standard vanilla look, just a tad darker, with a pick and minty green accent col
 2. Download Raw
 3. Go to themes and install `.theme.css` file (`%appdata%/BetterDiscord/themes/`)
 
-<br><br><br>
+<br>
+<img src="https://mintlily.lgbt/img/upload/Discord_y0sS2t2t6W.png" />
+<br><br>
 
 # VRCX Installation
 
@@ -21,6 +23,8 @@ Standard vanilla look, just a tad darker, with a pick and minty green accent col
 3. Place the `html` folder in the root of the app install
 4. Replace all files
 5. Open app, and the theme should be applied
+
+<img src="https://mintlily.lgbt/img/upload/VRCX_jSgTVS0sz8.png" />
 
 ### Note
 This is version specific, newer versions of VRCX may include more features. overwriting an outdated theme on to a fresh app update, may break the app or have new features not show up at all.
