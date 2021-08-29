@@ -27,10 +27,10 @@
 }
 
 .info-1VyQPT:after {
-	content: 'Dark Vanilla 1.4.0';
+	content: 'Dark Vanilla 1.4.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
-    line-height: 16px;
+	line-height: 16px;
 }
 
 .appMount-3lHmkl, body { background-color: var(--background-tertiary); }
@@ -66,7 +66,7 @@
 
 /* Windows 10 TitleBar */
 .titleBar-AC4pGV {
-    height: 26px;
+	height: 26px;
 }
 .withFrame-haYltId {
 	margin-top: 0px !important;
@@ -100,13 +100,13 @@
 
 /* Only show the checkmark on verified bots */
 .botText-1526X_:not(:only-child) {
-    display: none;
+	display: none;
 }
 .px-10SIf7.botTag-2WPJ74 {
-    padding-right: 0;
+	padding-right: 0;
 }
 .botText-1526X_:only-child {
-    padding-right: 4px;
+	padding-right: 4px;
 }
 
 
@@ -121,11 +121,11 @@
 
 
 
-/* Scrollbar Color */
-.base-gE7OpD { /* typing and slowmode stuff */
-    top: -24px; /* height is 24px */
+/* Scrollbar Color */ /* typing and slowmode stuff */
+.base-gE7OpD {
+	top: -24px; /* height is 24px */
 	height: 25px;
-    background-color: rgba(19, 23, 25, 0.5);
+	background-color: rgba(19, 23, 25, 0.5);
 	backdrop-filter: blur(var(--blur));
 	width: 97%;
 	border-top-left-radius: 12px;
@@ -170,8 +170,8 @@ code.hljs { background: var(--background-tertiary) !important; }
 
 /* Audio Embeds */
 .wrapperAudio-1jDe0Q {
-  width: auto !important;
-  min-width: 400px;
+	width: auto !important;
+	min-width: 400px;
 }
 
 
@@ -208,30 +208,30 @@ code.hljs { background: var(--background-tertiary) !important; }
 
 /* Collapsed Search Bar */
 [class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] {
-  background: none;
-  width: 24px;
-  color: var(--color-text);
-  transition: width 0.2s, padding 0.5s;
-  padding: 0 !important;
+	background: none;
+	width: 24px;
+	color: var(--color-text);
+	transition: width 0.2s, padding 0.5s;
+	padding: 0 !important;
 }
 [class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] [class*="iconContainer-"] {
-  width: 24px !important;
-  height: 24px;
-  cursor: pointer !important;
+	width: 24px !important;
+	height: 24px;
+	cursor: pointer !important;
 }
 [class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] svg {
-  color: var(--color-text);
-  width: 24px;
-  height: 24px;
-  padding: 0.5px;
+	color: var(--color-text);
+	width: 24px;
+	height: 24px;
+	padding: 0.5px;
 }
 [class*="toolbar-"] > [class*="search-"] [class*="searchBar-"]:focus-within {
-  width: 300px;
-  padding: 0 10px !important;
+	width: 300px;
+	padding: 0 10px !important;
 }
 [class*="toolbar-"] > [class*="search-"] [class*="searchBar-"]:focus-within svg {
-  color: var(--text-muted);
-  transform: scale(0.8);
+	color: var(--text-muted);
+	transform: scale(0.8);
 }
 
 .theme-dark .root-1gCeng { background-color: var(--background-primary); }
@@ -273,11 +273,11 @@ code.hljs { background: var(--background-tertiary) !important; }
 .preview-2Vkbi6 { background-color: var(--background-fourth); }
 
 .tooltipPrimary-1d1ph4 {
-    background-color: rgba(var(--background-tertiary-rgb), 0.2);
+	background-color: rgba(var(--background-tertiary-rgb), 0.2);
 	backdrop-filter: blur(var(--blur));
 }
 .tooltipPointer-3ZfirK {
-    background-color: rgba(var(--background-tertiary-rgb), 0.2);
+	background-color: rgba(var(--background-tertiary-rgb), 0.2);
 	backdrop-filter: blur(var(--blur));
 }
 
@@ -316,6 +316,8 @@ code.hljs { background: var(--background-tertiary) !important; }
 
 .numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW[style*="background-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] { background-color: var(--theme-text-muted) !important; }
 
+.container-3O_wAf { background-color: var(--background-fourth); }
+
 
 /* EXTRA ADDONS (OPTIONAL) */
 
@@ -330,18 +332,18 @@ code.hljs { background: var(--background-tertiary) !important; }
 
 /* Shrink server banners to header instead of disappearing. */
 [class*="animatedContainer-"] {
-    opacity: 1 !important;
-    transition: opacity .5s;
+	opacity: 1 !important;
+	transition: opacity .5s;
 }
 [class*="animatedContainer-"] > [class*="bannerImage-"] {
-    transition: margin .5s;
+	transition: margin .5s;
 }
 :not([class*="bannerVisible-"]) > [class*="animatedContainer-"] {
-    opacity: .35 !important;
-    height: 138px;
+	opacity: .35 !important;
+	height: 138px;
 }
 :not([class*="bannerVisible-"]) > [class*="animatedContainer-"] > [class*="bannerImage-"] {
-    margin-top: -12px;
+	margin-top: -12px;
 }
 .header-2V-4Sw { backdrop-filter: blur(var(--blur)) !important; }
 .hasBanner-2SrLR3 .header-2V-4Sw, .hasBanner-2SrLR3 .header-2V-4Sw:hover { backdrop-filter: blur(0px) !important; }
@@ -382,25 +384,25 @@ code.hljs { background: var(--background-tertiary) !important; }
 
 /* Double line Channel Topic */
 [class*="chat-"] > [class*="title-"] > [class*="children-"] > [class*="topic-"] {
-    white-space: normal;
-    max-height: 2.4em;
-    font-size: .9em;
-    line-height: 1.2em;
-    text-overflow: ellipsis;
-    position: relative;
+	white-space: normal;
+	max-height: 2.4em;
+	font-size: .9em;
+	line-height: 1.2em;
+	text-overflow: ellipsis;
+	position: relative;
 }
 [class*="chat-"] > [class*="title-"] > [class*="children-"]::after {
-    content: unset;
+	content: unset;
 }
 [class*="chat-"] > [class*="title-"] > [class*="children-"] > [class*="topic-"]::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 1em;
-    background: linear-gradient(to right, transparent, var(--background-primary), var(--background-primary)) !important;
-    display: flex;
-    width: 130px;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 1em;
+	background: linear-gradient(to right, transparent, var(--background-primary), var(--background-primary)) !important;
+	display: flex;
+	width: 130px;
 }
 
 
@@ -428,27 +430,27 @@ code.hljs { background: var(--background-tertiary) !important; }
 /* Reply Click Background flash */
 .backgroundFlash-24qWLN[style^="background-color: rgba(88, 101, 242"] {
 	background: linear-gradient(270deg, var(--theme-text-muted), transparent);
-    background-size: 400% 400%;
-
-    -webkit-animation: reply 2s ease 3;
-    -moz-animation: reply 2s ease 3;
-    animation: reply 2s ease 3;
+	background-size: 400% 400%;
+	
+	-webkit-animation: reply 2s ease 3;
+	-moz-animation: reply 2s ease 3;
+	animation: reply 2s ease 3;
 }
 
 @-webkit-keyframes reply {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
 @-moz-keyframes reply {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
 @keyframes reply {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
 		
 		
