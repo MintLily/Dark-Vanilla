@@ -13,7 +13,8 @@ Standard vanilla look, just a tad darker, with a pick and minty green accent col
 3. Go to themes and install `.theme.css` file (`%appdata%/BetterDiscord/themes/`)
 
 <br>
-<img src="https://mintlily.lgbt/img/upload/Discord_y0sS2t2t6W.png" />
+<img src="https://mintlily.lgbt/img/upload/DarkVanilla_DiscordTheme_Preview%20_1.png" />
+<img src="https://mintlily.lgbt/img/upload/DarkVanilla_DiscordTheme_Preview%20_2.png" />
 <br><br>
 
 # VRCX Installation
