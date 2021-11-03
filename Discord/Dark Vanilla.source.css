@@ -64,6 +64,32 @@
 .PronounDB-pronouns-text { font-weight: 500; }
 
 
+/* Compatibility: User Connections (onPopout) */
+.sc-connectAccounts { margin-top: 25px; }
+.base-18fc34.size12-3R0845.bodyTitle-1ySSKn {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	margin-bottom: 8px;
+    font-weight: 700;
+	forced-color-adjust: none;
+    color: var(--header-secondary);
+	margin-top: 5px;
+}
+
+
+/* Compatibility: PermissionViewer (onPopout) */
+.member-perms-title {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	margin-bottom: 2px;
+    font-weight: 700;
+	forced-color-adjust: none !important;
+	font-size: 12px;
+    line-height: 16px;
+    color: var(--header-secondary);
+}
+
+
 /* Windows 10 TitleBar */
 .titleBar-AC4pGV {
 	height: 26px;
