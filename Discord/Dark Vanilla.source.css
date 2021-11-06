@@ -27,7 +27,7 @@
 }
 
 .info-1VyQPT:after {
-	content: 'Dark Vanilla 1.7.0';
+	content: 'Dark Vanilla 1.7.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	line-height: 16px;
@@ -65,15 +65,14 @@
 
 
 /* Compatibility: User Connections (onPopout) */
-.sc-connectAccounts { margin-top: 25px; }
+.sc-connectAccounts { margin-top: 30px; }
 .base-18fc34.size12-3R0845.bodyTitle-1ySSKn {
 	font-family: var(--font-display);
 	text-transform: uppercase;
-	margin-bottom: 8px;
-    font-weight: 700;
+	font-weight: 700;
 	forced-color-adjust: none;
-    color: var(--header-secondary);
-	margin-top: 5px;
+	color: var(--header-secondary);
+	margin-top: -18px;
 }
 
 
