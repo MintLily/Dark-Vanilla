@@ -1,0 +1,119 @@
+@-moz-document domain("api.potato.moe") {
+:root {
+    --theme: #EECCE0;
+    --theme-dark: #906D92;
+    --color: #eee;
+    --bg-primary-color: #191F22;
+    --bg-secondary-color: #1e2427;
+    --bg-tertiary-color: #131719;
+    --blur: 8px;
+    
+    --author: "Lily (MintLily#0001)";
+    --version: "1.0.0";
+}
+
+body {
+    background-color: var(--bg-primary-color);
+    color: var(--color);
+}
+
+.sidebar-sticky {
+    background-color: var(--bg-tertiary-color);
+}
+
+.sidebar .nav-link {
+    color: var(--color);
+}
+
+.navbar-dark .navbar-brand, .sidebar .nav-link .feather, .h2, h2, .h4, h4, .modal-title {
+    color: var(--theme);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    transition: ease .2s;
+    color: var(--theme);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    transition: ease .2s;
+    color: red;
+}
+
+.h5, h5, li {
+    color: var(--color);
+}
+
+.bg-dark {
+    background-color: var(--bg-secondary-color) !important;
+}
+
+.badge-secondary {
+    background-color: var(--theme-dark);
+}
+
+.list-group-item {
+    background-color: var(--bg-tertiary-color);
+    color: var(--color);
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--color);
+}
+
+.page-link {
+    background-color: var(--bg-tertiary-color);
+    border-color: var(--bg-tertiary-color);
+    color: var(--theme);
+}
+
+.page-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--bg-tertiary-color);
+    color: var(--theme);
+}
+
+.page-item.disabled .page-link {
+    background-color: var(--bg-tertiary-color);
+    border-color: var(--bg-tertiary-color);
+}
+
+.btn-outline-secondary {
+    color: var(--color);
+    border-color: var(--theme-dark);
+}
+
+.btn-outline-secondary:hover {
+    color: #000;
+    border-color: var(--theme);
+    background-color: var(--theme);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--theme) !important;
+}
+
+.form-control {
+    background-color: var(--bg-secondary-color);
+    border-color: var(--bg-secondary-color);
+    color: #fff;
+}
+
+.modal-content {
+    background-color: var(--bg-tertiary-color);
+    border-color: var(--bg-tertiary-color);
+    color: var(--color);
+}
+
+.close {
+    color: var(--theme-dark);
+}
+
+.modal-open .modal {
+    backdrop-filter: blur(var(--blur));
+}
+
+code {
+    color: #9fffe3;
+}
+}
