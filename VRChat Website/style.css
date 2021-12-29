@@ -11,7 +11,7 @@
     --primary: #EECCE0;
     
     --author: "Lily (MintLily#0001)";
-    --version: "1.1.0";
+    --version: "1.1.1";
 }
 
 body {
@@ -156,5 +156,13 @@ a[title="logout"] {
 
 h1:after, h3:after, h5:after {
     border-bottom: 1px solid var(--theme);
+}
+
+.form-control {
+    color: var(--color);
+}
+
+.badge-info {
+    background-color: var(--theme-dark);
 }
 }
