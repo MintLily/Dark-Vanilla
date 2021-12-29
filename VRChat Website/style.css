@@ -11,7 +11,7 @@
     --primary: #EECCE0;
     
     --author: "Lily (MintLily#0001)";
-    --version: "1.1.1";
+    --version: "1.1.2";
 }
 
 body {
@@ -164,5 +164,11 @@ h1:after, h3:after, h5:after {
 
 .badge-info {
     background-color: var(--theme-dark);
+}
+
+div[class="css-rqhlr5 col-md-3"] { display:none; }
+
+div[class="usercard friend-false size-huge state-active level-trusted card"], div[class="css-jjyo93 col-md-9"] {
+    width: 130%;
 }
 }
