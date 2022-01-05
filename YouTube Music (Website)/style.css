@@ -6,8 +6,11 @@
     --author: "Lily (MintLily#0001)";
     --version: "1.0.0";
     
-    --yes: #EECCE0;
+    --theme: #EECCE0;
+    --bg-color: #131719;
 }
+
+body { background-color: var(--bg-color); }
 
 ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-divider.ytmusic-app-layout, ytmusic-app-layout[player-page-open_] #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-background.ytmusic-app-layout, ytmusic-app-layout.content-scrolled #nav-bar-divider.ytmusic-app-layout {
     background: rgba(0,0, 0, 0.5);
@@ -44,8 +47,8 @@ ytd-multi-page-menu-renderer {
 ytd-active-account-header-renderer { background-color: transparent; }
 
 .slider-knob-inner.tp-yt-paper-slider {
-    background: var(--yes);
-    border: 2px solid var(--yes);
+    background: var(--theme);
+    border: 2px solid var(--theme);
 }
 
 #progress-bar.ytmusic-player-bar {
@@ -62,6 +65,6 @@ ytmusic-player-bar {
 }
 
 #selectionBar.tp-yt-paper-tabs {
-    border-bottom: 2px solid var(--yes);
+    border-bottom: 2px solid var(--theme);
 }
 }
