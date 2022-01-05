@@ -27,7 +27,7 @@
 }
 
 .info-1VyQPT:after {
-	content: 'Dark Vanilla 1.7.2';
+	content: 'Dark Vanilla 1.7.3';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	line-height: 16px;
@@ -325,8 +325,7 @@ code.hljs { background: var(--background-tertiary) !important; }
 	transition: opacity .2s;
 }
 
-.updateIconForeground-3tnNZn { fill: var(--theme-text-hsl) !important; }
-
+path[class*="updateIconForeground"] { fill: var(--theme-text-hsl) !important; }
 
 .unreadPill-2HyYtt {
 	background-color: var(--theme-text);
@@ -340,7 +339,9 @@ code.hljs { background: var(--background-tertiary) !important; }
 
 .rem-2m9HGf.botTag-2WPJ74 { padding-right: 0; }
 
-.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW[style*="background-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] { background-color: var(--theme-text-muted) !important; }
+.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW[style*="background-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
+	background-color: var(--theme-text-muted) !important;
+}
 
 .container-3O_wAf { background-color: var(--background-fourth); }
 
@@ -566,11 +567,6 @@ code.hljs { background: var(--background-tertiary) !important; }
     100%{background-position:0% 50%}
 }
 @-moz-keyframes pill-anim {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-o-keyframes pill-anim {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
