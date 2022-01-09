@@ -1,0 +1,628 @@
+/*
+This is a crappy update to the new Canary / powercord update
+a complete rewrite is in the works to hopefully be better than this and the old file
+*/
+
+/* Blurpurple Recolor Integration - Probably no updated */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css);
+
+:root {
+	--blur: 8px;
+	--blur-mac: 18px;
+	--background-primary: #191F22;
+	--background-secondary: #191F22;
+	--background-tertiary: #131719;
+	--background-tertiary-rgb: 19, 23, 25;
+	--background-modifier-selected: rgba(238, 204, 224, 0.2);
+	--background-modifier-hover: rgba(238, 204, 224, 0.3);
+	--background-fourth: #1e2427;
+	--theme-text: #EECCE0;
+	--theme-text-muted: #906D92;
+	--theme-text-rgb: 238, 204, 224;
+	--theme-text-hsl: hsl(325, 50%, 87%);
+	--theme-text-muted-rgb: 144, 109, 146;
+	
+	/* Blurpurple Recolor Integration */
+	--accentcolor:			144, 109, 146;		/*	blurple		-	default:	88,101,242		*/
+	--accentcolor2:			238, 204, 224;		/*	boostpink	-	default:	255,115,250		*/
+	--linkcolor:			  238, 204, 224;		/*	link		-	default:	0,176,244		*/
+	
+	--profile-border-width: 2px;
+	--anim-speed: 6s !important;
+	--info-warning-foreground: #EECCE0;
+}
+
+.info-1sUqUG:after {
+	content: 'Dark Vanilla 1.8.0';
+	color: var(--theme-text-muted);
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.appMount-3lHmkl, body { background-color: var(--background-tertiary); }
+
+.unread-2lAfLh { background-color: var(--theme-text); }
+
+/* Compatibility: DisplayServersAsChannels */
+.styledGuildsAsChannels-DNHtg_ .wrapper-3NnKdC .expandedFolderBackground-1cujaW {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.styledGuildsAsChannels-DNHtg_ [role="group"] .listItem-GuPuDH .childWrapper-anI2G9 {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.styledGuildsAsChannels-DNHtg_ .wrapper-3NnKdC .button-Jt-tIg, .styledGuildsAsChannels-DNHtg_ .wrapper-3NnKdC .friendsOnline-2JkivW, .styledGuildsAsChannels-DNHtg_ .wrapper-3NnKdC .label-2wRs_g, .styledGuildsAsChannels-DNHtg_ .wrapper-3NnKdC #bd-pub-button {
+	font-size: 12px;
+	font-weight: 600;
+	padding-top: 0px !important;
+}
+
+.styledGuildsAsChannels-DNHtg_ .wrapper-3NnKdC .friendsOnline-2JkivW, .styledGuildsAsChannels-DNHtg_ .wrapper-3NnKdC .label-2wRs_g {
+	height: 10px !important;
+}
+
+
+/* Compatibility: BadgesEverywhere */
+.badgesChat-f_cbR8 { top: 4px; }
+
+
+/* Compatibility: PronounDB */
+.PronounDB-pronouns-text { font-weight: 500; }
+
+
+/* Compatibility: User Connections (onPopout) 
+.sc-connectAccounts { margin-top: 30px; }*/
+.base-18fc34.size12-3R0845.bodyTitle-1ySSKn {
+	display: none;
+	/*font-family: var(--font-display);
+	text-transform: uppercase;
+	font-weight: 700;
+	forced-color-adjust: none;
+	color: var(--header-secondary);
+	margin-top: 8px;*/
+}
+
+
+/* Compatibility: PermissionViewer (onPopout) */
+.member-perms-title {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	margin-bottom: 2px;
+    font-weight: 700;
+	forced-color-adjust: none !important;
+	font-size: 12px;
+    line-height: 16px;
+    color: var(--header-secondary);
+}
+
+
+/* Windows 10 TitleBar */
+div[class*="titleBar-"] {
+	height: 28px;
+}
+div[class*="withFrame-"] {
+	margin-top: 0px !important;
+}
+div[class*="winButton-"] {
+    height: 32px !important;
+    width: 42px !important;
+}
+.winButtonClose-1HsbF-, .winButtonMinMax-PBQ2gm[aria-label="Maximize"], .winButtonMinMax-PBQ2gm[aria-label="Minimize"] {
+	color: #fff;
+	top: -6px !important;
+}
+div[class*="winButtonMinMax-"][aria-label="Maximize"]:hover {
+	background-color: #FAA61A;
+	color: white;
+}
+div[class*="winButtonMinMax-"][aria-label="Minimize"]:hover {
+	background-color: #3BA55C;
+	color: white;
+}
+div[class*="wordmark-"]{
+	position: absolute;
+	left: 50%;
+	top: 15px !important;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	color: var(--theme-text-muted);
+}
+
+
+
+/* Only show the checkmark on verified bots */
+.botText-1526X_:not(:only-child) {
+	display: none;
+}
+.px-10SIf7.botTag-2WPJ74 {
+	padding-right: 0;
+}
+.botText-1526X_:only-child {
+	padding-right: 4px;
+}
+
+
+
+/* evenly space and center users in voice display */
+.voiceUsers-2V7vuh {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	grid-template-columns: none;
+}
+
+
+
+/* Scrollbar Color */ /* typing and slowmode stuff */
+.base-gE7OpD {
+	top: -24px; /* height is 24px */
+	height: 25px;
+	background-color: rgba(19, 23, 25, 0.5);
+	backdrop-filter: blur(var(--blur));
+	width: 97%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	
+}
+.scrollableContainer-2NUZem { background-color: var(--background-tertiary) }
+
+.cooldownWrapper-3joyFc { margin-right: 20px; }
+
+.auto-Ge5KZx::-webkit-scrollbar-track { background-color: var(--background-tertiary); }
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece, .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+	margin-right: 0px;
+	background-color: var(--background-fourth) !important;
+	width: 20px;
+}
+.unread-1xRYoj {
+	background-color: rgba(var(--theme-text-rgb), 0.5);
+	backdrop-filter: blur(2px);
+}
+
+
+/* Code Blocks */
+code.hljs { background: var(--background-tertiary) !important; }
+
+/* Text Area */
+div[class*="scrollableContainer"] {
+	background-color: var(--background-tertiary);
+}
+
+/* Embeds */
+div[class*="embedFull"] { background: var(--background-tertiary) !important; }
+/*.textContainer-C0szpm { border: 1px solid var(--background-secondary); }*/
+div[class*="embedFootere"] {
+	background-color: var(--background-fourth);
+	border: 1px solid var(--background-tertiary);
+}
+
+
+
+/* User Panel */
+section[class*="panels"] { background: var(--background-fourth) !important; }
+
+
+
+/* Audio Embeds */
+div[class*="wrapperAudio"] {
+	width: auto !important;
+	min-width: 400px;
+}
+
+
+/* Reactions */
+div[class*="reaction-"] { background-color: var(--background-tertiary); }
+
+
+/* Emoji Auto Complete */
+.theme-dark div[class*="autocomplete"]:not(div[class*="autocompleteInner"], .theme-dark div[class*="selected"], div[class*="autocompleteRow"]) {
+	background-color: rgba(var(--background-tertiary-rgb), 0.6);
+	backdrop-filter: blur(var(--blur-mac));
+}
+.theme-dark div[class*="selected-"] { background: var(--background-fourth) !important; }
+
+
+/* Emoji Picker Panel */
+div[class*="inspector"] { background: var(--background-fourth) !important; }
+.navButtonActive-1EqC5l { background: var(--background-modifier-selected); }
+.navButtonActive-1EqC5l:hover { background: var(--background-modifier-hover); }
+button[class*="navButton"][aria-controls*="tab-panel"]:hover {
+	background: var(--background-modifier-hover);
+	border-radius: 4px;
+}
+
+
+/* Friends Panel */
+.theme-dark div[class*="peopleColumn"][id="online-tab"] { background-color: var(--background-secondary); }
+
+
+/* Slider Toggles */
+div[class*="container-"][style*="calc(var(--saturation-factor"] { background-color: var(--theme-text-muted) !important; }
+svg[class*="slider-"] path[fill*="calc(var(--saturation-factor"] { fill: var(--theme-text-muted); }
+
+
+/* Upload Panel 
+.theme-dark .uploadModal-2ifh8j { background-color: var(--background-secondary); }
+.theme-dark .footer-3mqk7D { background-color: var(--background-tertiary); }*/
+
+
+/* Collapsed Search Bar 
+[class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] {
+	background: none;
+	width: 24px;
+	color: var(--color-text);
+	transition: width 0.2s, padding 0.5s;
+	padding: 0 !important;
+}
+[class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] [class*="iconContainer-"] {
+	width: 24px !important;
+	height: 24px;
+	cursor: pointer !important;
+}
+[class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] svg {
+	color: var(--color-text);
+	width: 24px;
+	height: 24px;
+	padding: 0.5px;
+}
+[class*="toolbar-"] > [class*="search-"] [class*="searchBar-"]:focus-within {
+	width: 300px;
+	padding: 0 10px !important;
+}
+[class*="toolbar-"] > [class*="search-"] [class*="searchBar-"]:focus-within svg {
+	color: var(--text-muted);
+	transform: scale(0.8);
+}*/
+
+.theme-dark div[class*="root-"] { background-color: var(--background-primary); }
+.theme-dark div[class*="footer-"] { background-color: var(--background-tertiary); }
+.container-3XJ8ns { background-color: var(--background-tertiary); }
+.upsellContainer-L9xv7w { background-color: var(--background-tertiary); }
+.upsellFooter-ZYsio_ { background-color: var(--background-fourth); }
+.guildSection-1EoFKd { background-color: var(--background-fourth); }
+.enableContainer-2DIT9Q { background-color: var(--background-fourth); }
+.settingsFormFieldWrapper-3Y77Pr { background-color: var(--background-fourth); }
+.theme-dark .tierHeaderUnlocked-3lTDnP { background-color: var(--background-tertiary); }
+.theme-dark .tierHeaderLocked-3S508x { background-color: var(--background-tertiary); }
+.theme-dark .tierBody-3aUxuc { background-color: var(--background-fourth); }
+.container-_phMUq {
+	background-color: var(--background-tertiary);
+	border-radius: 5px 5px 5px 5px;
+}
+.item-26Dhrx { background-color: var(--background-fourth); }
+.theme-dark .paymentPane-3bwJ6A { background-color: var(--background-tertiary); }
+.theme-dark .paginator-166-09, .theme-dark .bottomDivider-1K9Gao, .theme-dark .codeRedemptionRedirect-1wVR4b { background-color: var(--background-fourth) !important; }
+.theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC { background-color: var(--background-fourth) !important; }
+.theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s { background-color: #525963; }
+.theme-dark .feature-2w65J5 { background-color: var(--background-fourth); }
+.defaultValue-3gC7yw .markValue-2DwdXI {color: var(--theme-text); }
+
+.theme-dark .perksModal-fSYqOq { background-color: var(--background-secondary); }
+.theme-dark .perk-2WeBWW { background-color: var(--background-fourth); }
+
+.menu-3sdvDGd {
+	background-color: rgba(var(--background-tertiary-rgb), 0.2);
+	backdrop-filter: blur(var(--blur));
+}
+.colorDefault-2K3EoJ[id="status-picker-invisible"].focused-3afm-j, .colorDefault-2K3EoJ[id="status-picker-invisible"]:active:not(.hideInteraction-1iHO1O) {
+	background-color: #525963;
+}
+
+.guildSubscriptionSlots-JPXXvN { background-color: var(--background-fourth); }
+.preview-2nSL_2 { background-color: var(--background-fourth); }
+.preview-2Vkbi6 { background-color: var(--background-fourth); }
+
+.tooltipPrimary-1d1ph4 {
+	background-color: rgba(var(--background-tertiary-rgb), 0.2);
+	backdrop-filter: blur(var(--blur));
+}
+.tooltipPointer-3ZfirK {
+	background-color: rgba(var(--background-tertiary-rgb), 0.2);
+	backdrop-filter: blur(var(--blur));
+}
+
+div[class*="mentioned"] {
+	background-color: rgba(var(--theme-text-rgb), 0.15) !important;
+	transition: background .2s;
+}
+div[class*="mentioned"]:hover {
+	background-color: rgba(var(--theme-text-rgb), 0.35) !important;
+	transition: background .2s;
+}
+
+path[class*="updateIconForeground"] { fill: var(--theme-text-hsl) !important; }
+
+.rem-2m9HGf.botTag-2WPJ74 { padding-right: 0; }
+
+div[class*="numberBadge-"][style*="calc(var(--saturation-factor"] {
+	background-color: var(--theme-text-muted) !important;
+}
+
+.container-3O_wAf { background-color: var(--background-fourth); }
+
+
+/* EXTRA ADDONS (OPTIONAL) */
+
+/* Active Selected Server Pill */
+/* Pride Pill 
+.pill-1z4sAY.wrapper-sa6paO .item-2hkk8m {
+	background: url('https://mintlily.lgbt/img/upload/PastelPride.png') !important;
+	background-size: 40px !important;
+}*/
+
+div[class*="divider"] > span[class*="content"] { color: var(--theme-text); }
+div[class*="divider"] { border-top: thin solid var(--theme-text); }
+span[class*="unreadPill"] {
+	background-color: var(--theme-text);
+	color: var(--background-primary);
+}
+path[class*="unreadPillCap"] {
+	color: var(--theme-text-hsl);
+	fill: var(--theme-text-hsl);
+}
+
+
+
+
+/* Shrink server banners to header instead of disappearing. */
+[class*="animatedContainer-"] {
+	opacity: 1 !important;
+	transition: opacity .5s;
+}
+[class*="animatedContainer-"] > [class*="bannerImage-"] {
+	transition: margin .5s;
+}
+:not([class*="bannerVisible-"]) > [class*="animatedContainer-"] {
+	opacity: .35 !important;
+	height: 138px;
+}
+:not([class*="bannerVisible-"]) > [class*="animatedContainer-"] > [class*="bannerImage-"] {
+	margin-top: -12px;
+}
+header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
+[class*="hasBanner"] [class*="header"], [class*="hasBanner"] [class*="header"]:hover {
+	backdrop-filter: blur(0px) !important;
+}
+
+
+/*/// Content Focus Backdrop Background Blur ///*/
+#app-mount div > div[class*="layer-"] {
+	backdrop-filter: blur(var(--blur)); /* Customizable Value (the higher the pixel count, the more blur there is) */
+	transition: opacity 0.5s;
+}
+
+#app-mount div > div[class*="backdrop-"] {
+	opacity: 0.5 !important;
+	transition: opacity 0.5s;
+}
+
+/* Custom profileBanner Background 
+div[class*="profileBanner"] {
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url('https://mintlily.lgbt/img/upload/DarkVanilla_ProfileBannerBackdrop.png');
+}*/
+
+
+/* Colourful member list - by mac */
+span[class*="roleColor"]::after {
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.125;
+	background: currentColor;
+}
+div[class*="membersGroup"] + div[class*="member"] { margin-top: 5px; }
+div[class*="membersGroup"] + div[class*="member"] span[class*="roleColor"]::after { border-radius: 5px 5px 5px 5px; }
+
+
+/* Double line Channel Topic */
+[class*="chat-"] > [class*="title-"] > [class*="children-"] > [class*="topic-"] {
+	white-space: normal;
+	max-height: 2.4em;
+	font-size: .9em;
+	line-height: 1.2em;
+	text-overflow: ellipsis;
+	position: relative;
+}
+[class*="chat-"] > [class*="title-"] > [class*="children-"]::after {
+	content: unset;
+}
+[class*="chat-"] > [class*="title-"] > [class*="children-"] > [class*="topic-"]::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 1em;
+	background: linear-gradient(to right, transparent, var(--background-primary), var(--background-primary)) !important;
+	display: flex;
+	width: 130px;
+}
+
+
+/* Voice Channel Activity mask bug fix */
+.assetsLargeMaskVoiceChannel-2k1oGM {-webkit-mask-size: cover;}
+
+
+/* Hide threads until channel is selected */
+[class*="containerDefault--"]:not([class*="selected-"]) + [class*="container-"] {
+    overflow: hidden;
+}
+[class*="containerDefault--"]:not([class*="selected-"]) + [class*="container-"] > [class*="containerDefault--"]:not(:last-child):not([class*="selected-"]) {
+    display: none;
+}
+
+[class*="containerDefault--"]:not([class*="selected-"]) + [class*="container-"] > [class*="containerDefault--"]:last-child:not([class*="selected-"])::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent, var(--background-secondary));
+    pointer-events: none;
+}
+
+
+/* Reply Click Background flash */
+div[class*="backgroundFlash"][style^="background-color: rgba(88, 101, 242"] {
+	background: linear-gradient(270deg, var(--theme-text-muted), transparent);
+	background-size: 400% 400%;
+	
+	-webkit-animation: reply 2s ease 3;
+	-moz-animation: reply 2s ease 3;
+	animation: reply 2s ease 3;
+}
+
+@-webkit-keyframes reply {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes reply {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes reply {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+		
+		
+/* Colored profile popout borders 
+.userPopout-xaxa6l .banner-2QYc2d {
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+    background-size: calc(100% - 4px);
+    background-position: center 2px;
+    border-radius: 10px;
+}
+.userPopout-xaxa6l .banner-2QYc2d:after {
+    content: "";
+    display: block;
+    background-color: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width: 100%;
+    height: 124px;
+    clip-path: path("M 2 12 Q 2 2 12 2 L 292 2 Q 302 2 302 12 L 302 123 L 304 123 L 304 0 L 0 0 L 0 123 L 2 123 L 2 12");
+}
+.headerTop-3vNv-a, .body-3HBlXn, .footer-3UKYOU {
+    background-color: var(--background-floating) !important;
+}
+.avatarPositionNormal-aZjAsn {top: 16px;}
+.avatarPositionNormal-aZjAsn+.headerTop-3vNv-a {padding-top: 120px;}
+.avatarPositionPremium-3We5Ho+.headerTop-3vNv-a {margin-top: 120px;}
+.avatarPositionNormal-aZjAsn+.headerTop-3vNv-a>.profileBadges-ohc0Vu {top: 76px;}
+
+.root-3QyAh1 {
+    padding: var(--profile-border-width);
+    border-radius: 10px;
+}
+.topSection-y3p-_D {
+    margin-top: 239px;
+}
+.topSection-y3p-_D .banner-2QYc2d {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-size: calc(100% - calc(var(--profile-border-width) * 2));
+    background-position: center var(--profile-border-width);
+    z-index: -1;
+}
+.topSection-y3p-_D .banner-2QYc2d:after {
+    margin: calc(var(--profile-border-width) - 2px);
+    content: "";
+    display: block;
+    background-color: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width: 100%;
+    height: 244px;
+    clip-path: path("M 0 0 V 12 H 2 Q 2 2 12 2 V 0 Z M 604.5 0 V 12 H 602.5 Q 602.5 2 592.5 2 V 0 Z");
+}
+.header-4zuFdR {
+    top: -76px;
+}
+.body-r6_QPy {
+    border-radius: 0 0 8.5px 8.5px;
+}*/
+
+/* Revert User Popout Roles 
+.role-2irmRk {
+	background: transparent;
+	border: 1px solid;
+	border-radius: 50px;
+}*/
+
+/* Color Anim */
+.item-2LIpTv {
+	background: linear-gradient(270deg, #51ff3b, #9fffe3, #eecce0);
+    background-size: 600% 600%;
+
+    -webkit-animation: pill-anim 30s ease infinite;
+    -moz-animation: pill-anim 30s ease infinite;
+    -o-animation: pill-anim 30s ease infinite;
+    animation: pill-anim 30s ease infinite;
+}
+@-webkit-keyframes pill-anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes pill-anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes pill-anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+div[id*="popout"][class*="layer-"] {
+	border-width: 1px;
+	border-radius: 4px;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(var(--angle), #51FF3B, #9fffe3, #9fffe3, #EECCE0);
+	border-style: solid;
+	margin-bottom: 20px;
+	animation: border-anim var(--anim-speed) ease infinite;
+}
+@property --angle {
+	syntax: '<angle>';
+	initial-value: 0deg;
+	inherits: false;
+}
+@keyframes border-anim {
+	to {
+		--angle: 360deg;
+	}
+}
+
+/* Save Changes bottom popup */
+.theme-dark .elevationHigh-1PneE4[style^="background-color: rgba(32, 34, 37, 0.9"] {
+	background-color: rgba(var(--theme-text-rgb), 0.3) !important;
+	backdrop-filter: blur(var(--blur-mac));
+}
+
+
+
+
+
+
+
+
+
+
+/* Quick Fixes */
+.badges img {
+	width: 2% !important;
+	height: 2% !important;
+}
