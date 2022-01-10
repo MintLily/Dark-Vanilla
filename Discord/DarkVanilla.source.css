@@ -469,3 +469,13 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 /* Slider Toggles */
 div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-muted) !important; }
 .slider-32CRPX path[fill*="calc(var(--saturation-factor"] { fill: var(--theme-text-muted); }
+
+/* New Message Bar */
+.newMessagesBar-1hF-9G {
+	width: 35%;
+	top: 1.6rem;
+	left: auto;
+	right: 12px;
+	border-radius: 0.7rem 0 0 0.7rem;
+	float: right;
+}
