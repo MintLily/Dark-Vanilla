@@ -1,10 +1,10 @@
 # Dark Vanilla
-Standard vanilla look, just a tad darker, with a pick and minty green accent color, and [BlurpleRecolor](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BlurpleRecolor) replacement
+Simplistic Vanilla-based theme with darker colors, with a few tweaks here and there.
 
 # Discord Installation
 
-### Powercord
-1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/latest/download/DarkVanilla_PC.zip) (From Releases page - *`DarkVanilla_PC.zip`*)
+### Powercord (Updated for Canary update)
+1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/download/latest/Dark.Vanilla.zip) (From Releases page - *`Dark.Vanilla.zip`*)
 2. Go to themes folder and install folder (`powercord/src/Powercord/themes/`)
 
 ### BetterDiscord
