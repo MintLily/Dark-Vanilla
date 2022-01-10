@@ -45,6 +45,7 @@
 	--brand-experiment-600: hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
 	--brand-experiment-560: hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
 	--control-brand-foreground: #906D92;
+	--divider-color: #EECCE0;
 
 	--spotify-color: #EECCE0 !important;
 }
@@ -138,6 +139,10 @@ div[data-item-id="ADD_FRIEND"]:hover {
 .embed-hKpSrO {
 	border-top-right-radius: var(--soft-corner);
 	border-bottom-right-radius: var(--soft-corner);
+}
+.wrapper-x4po40 /* YouTube play pill */ {
+	background-color: rgba(var(--background-tertiary-rgb), 0.6);
+	backdrop-filter: blur(var(--blur));
 }
 
 /* Text Mention */
@@ -470,6 +475,7 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-muted) !important; }
 .slider-32CRPX path[fill*="calc(var(--saturation-factor"] { fill: var(--theme-text-muted); }
 
+/* Message Unread */
 /* New Message Bar */
 .newMessagesBar-1hF-9G {
 	width: 35%;
@@ -479,3 +485,12 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	border-radius: 0.7rem 0 0 0.7rem;
 	float: right;
 }
+/* Inline with Messages */
+.unreadPill-3nEWYM, .unreadPillCapStroke-1nE1Q8{
+	background-color: var(--theme-text);
+	color: var(--background-tertiary);
+	fill: var(--theme-text);
+}
+.isUnread-3Lojb- { border-color: var(--theme-text); }
+.divider-2rZFJK { border-color: var(--theme-text-muted); }
+.content-3spvdd { color: var(--theme-text); }
