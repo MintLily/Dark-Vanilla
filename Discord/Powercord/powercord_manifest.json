@@ -1,11 +1,11 @@
 {
     "name": "Dark Vanilla",
-    "description": "Standard vanilla look, just a tad darker and Blurpurple replacement",
-    "version": "1.4.0",
+    "description": "Simplistic Vanilla-based theme with darker colors, with a few tweaks here and there.",
+    "version": "2.0.0",
     "license": "MIT",
-    "theme": "Dark Vanilla.theme.css",
+    "theme": "theme.css",
     "splashTheme": "splash.css",
     "author": "MintLily",
-    "preview": [ "https://mintlily.lgbt/img/upload/Discord_y0sS2t2t6W.png" ],
+    "preview": [ "" ],
     "discord": "0"
 }
