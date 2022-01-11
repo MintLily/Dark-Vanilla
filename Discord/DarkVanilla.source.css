@@ -51,7 +51,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.0.0';
+	content: 'Dark Vanilla 2.0.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	line-height: 16px;
@@ -494,3 +494,8 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 .isUnread-3Lojb- { border-color: var(--theme-text); }
 .divider-2rZFJK { border-color: var(--theme-text-muted); }
 .content-3spvdd { color: var(--theme-text); }
+
+/* Text File Preview */
+.textContainer-36wgKK { background-color: var(--background-tertiary); }
+.footer-GXWBBp { background-color: var(--background-tertiary); }
+.formattedSize-1YbZww { color: #bbb; }
