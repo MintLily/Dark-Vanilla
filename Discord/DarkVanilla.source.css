@@ -46,12 +46,18 @@
 	--brand-experiment-560: hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
 	--control-brand-foreground: #906D92;
 	--divider-color: #EECCE0;
+	--text-brand: #EECCE0;
+	--scrollbar-thin-thumb: #131719;
+	--scrollbar-auto-thumb: #131719;
+	--scrollbar-auto-track: #1e2427;
+	--scrollbar-auto-scrollbar-color-thumb: #131719;
+    --scrollbar-auto-scrollbar-color-track: #1e2427;
 
 	--spotify-color: #EECCE0 !important;
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.0.1';
+	content: 'Dark Vanilla 2.0.2';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	line-height: 16px;
@@ -467,6 +473,17 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 .theme-dark .addGamePopout-3yePJc { background-color: var(--background-fourth); }
 /* === END Settings Opened === */
 
+/* Server Opened */
+/* Overview */
+.avatarUploaderInnerSquareDisabled-e_U2MZ { background-color: var(--background-tertiary); }
+/* Stickers */
+.theme-dark .tierHeaderLocked-30MLlO { background-color: var(--background-tertiary); }
+.theme-dark .tierBody-1d3UiS { background-color: var(--background-fourth); }
+/* Audit Log */
+.theme-dark .headerClickable-zGQJz3, .theme-dark .headerDefault-1e6yjj { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
+/* Inegrations */
+.theme-dark .card-3JmxsM { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
+
 /* Change Log Popup */
 .theme-dark .root-g14mjS { background-color: var(--background-primary); }
 .theme-dark .footer-31IekZ { background-color: var(--background-fourth); }
@@ -499,3 +516,10 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 .textContainer-36wgKK { background-color: var(--background-tertiary); }
 .footer-GXWBBp { background-color: var(--background-tertiary); }
 .formattedSize-1YbZww { color: #bbb; }
+
+/* File upload Progress Bar */
+.progressBar-1T6LYX[style*="background-color: hsl(235"] { background-color: var(--theme-text-muted) !important; }
+
+/* Button Hover */
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS { background-color: var(--theme-text-muted); }
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS:hover { background-color: var(--theme-text); color: var(--background-tertiary); }
