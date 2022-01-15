@@ -1,10 +1,10 @@
 # VRCX Installation
 
-1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/latest/download/DarkVanilla_VRCX.zip) (From Releases page - *`DarkVanilla_VRCX.zip`*)
-2. Go to VRCX folder and open the ZIP file
-3. Place the `html` folder in the root of the app install
-4. Replace all files
-5. Open app, and the theme should be applied
+1. Save the File [here](https://raw.githubusercontent.com/MintLily/Dark-Vanilla/main/VRCX/custom.css) as `custom.css`
+2. Open your File Explorer and go to `%AppData%\VRCX\`
+3. Place the `custom.css` in that folder (the final path will be `%AppData%\VRCX\custom.css`
+4. Reload VRCX
+5. And you're done
 
 ### Note
-This is version specific, newer versions of VRCX may include more features. overwriting an outdated theme on to a fresh app update, may break the app or have new features not show up at all.
+This version will pull my latest updates from GitHub, therefore you dont have to update the file ever time.
