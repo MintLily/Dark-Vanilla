@@ -57,7 +57,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.0.2';
+	content: 'Dark Vanilla 2.0.3';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	line-height: 16px;
@@ -152,15 +152,15 @@ div[data-item-id="ADD_FRIEND"]:hover {
 }
 
 /* Text Mention */
-div[class*="mentioned"] {
+.mentioned-Tre-dv {
 	background-color: rgba(var(--theme-text-rgb), 0.15) !important;
 	transition: background .2s;
 }
-div[class*="mentioned"]:hover {
+.mentioned-Tre-dv:hover {
 	background-color: rgba(var(--theme-text-rgb), 0.35) !important;
 	transition: background .2s;
 }
-div[class*="mentioned"]::before { background-color: var(--theme-text); }
+.mentioned-Tre-dv::before { background-color: var(--theme-text); }
 
 /* Double line Channel Topic */
 [class*="chat-"] > [class*="title-"] > [class*="children-"] > [class*="topic-"] {
@@ -523,3 +523,6 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 /* Button Hover */
 .lookFilled-yCfaCM.colorBrandNew-2-gGsS { background-color: var(--theme-text-muted); }
 .lookFilled-yCfaCM.colorBrandNew-2-gGsS:hover { background-color: var(--theme-text); color: var(--background-tertiary); }
+
+/* Spoiler */
+.theme-dark .spoilerText-27bIiA.hidden-3B-Rum { background-color: var(--background-tertiary); }
