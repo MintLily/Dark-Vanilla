@@ -57,7 +57,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.0.3';
+	content: 'Dark Vanilla 2.0.4';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	line-height: 16px;
@@ -150,6 +150,12 @@ div[data-item-id="ADD_FRIEND"]:hover {
 	background-color: rgba(var(--background-tertiary-rgb), 0.6);
 	backdrop-filter: blur(var(--blur));
 }
+.theme-dark .wrapperAudio-1Bzv_Z {
+	background: var(--background-tertiary);
+	border-radius: var(--soft-corner);
+}
+.audioControls-3fmemK { border-radius: var(--soft-corner); }
+.audioMetadata-1Hrt8T .metadataSize-2A2s1T { color: #ddd; }
 
 /* Text Mention */
 .mentioned-Tre-dv {
@@ -526,3 +532,22 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 
 /* Spoiler */
 .theme-dark .spoilerText-27bIiA.hidden-3B-Rum { background-color: var(--background-tertiary); }
+
+/* Send Button */
+.lookBlank-21BCro svg.sendIcon-1HcEzu {
+	color: var(--theme-text);
+	transition: color 0.2s ;
+}
+.lookBlank-21BCro:hover svg.sendIcon-1HcEzu {
+	color: var(--theme-text-muted);
+	transition: color 0.2s ;
+}
+
+/* Server Boost */
+.theme-dark .perksModal-CLcR1c { background-color: var(--background-primary); }
+.theme-dark .perk-19D_HN { background-color: var(--background-fourth); }
+.theme-dark .barBackground-unEPDT { background-color: var(--background-tertiary); }
+.theme-dark .tierMarkerBackground-G8FoN4 { background-color: var(--background-fourth); }
+.theme-dark .tierHeaderLocked-3ItHYn { background-color: var(--background-fourth); }
+.theme-dark .tierBody-3ju-rc { background-color: var(--background-tertiary); }
+.barSecondary-VouwoY { background-color: var(--theme-text); }
