@@ -57,11 +57,15 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.0.4';
+	content: 'Dark Vanilla 2.1.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
+	font-weight: bold;
 	line-height: 16px;
 }
+
+/* Just a little funny easter-egg-ish thing */
+.powercord-account-item:not(a)::after { content: ' - The Mega Cutie~'; }
 
 /* Windows 10 TitleBar */
 div[class*="titleBar-"] {
@@ -417,10 +421,52 @@ ul[class*="channelAttachmentArea-"] {
 }
 .attachButtonPlay-1ATmb5 { color: var(--theme-text); }
 /* Jump To Present Bar */
-.jumpToPresentBar-1cEnH0 {
+[class*="jumpToPresentBar"] { display: contents; }
+[class*="jumpToPresentBar"] > button:first-child { display: none; }
+[class*="jumpToPresentBar"] > button:last-child {
+    position: absolute;
+    bottom: 15px;
+    right: 16px;
+    padding: 8px !important;
+    height: auto;
+    background-color: var(--thene-text-muted);
+    box-shadow: var(--elevation-high);
+    border-radius: 100px;
+    display: flex;
+    font-size: 0;
+    color: transparent;
+    transition: font-size 0.2s 0.1s, color 0.2s, padding 0.4s 0.1s;
+    background-color: rgba(var(--background-tertiary-rgb), 0.6);
+	backdrop-filter: blur(var(--blur-mac));
+	z-index: 100;
+}
+[class*="jumpToPresentBar"] > button svg {
+    order: -1;
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    top: unset;
+    margin-right: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    color: var(--theme-text);
+    transition: margin 0.6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+    padding: 8px 18px !important;
+    font-size: 14px;
+    color: var(--text-normal);
+    transition: font-size 0.2s, color 0.2s 0.1s, padding 0.4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+    margin-right: 2px;
+    margin-left: -6px;
+}
+/*.jumpToPresentBar-1cEnH0 {
 	background-color: rgba(var(--background-tertiary-rgb), 0.6);
 	backdrop-filter: blur(var(--blur-mac));
 }
+*/
 
 /* Reactions */
 .reaction-2A2y9y { background-color: var(--background-tertiary); }
@@ -501,7 +547,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 /* Message Unread */
 /* New Message Bar */
 .newMessagesBar-1hF-9G {
-	width: 35%;
+	width: 65%;
 	top: 1.6rem;
 	left: auto;
 	right: 12px;
@@ -534,11 +580,11 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 .theme-dark .spoilerText-27bIiA.hidden-3B-Rum { background-color: var(--background-tertiary); }
 
 /* Send Button */
-.lookBlank-21BCro svg.sendIcon-1HcEzu {
+.sendIcon-1HcEzu {
 	color: var(--theme-text);
 	transition: color 0.2s ;
 }
-.lookBlank-21BCro:hover svg.sendIcon-1HcEzu {
+.sendIcon-1HcEzu:hover {
 	color: var(--theme-text-muted);
 	transition: color 0.2s ;
 }
@@ -551,3 +597,31 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 .theme-dark .tierHeaderLocked-3ItHYn { background-color: var(--background-fourth); }
 .theme-dark .tierBody-3ju-rc { background-color: var(--background-tertiary); }
 .barSecondary-VouwoY { background-color: var(--theme-text); }
+
+/* Pinned Messages Resize */
+.messagesPopoutWrap-3zryHW {
+	max-height:70vh !important;
+	width:30vw;
+}
+
+/* Are things offline? */
+.tipTitle-3FYEQp {
+	content: "";
+	font-size: 0px;
+}
+.tipTitle-3FYEQp::before {
+	content: "Hey, it seems things are offline at the moment. Please Stand by . . .";
+	font-size: 12px;
+}
+.tip-1AwED_ {
+	content: "";
+	font-size: 0px;
+}
+.tip-1AwED_::before {
+	content: "You're Offline :c"; font-size: 16px;
+}
+.problems-CvGwpb.slideIn-VAD-dp, .tip-1AwED_ > .keybindShortcut-3zF1P9.keybind-2rkdVo { display: none; }
+.container-2RRFHK.fixClipping-3GOd_d {
+	background:rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+}
