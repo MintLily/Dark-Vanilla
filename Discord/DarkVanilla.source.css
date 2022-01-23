@@ -610,7 +610,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	font-size: 0px;
 }
 .tipTitle-3FYEQp::before {
-	content: "Hey, it seems things are offline at the moment. Please Stand by . . .";
+	content: "Hey, it seems things are not connected at the moment. Please Stand by . . .";
 	font-size: 12px;
 }
 .tip-1AwED_ {
