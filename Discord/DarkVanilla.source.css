@@ -57,7 +57,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.1.0';
+	content: 'Dark Vanilla 2.1.2';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -555,14 +555,14 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	float: right;
 }
 /* Inline with Messages */
-.unreadPill-3nEWYM, .unreadPillCapStroke-1nE1Q8{
+.unreadPill-3nEWYM, .unreadPillCapStroke-1nE1Q8 {
 	background-color: var(--theme-text);
 	color: var(--background-tertiary);
 	fill: var(--theme-text);
 }
 .isUnread-3Lojb- { border-color: var(--theme-text); }
 .divider-2rZFJK { border-color: var(--theme-text-muted); }
-.content-3spvdd { color: var(--theme-text); }
+.content-3spvdd, .isUnread-3Lojb- .content-3spvdd { color: var(--theme-text) !important; }
 
 /* Text File Preview */
 .textContainer-36wgKK { background-color: var(--background-tertiary); }
@@ -625,3 +625,9 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	background:rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
 }
+
+/* Discord Game Store Preview */
+.scroller-s-wehS { background-color: var(--background-tertiary); }
+.theme-dark .root-3mkK8X { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
+.theme-dark .entitledHeader-3TLJwI, .theme-light .entitledHeader-3TLJwI { background-color: var(--background-fourth); }
+.theme-dark .bodySection-3iDdop, .theme-light .bodySection-3iDdop, .theme-dark .row-2qQ--F { background-color: var(--background-primary); }
