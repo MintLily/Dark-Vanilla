@@ -1,4 +1,3 @@
-@-moz-document domain("vrchat.com"), domain("vrchat.net") {
 :root {
     --theme: #EECCE0;
     --theme-dark: #906D92;
@@ -254,5 +253,4 @@ div.col-12.col-md-5 > h4 > span > small > a:hover {
 
 .form-control:focus {
     box-shadow: inset 0 1px 1px rgb(10 10 13 / 8%), 0 0 0 3px rgb(144 109 146 / 75%);
-}
 }
