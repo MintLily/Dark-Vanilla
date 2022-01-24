@@ -11,7 +11,7 @@
     --primary: #EECCE0;
     
     --author: "Lily (MintLily#0001)";
-    --version: "1.1.2";
+    --version: "1.2.0";
 }
 
 body {
@@ -52,9 +52,27 @@ a:hover {
     border-color: var(--bg-secondary-color);
 }
 
+div.navbar-header > a.btn-secondary {
+    background: var(--bg-tertiary-color);
+    border-color: var(--bg-tertiary-color);
+}
+
+div.navbar-header > a.btn-secondary:hover {
+    background-color: var(--theme-dark) !important;
+}
+
 .btn-outline-primary {
     color: var(--theme);
     border-color: var(--theme);
+}
+
+.btn-primary:focus, .btn-primary.focus, .btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgb(144 109 146 / 75%);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle:focus, 
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(238 204 224 / 50%);
 }
 
 .btn-primary {
@@ -67,6 +85,23 @@ a:hover {
     color: var(--color);
     background: var(--theme-dark);
     border-color: var(--theme-dark);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show>.btn-outline-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+    color: var(--bg-primary-color);
+    background: var(--theme);
+    border-color: var(--theme);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle, .btn-primary.disabled, .btn-primary:disabled {
+    color: var(--color);
+    background: var(--theme-dark);
+    border-color: var(--theme-dark);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: var(--theme);
 }
 
 .card {
@@ -101,15 +136,31 @@ a:hover {
     background-color: var(--theme-dark);
 }
 
+button[type="submit"] {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
 .form-control {
     border-color: var(--theme);
     background-color: var(--bg-tertiary-color);
+}
+
+.form-control[type="text"]:not(#mergeToken, #displayName, #email) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .form-control:focus {
     border-color: var(--theme) !important;
     background-color: var(--bg-tertiary-color);
     color: var(--color);
+}
+
+.css-733nux {
+    background-color: var(--bg-tertiary-color);
+    color: var(--color);
+    border: 1px solid var(--theme);
 }
 
 .css-1h72598 {
@@ -121,8 +172,13 @@ a:hover {
     background-color: var(--theme-dark);
 }
 
-.css-1o3w9m7 .search-container {
+.css-1o3w9m7 .search-container, .css-1o3w9m7 .search-container.private, .img-thumbnail {
     border: 1px solid var(--theme);
+    border-radius: 0.35rem;
+}
+
+.css-1efq825 .search-container {
+    border-radius: 0.35rem;
 }
 
 .css-4r69nx .world-row {
@@ -145,8 +201,16 @@ a:hover {
     transition: all 0.2s ease-in-out 0s;
 }
 
-a[title="logout"] {
-    background-color: var(--theme-dark) !important;
+.css-4r69nx .world-nav-arrow {
+    background-color: var(--bg-secondary-color);
+}
+
+.css-4r69nx .world-nav:not(.nav-disabled):hover .world-nav-arrow {
+    background-color: var(--theme-dark);
+}
+
+.css-4r69nx .world-nav {
+    background-color: var(--bg-primary-color);
 }
 
 .btn-outline-light, .btn-group>.btn:not(:first-child), .btn-group>.btn-group:not(:first-child)>.btn {
@@ -170,5 +234,25 @@ div[class="css-rqhlr5 col-md-3"] { display:none; }
 
 div[class="usercard friend-false size-huge state-active level-trusted card"], div[class="css-jjyo93 col-md-9"] {
     width: 130%;
+}
+
+.css-5ouil5 {
+    background-color: var(--bg-tertiary-color);
+}
+
+.subheader, div.col-12.col-md-5 > h4 > span > small > a {
+    color: var(--theme);
+}
+
+div.col-12.col-md-5 > h4 > span > small > a:hover {
+    color: var(--theme-dark);
+}
+
+.css-1infjsl:hover {
+    color: var(--theme);
+}
+
+.form-control:focus {
+    box-shadow: inset 0 1px 1px rgb(10 10 13 / 8%), 0 0 0 3px rgb(144 109 146 / 75%);
 }
 }
