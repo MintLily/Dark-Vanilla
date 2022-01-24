@@ -1,0 +1,258 @@
+@-moz-document domain("vrchat.com"), domain("vrchat.net") {
+:root {
+    --theme: #EECCE0;
+    --theme-dark: #906D92;
+    --color: #eee;
+    --bg-primary-color: #191F22;
+    --bg-secondary-color: #1e2427;
+    --bg-tertiary-color: #131719;
+    --blur: 8px;
+    
+    --primary: #EECCE0;
+    
+    --author: "Lily (MintLily#0001)";
+    --version: "1.2.0";
+}
+
+body {
+    background-color: var(--bg-tertiary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--bg-primary-color) !important;
+}
+
+.css-a0az5u {
+    background-image: linear-gradient(var(--bg-primary-color), var(--bg-primary-color), var(--theme-dark), var(--theme)) !important;
+    background-color: var(--bg-primary-color);
+}
+
+.bg-gradient-secondary {
+    background-image: linear-gradient(var(--theme), var(--theme), var(--bg-primary-color), var(--bg-primary-color)) !important;
+    background-color: var(--bg-primary-color);
+}
+
+.css-9ikhbi {
+    background-color: var(--bg-primary-color);
+}
+
+a {
+    color: var(--theme-dark);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+a:hover {
+    color: var(--theme);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.btn-secondary {
+    color: #fff;
+    background: var(--bg-primary-color) linear-gradient(180deg, var(--bg-secondary-color), var(--bg-primary-color)) repeat-x;
+    border-color: var(--bg-secondary-color);
+}
+
+div.navbar-header > a.btn-secondary {
+    background: var(--bg-tertiary-color);
+    border-color: var(--bg-tertiary-color);
+}
+
+div.navbar-header > a.btn-secondary:hover {
+    background-color: var(--theme-dark) !important;
+}
+
+.btn-outline-primary {
+    color: var(--theme);
+    border-color: var(--theme);
+}
+
+.btn-primary:focus, .btn-primary.focus, .btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgb(144 109 146 / 75%);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle:focus, 
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(238 204 224 / 50%);
+}
+
+.btn-primary {
+    color: var(--bg-tertiary-color);
+    background: var(--theme);
+    border-color: var(--theme);
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn-outline-primary:hover {
+    color: var(--color);
+    background: var(--theme-dark);
+    border-color: var(--theme-dark);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show>.btn-outline-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+    color: var(--bg-primary-color);
+    background: var(--theme);
+    border-color: var(--theme);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle, .btn-primary.disabled, .btn-primary:disabled {
+    color: var(--color);
+    background: var(--theme-dark);
+    border-color: var(--theme-dark);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: var(--theme);
+}
+
+.card {
+    background-color: var(--bg-primary-color);
+}
+
+.badge-secondary {
+    color: var(--color);
+    background-color: var(--theme-dark);
+}
+
+.css-106697k, .css-19w2cfh, .css-1dnyrdp, .css-z9dye4 {
+    backdrop-filter: blur(var(--blur));
+    transition: opacity 0.2s ease-in-out 0s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.css-1t7q23s {
+    backdrop-filter: blur(var(--blur));
+    transition: opacity 0.2s ease-in-out 0s;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-secondary {
+    color: var(--theme);
+    border-color: var(--theme);
+}
+
+.btn-outline-secondary:hover {
+    color: var(--color);
+    border-color: var(--theme-dark);
+    background-color: var(--theme-dark);
+}
+
+button[type="submit"] {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.form-control {
+    border-color: var(--theme);
+    background-color: var(--bg-tertiary-color);
+}
+
+.form-control[type="text"]:not(#mergeToken, #displayName, #email) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.form-control:focus {
+    border-color: var(--theme) !important;
+    background-color: var(--bg-tertiary-color);
+    color: var(--color);
+}
+
+.css-733nux {
+    background-color: var(--bg-tertiary-color);
+    color: var(--color);
+    border: 1px solid var(--theme);
+}
+
+.css-1h72598 {
+    background-color: var(--theme-dark);
+    color: var(--color);
+}
+
+.css-xf6jmh:hover {
+    background-color: var(--theme-dark);
+}
+
+.css-1o3w9m7 .search-container, .css-1o3w9m7 .search-container.private, .img-thumbnail {
+    border: 1px solid var(--theme);
+    border-radius: 0.35rem;
+}
+
+.css-1efq825 .search-container {
+    border-radius: 0.35rem;
+}
+
+.css-4r69nx .world-row {
+    background-color: var(--bg-tertiary-color);
+}
+
+.css-4r69nx .info-overlay {
+    transition: all 0.5s ease-in-out 0s;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(var(--blur));
+}
+
+.css-4r69nx .world a {
+    color: var(--color);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.css-4r69nx .world a:hover {
+    color: var(--theme);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.css-4r69nx .world-nav-arrow {
+    background-color: var(--bg-secondary-color);
+}
+
+.css-4r69nx .world-nav:not(.nav-disabled):hover .world-nav-arrow {
+    background-color: var(--theme-dark);
+}
+
+.css-4r69nx .world-nav {
+    background-color: var(--bg-primary-color);
+}
+
+.btn-outline-light, .btn-group>.btn:not(:first-child), .btn-group>.btn-group:not(:first-child)>.btn {
+    color: #f8f9fa;
+    border-color: var(--theme);
+}
+
+h1:after, h3:after, h5:after {
+    border-bottom: 1px solid var(--theme);
+}
+
+.form-control {
+    color: var(--color);
+}
+
+.badge-info {
+    background-color: var(--theme-dark);
+}
+
+div[class="css-rqhlr5 col-md-3"] { display:none; }
+
+div[class="usercard friend-false size-huge state-active level-trusted card"], div[class="css-jjyo93 col-md-9"] {
+    width: 130%;
+}
+
+.css-5ouil5 {
+    background-color: var(--bg-tertiary-color);
+}
+
+.subheader, div.col-12.col-md-5 > h4 > span > small > a {
+    color: var(--theme);
+}
+
+div.col-12.col-md-5 > h4 > span > small > a:hover {
+    color: var(--theme-dark);
+}
+
+.css-1infjsl:hover {
+    color: var(--theme);
+}
+
+.form-control:focus {
+    box-shadow: inset 0 1px 1px rgb(10 10 13 / 8%), 0 0 0 3px rgb(144 109 146 / 75%);
+}
+}
