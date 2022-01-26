@@ -590,9 +590,9 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 }
 
 /* Reply */
-.replyBar-1oi75v, .threadSuggestionBar-3ExSyc, .theme-dark .form-3gdLxP:before, .channelTextArea-1FufC0 { background: transparent !important; }
-.attachedBars-2BCP3l {
-	background: rgba(var(--background-tertiary-rgb), 0.6);
+.attachedBars-2BCP3l, .channelTextArea-1FufC0 { background: transparent !important; }
+.replyBar-1oi75v, .threadSuggestionBar-3ExSyc {
+	background: rgba(var(--background-tertiary-rgb), 0.4);
 	backdrop-filter: blur(var(--blur));
 }
 
