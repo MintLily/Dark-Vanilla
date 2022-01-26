@@ -57,7 +57,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.1.2';
+	content: 'Dark Vanilla 2.1.3';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -437,8 +437,8 @@ ul[class*="channelAttachmentArea-"] {
     color: transparent;
     transition: font-size 0.2s 0.1s, color 0.2s, padding 0.4s 0.1s;
     background-color: rgba(var(--background-tertiary-rgb), 0.6);
-	backdrop-filter: blur(var(--blur-mac));
-	z-index: 100;
+    backdrop-filter: blur(var(--blur-mac));
+    z-index: 100;
 }
 [class*="jumpToPresentBar"] > button svg {
     order: -1;
@@ -589,6 +589,13 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	transition: color 0.2s ;
 }
 
+/* Reply */
+.replyBar-1oi75v, .threadSuggestionBar-3ExSyc, .theme-dark .form-3gdLxP:before, .channelTextArea-1FufC0 { background: transparent !important; }
+.attachedBars-2BCP3l {
+	background: rgba(var(--background-tertiary-rgb), 0.6);
+	backdrop-filter: blur(var(--blur));
+}
+
 /* Server Boost */
 .theme-dark .perksModal-CLcR1c { background-color: var(--background-primary); }
 .theme-dark .perk-19D_HN { background-color: var(--background-fourth); }
@@ -600,8 +607,8 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 
 /* Pinned Messages Resize */
 .messagesPopoutWrap-3zryHW {
-	max-height:70vh !important;
-	width:30vw;
+	max-height: 70vh !important;
+	width: 30vw;
 }
 
 /* Are things offline? */
@@ -622,7 +629,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 }
 .problems-CvGwpb.slideIn-VAD-dp, .tip-1AwED_ > .keybindShortcut-3zF1P9.keybind-2rkdVo { display: none; }
 .container-2RRFHK.fixClipping-3GOd_d {
-	background:rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
 }
 
