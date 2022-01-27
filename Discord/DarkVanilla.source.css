@@ -57,7 +57,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.1.3';
+	content: 'Dark Vanilla 2.1.4';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -484,6 +484,10 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 .iconItem-1EjiK0 .actionIcon-2sw4Sl:active { color: var(--theme-text-muted); }
 
 /* === Settings Opened === */
+/* My Account */
+.settingsBanner-1eDJ5w { height: 265px; }
+.avatar-3mTjvZ { top: 235px; }
+/* Other */
 .cardPrimary-3qRT__ { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
 /* Authorized Apps */
 .authedApp-1tw-eT {
