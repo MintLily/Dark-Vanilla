@@ -1,3 +1,6 @@
+@import url("https://davidnyan10.github.io/GoogleMaterialIcons/GoogleMaterialIcons.css");
+@import url("https://crearts-community.github.io/Settings-Icons/clients/powercord.css");
+
 :root {
 	--blur: 8px;
 	--blur-mac: 18px;
@@ -57,7 +60,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.1.4';
+	content: 'Dark Vanilla 2.1.5';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -72,11 +75,16 @@ div[class*="titleBar-"] {
 	height: 28px;
 }
 div[class*="withFrame-"] {
-	margin-top: 0px !important;
+	height: 32px;
+	margin-top: 0px;
 }
 div[class*="winButton-"] {
-	height: 32px !important;
-	width: 42px !important;
+	height: 32px;
+	width: 32px;
+	top: 0;
+	padding-left: 8px;
+	padding-right: 8px;
+	cursor: default;
 }
 .winButtonClose-1HsbF-, .winButtonMinMax-PBQ2gm[aria-label="Maximize"], .winButtonMinMax-PBQ2gm[aria-label="Minimize"] {
 	color: #fff;
@@ -93,7 +101,7 @@ div[class*="winButtonMinMax-"]:nth-child(3):hover {
 div[class*="wordmark-"]{
 	position: absolute;
 	left: 50%;
-	top: 15px !important;
+	top: 16px !important;
 	transform: translate(-50%, -50%);
 	padding: 10px;
 	color: var(--theme-text-muted);
@@ -621,7 +629,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	font-size: 0px;
 }
 .tipTitle-3FYEQp::before {
-	content: "Hey, it seems things are not connected at the moment. Please Stand by . . .";
+	content: "Hey, it seems things are not connected at the moment.";
 	font-size: 12px;
 }
 .tip-1AwED_ {
@@ -629,7 +637,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	font-size: 0px;
 }
 .tip-1AwED_::before {
-	content: "You're Offline :c"; font-size: 16px;
+	content: "Things are loading, please stand by . . ."; font-size: 16px;
 }
 .problems-CvGwpb.slideIn-VAD-dp, .tip-1AwED_ > .keybindShortcut-3zF1P9.keybind-2rkdVo { display: none; }
 .container-2RRFHK.fixClipping-3GOd_d {
