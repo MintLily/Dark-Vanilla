@@ -1,0 +1,15 @@
+{
+    "manifest": {
+        "name": "DarkVanilla",
+        "version": "0.0.1",
+        "author": "MintLily",
+        "license": "MIT",
+        "updater": "https://mintlily.github.io/Dark-Vanilla/Aliucord/DarkVanilla.json"
+    },
+    "background": {},
+    "fonts": {},
+    "simple_colors": {},
+    "colors": {},
+    "drawable_tints": {},
+    "raws": {}
+}
