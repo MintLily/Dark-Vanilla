@@ -1,12 +1,6 @@
-.themeboxstyle {
-	float: right;
-	margin-right: 12px;
-	color: white;
-}
-
 :root {
 	--ThemeName: "Dark Vanilla";
-	--ThemeVersion: "v1.6";
+	--ThemeVersion: "v1.7";
 	--ThemeAuthor: "MintLily"; /* Discord: MintLily#0001 */
 	
 	--blur: 3px;
@@ -19,6 +13,14 @@
 	--theme-text-muted: #906D92;
 	--theme-text-rgb: 238, 204, 224;
 	--theme-text-muted-rgb: 144, 109, 146;
+}
+
+div.options-container[style="margin-top: 45px; border-top: 1px solid rgb(238, 238, 238); padding-top: 30px;"]:after {
+	content: var(--ThemeName) ' ' var(--ThemeVersion) ' by ' var(--ThemeAuthor);
+	color: var(--theme-text);
+	float: right;
+	padding-bottom: 10px;
+	padding-right: 10px;
 }
 
 a { color: var(--theme-text) !important; }
@@ -56,14 +58,10 @@ a { color: var(--theme-text) !important; }
 .el-table--striped .el-table__body tr.el-table__row--striped td { background: var(--mid) !important; }
 
 
-.el-dialog, .el-pager li, .el-pagination .btn-next, .el-pagination .btn-prev { background: var(--top) !important; }
+.el-dialog, .el-pager li, .el-pagination .btn-next, .el-pagination .btn-prev { background: var(--mid) !important; }
 .el-pager li.active { color: var(--theme-text) !important; }
 .el-pager li.btn-quicknext, .el-pager li.btn-quickprev { color: var(--theme-text-muted) !important; }
 .el-pager li:hover, .el-pagination button:hover { color: var(--theme-text) !important; }
-.el-dialog, .el-pager li {
-	background: rgba(57, 68, 74, 0.2) !important;
-	backdrop-filter: blur(var(--blur));
-}
 
 .x-friend-item:hover, .x-change-image-item:hover { background: var(--theme-text-muted) !important; }
 
@@ -184,3 +182,20 @@ a { color: var(--theme-text) !important; }
 .el-slider__bar { background-color: var(--theme-text-muted) !important; }
 .el-slider__button { border-color: var(--theme-text-muted) !important; }
 .el-table .descending .sort-caret.descending, .el-table .ascending .sort-caret.ascending { border-top-color: var(--theme-text) !important; }
+
+.el-select-dropdown__item.selected { color: var(--theme-text); }
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover { background-color: var(--farback); }
+
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+	background-color: var(--farback);
+	color: var(--theme-text);
+}
+
+.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close { color: var(--theme-text); }
+
+.el-progress-bar__inner { background-color: var(--theme-text); }
+.el-progress-bar__outer { background-color: var(--farback); }
+.el-button--text:focus, .el-button--text:hover { color: var(--theme-text); }
+
+path[stroke="#20a0ff"] { stroke: var(--theme-text) !important; }
+path[stroke="#e5e9f2"] { stroke: var(--farback) !important; }
