@@ -1,7 +1,7 @@
 {
     "name": "Dark Vanilla",
     "description": "Simplistic Vanilla-based theme with darker colors, with a few tweaks here and there.",
-    "version": "2.0.1",
+    "version": "2.2.0",
     "license": "MIT",
     "theme": "theme.css",
     "splashTheme": "splash.css",
