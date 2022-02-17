@@ -57,7 +57,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.1.5';
+	content: 'Dark Vanilla 2.2.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -169,11 +169,11 @@ div[data-item-id="ADD_FRIEND"]:hover {
 /* Text Mention */
 .mentioned-Tre-dv {
 	background-color: rgba(var(--theme-text-rgb), 0.15) !important;
-	transition: background .2s;
+	transition: background 0.2s;
 }
 .mentioned-Tre-dv:hover {
 	background-color: rgba(var(--theme-text-rgb), 0.35) !important;
-	transition: background .2s;
+	transition: background 0.2s;
 }
 .mentioned-Tre-dv::before { background-color: var(--theme-text); }
 
@@ -245,7 +245,7 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG:active {
 	border-bottom-color: var(--theme-text);
 }
-/* Roles */
+/* Server Roles */
 .role-2TIOKu:not(.addButton-1_dZYu) {
 	background-color: var(--background-tertiary);
 	border: 0.025rem solid currentColor;
@@ -262,6 +262,16 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	border: 0.025rem solid #ddd;
 	transition: background 0.1s;
 }
+/* Personal Roles */
+.aboutMeSection-PUghFQ > .markup-eYLPri code {
+	background-color: var(--background-tertiary);
+	border: 0.025rem solid #aaa;
+	border-radius: var(--soft-corner);
+	display: flex;
+}
+.aboutMeSection-PUghFQ > .markup-eYLPri code:nth-child(5) {
+	margin-bottom: 5px;
+}
 
 /* Shrink server banners to header instead of disappearing. */
 [class*="animatedContainer-"] {
@@ -272,7 +282,7 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	transition: margin 0.5s;
 }
 :not([class*="bannerVisible-"]) > [class*="animatedContainer-"] {
-	opacity: .35 !important;
+	opacity: 0.35 !important;
 	height: 138px;
 }
 :not([class*="bannerVisible-"]) > [class*="animatedContainer-"] > [class*="bannerImage-"] {
@@ -647,3 +657,102 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 .theme-dark .root-3mkK8X { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
 .theme-dark .entitledHeader-3TLJwI, .theme-light .entitledHeader-3TLJwI { background-color: var(--background-fourth); }
 .theme-dark .bodySection-3iDdop, .theme-light .bodySection-3iDdop, .theme-dark .row-2qQ--F { background-color: var(--background-primary); }
+
+
+
+
+
+
+
+
+
+/* Snippets directly from the community */
+/* >START> Cynthia */
+/* Improved user name + banner */
+/* Banner + avatar */
+#app-mount .userPopout-2j1gM4 .banner-1YaD3N { height: 124px; }
+#app-mount .userPopout-2j1gM4 .banner-1YaD3N div { display: none; }
+#app-mount .userPopout-2j1gM4 [class*="avatarPosition"] { top: 16px; }
+#app-mount .userPopout-2j1gM4 .avatar-2Vndt_ {
+	filter: drop-shadow(0px 0px 5px black);
+	border: 6px solid transparent;
+	background-color: rgb(0, 0, 0, 0.25);
+}
+
+/* Name display */
+#app-mount .userPopout-2j1gM4 .headerTop-3GPUSF {
+	padding: 8px 16px;
+	background-image: linear-gradient(to left, var(--background-floating), rgb(0, 0, 0, 0.2));    /* reduced opacity */
+	backdrop-filter: blur(3px);                                                                   /* Added blur */
+	border-top-right-radius: inherit;
+	position: absolute;
+	display: flex;
+	flex-direction: column-reverse;
+	right: 0;
+	width: 144px;
+	height: 108px;
+}
+
+/* Badges */
+#app-mount .userPopout-2j1gM4 .headerTop-3GPUSF .headerText-1-WmDq { margin: auto 0; }
+#app-mount .userPopout-2j1gM4 .headerTop-3GPUSF .profileBadges-2pItdR {
+	justify-content: flex-start;
+	position: initial;
+}
+
+#app-mount .userPopout-2j1gM4 .body-2wLx-E { padding: 8px 16px 0px; }
+
+/* General profile padding changes */
+/* Body padding changes */
+#app-mount .userPopout-2j1gM4 { padding-bottom: 16px; }
+#app-mount .userPopout-2j1gM4 .body-2wLx-E > div { margin-bottom: 8px; }
+
+/* Profile info (Rolenames, activity, notes etc) */
+/* Stylized subtitles, divider style */
+#app-mount .userPopout-2j1gM4 .body-2wLx-E :is(h3, .activity-1gTu-L .headerContainer-1wJjOa) {
+	height: 1px;
+	background-color: var(--background-modifier-accent);
+	margin-bottom: 8px;
+	font-size: 0px;
+}
+#app-mount .userPopout-2j1gM4 .body-2wLx-E :is(h3, .activity-1gTu-L .headerContainer-1wJjOa) > .icon-1zKOXL {
+	bottom: 5px;
+	right: 5px;
+}
+#app-mount .userPopout-2j1gM4 .divider-1wtgZ3 { display: none; }
+
+/* Roles */
+#app-mount .userPopout-2j1gM4 .body-2wLx-E .rolesList-3uZoaa { margin: 0 0 4px; }
+#app-mount .userPopout-2j1gM4 .body-2wLx-E 
+div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
+
+/* Activity, Spotify */
+/* TODO: Not 100% perfect, needs improvement */
+#app-mount .userPopout-2j1gM4 .activity-1gTu-L { padding: 0; }
+#app-mount .userPopout-2j1gM4 .activity-1gTu-L 
+:is(.headerContainer-1wJjOa, .bodyNormal-250CQK) h3 { display: none; }
+#app-mount .userPopout-2j1gM4 .activity-1gTu-L .headerContainer-1wJjOa ~ div {
+	padding-bottom: 8px;
+	margin: 0;
+}
+#app-mount .userPopout-2j1gM4 .activity-1gTu-L .platformIcon-k3yytQ { display: none; }
+
+/* User notes */
+#app-mount .userPopout-2j1gM4 .note-Go5ZP2 { margin: 0; }
+
+/* User DM */
+#app-mount .userPopout-2j1gM4 .footer-3naVBw { padding: 8px 16px 0; }
+
+/* PronounDB support - move pronouns up */
+#app-mount .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
+	margin-bottom: 0 !important;
+	display: flex;
+	flex-direction: column;
+}
+#app-mount .userPopout-2j1gM4 .note-Go5ZP2 + .bodyTitle-2Az3VQ { display: none; }
+#app-mount .userPopout-2j1gM4 .bodyTitle-2Az3VQ + .size14-3fJ-ot {
+	order: -1;
+	margin-bottom: 8px;
+	color: var(--text-normal);
+}
+/* Cynthia <END< */
