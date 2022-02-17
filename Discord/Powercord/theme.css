@@ -3,6 +3,13 @@
 
 
 
-/* Optional Addons */
+/* Optional Addons */ /* Uncomment out what you'd like */
 
+/* Settings Icons */
 @import url("https://crearts-community.github.io/Settings-Icons/clients/powercord.css");
+
+/* Some icons replacemnt with Google Material Icons */
+@import url("https://davidnyan10.github.io/GoogleMaterialIcons/GoogleMaterialIcons.css");
+
+/* Last Message Time, Join Time, Account Creation Time - Hiding */ /* Comment or delete to show */
+#app-mount .userPopout-2j1gM4 .headerTop-3GPUSF .headerText-1-WmDq > .date-YN6TCS { display: none !important; }
