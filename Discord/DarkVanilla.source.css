@@ -445,43 +445,43 @@ ul[class*="channelAttachmentArea-"] {
 [class*="jumpToPresentBar"] { display: contents; }
 [class*="jumpToPresentBar"] > button:first-child { display: none; }
 [class*="jumpToPresentBar"] > button:last-child {
-    position: absolute;
-    bottom: 15px;
-    right: 16px;
-    padding: 8px !important;
-    height: auto;
-    background-color: var(--thene-text-muted);
-    box-shadow: var(--elevation-high);
-    border-radius: 100px;
-    display: flex;
-    font-size: 0;
-    color: transparent;
-    transition: font-size 0.2s 0.1s, color 0.2s, padding 0.4s 0.1s;
-    background-color: rgba(var(--background-tertiary-rgb), 0.6);
-    backdrop-filter: blur(var(--blur-mac));
-    z-index: 100;
+	position: absolute;
+	bottom: 15px;
+	right: 16px;
+	padding: 8px !important;
+	height: auto;
+	background-color: var(--thene-text-muted);
+	box-shadow: var(--elevation-high);
+	border-radius: 100px;
+	display: flex;
+	font-size: 0;
+	color: transparent;
+	transition: font-size 0.2s 0.1s, color 0.2s, padding 0.4s 0.1s;
+	background-color: rgba(var(--background-tertiary-rgb), 0.6);
+	backdrop-filter: blur(var(--blur-mac));
+	z-index: 100;
 }
 [class*="jumpToPresentBar"] > button svg {
-    order: -1;
-    margin: 0;
-    height: 24px;
-    width: 24px;
-    top: unset;
-    margin-right: 2px;
-    margin-left: 0;
-    margin-right: 0;
-    color: var(--theme-text);
-    transition: margin 0.6s;
+	order: -1;
+	margin: 0;
+	height: 24px;
+	width: 24px;
+	top: unset;
+	margin-right: 2px;
+	margin-left: 0;
+	margin-right: 0;
+	color: var(--theme-text);
+	transition: margin 0.6s;
 }
 [class*="jumpToPresentBar"]:hover > button {
-    padding: 8px 18px !important;
-    font-size: 14px;
-    color: var(--text-normal);
-    transition: font-size 0.2s, color 0.2s 0.1s, padding 0.4s;
+	padding: 8px 18px !important;
+	font-size: 14px;
+	color: var(--text-normal);
+	transition: font-size 0.2s, color 0.2s 0.1s, padding 0.4s;
 }
 [class*="jumpToPresentBar"]:hover > button svg {
-    margin-right: 2px;
-    margin-left: -6px;
+	margin-right: 2px;
+	margin-left: -6px;
 }
 /*.jumpToPresentBar-1cEnH0 {
 	background-color: rgba(var(--background-tertiary-rgb), 0.6);
