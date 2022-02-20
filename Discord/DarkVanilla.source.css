@@ -57,7 +57,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.2.1';
+	content: 'Dark Vanilla 2.2.2';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -273,11 +273,11 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 .aboutMeSection-PUghFQ > .markup-eYLPri code:nth-child(5) {
 	margin-bottom: 5px;
 }*/
-/* Unclamp User About Me */
+/* Unclamp User About Me 
 .clamped-2ZePhX {
 	-webkit-line-clamp: 0 !important;
 	-webkit-box-orient: horizontal;
-}
+}*/
 
 /* Shrink server banners to header instead of disappearing. */
 [class*="animatedContainer-"] {
