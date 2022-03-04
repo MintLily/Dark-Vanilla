@@ -57,7 +57,7 @@
 }
 
 .info-1sUqUG::after {
-	content: 'Dark Vanilla 2.3.1';
+	content: 'Dark Vanilla 2.3.2';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -334,6 +334,8 @@ svg.icon-Lupfh- path { fill: var(--theme-text); }
 }
 .guilds-2JjMmN { margin-bottom: 53px; }
 .container-1eFtFS { background: var(--background-fourth); }*/
+/* Spotify Reround Album Art */
+.assetsLargeImageSpotify-17ME3M { border-radius:8px; }
 
 /* Toolbar Navigation */
 .clickable-ZD7xvu:hover .icon-2xnN2Y { color: var(--theme-text-muted); }
