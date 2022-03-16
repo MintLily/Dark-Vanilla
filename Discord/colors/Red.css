@@ -1,0 +1,39 @@
+:root {
+	--theme-text:                           #e61e1e;
+	--theme-text-muted:                     #7c6c93;
+	--theme-text-rgb:                       230, 30, 30;
+	--theme-text-muted-rgb:                 147, 108, 108;
+	--background-modifier-selected:         rgba(230, 30, 30, 0.2);
+	--background-modifier-hover:            rgba(230, 30, 30, 0.3);
+	/* Redo Blurple Replace */
+	--text-link:                            #e61e1e;
+	--text-link-low-saturation:             #7c6c93;
+	--brand-experiment:                     rgb(230, 30, 30);
+	--brand-experiment-05a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.05);
+	--brand-experiment-10a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.1);
+	--brand-experiment-15a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.15);
+	--brand-experiment-20a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.2);
+	--brand-experiment-25a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.25);
+	--brand-experiment-30a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.3);
+	--brand-experiment-35a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.35);
+	--brand-experiment-40a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.4);
+	--brand-experiment-45a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.45);
+	--brand-experiment-50a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.5);
+	--brand-experiment-55a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.55);
+	--brand-experiment-60a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.6);
+	--brand-experiment-65a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.65);
+	--brand-experiment-70a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.7);
+	--brand-experiment-75a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.75);
+	--brand-experiment-80a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.8);
+	--brand-experiment-85a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.85);
+	--brand-experiment-90a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.9);
+	--brand-experiment-95a:                 hsla(0, calc(var(--saturation-factor, 1) * 100%), 70%, 0.95);
+	--brand-experiment-200:                  hsl(0, calc(var(--saturation-factor, 1) * 100%), 97%);
+	--brand-experiment-600:                  hsl(0, calc(var(--saturation-factor, 1) * 15%), 50%);
+	--brand-experiment-560:                  hsl(0, calc(var(--saturation-factor, 1) * 15%), 50%);
+	--control-brand-foreground:             #7c6c93;
+	--divider-color:                        #e61e1e;
+	--text-brand:                           #e61e1e;
+	
+	--spotify-color:                        #e61e1e !important;
+}
