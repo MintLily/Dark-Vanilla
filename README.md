@@ -10,10 +10,10 @@ Simplistic Vanilla-based theme with darker colors, with a few tweaks here and th
 ### BetterDiscord
 1. Click > [Download](https://raw.githubusercontent.com/MintLily/Dark-Vanilla/main/Discord/BetterDiscord/DarkVanilla.theme.css)
 2. Download Raw
-3. Go to themes and install `.theme.css` file (`%appdata%/BetterDiscord/themes/`)
+3. Go to themes and install `DarkVanilla.theme.css` file (`%appdata%/BetterDiscord/themes/`)
 
 <br>
-<img src="https://mintlily.lgbt/img/upload/DarkVanilla_DiscordTheme_Preview%20_1.png" />
+<img src="https://i.mintlily.lgbt/DarkVanilla_Mar2022_Preview.png" />
 <img src="https://mintlily.lgbt/img/upload/DarkVanilla_DiscordTheme_Preview%20_2.png" />
 <br><br>
 
