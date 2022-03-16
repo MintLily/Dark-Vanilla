@@ -29,7 +29,7 @@
 	--brand-experiment-25a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.25);
 	--brand-experiment-30a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.3);
 	--brand-experiment-35a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.35);
-	--brand-experiment-30a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.4);
+	--brand-experiment-40a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.4);
 	--brand-experiment-45a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.45);
 	--brand-experiment-50a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.5);
 	--brand-experiment-55a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.55);
@@ -53,11 +53,11 @@
 	--scrollbar-auto-scrollbar-color-thumb: #131719;
 	--scrollbar-auto-scrollbar-color-track: #1e2427;
 
-	--spotify-color:                        #EECCE0 !important;
+	--spotify-color:                        #EECCE0;
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.3.4';
+	content: 'Dark Vanilla 2.4.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -131,7 +131,7 @@ button[class*="navButton"][aria-controls*="tab-panel"]:hover {
 .theme-dark #blocked-tab { background-color: var(--background-secondary); }
 /* x = Add Friend */
 .theme-dark #add_friend-tab { background-color: var(--background-secondary); }
-.theme-dark div[aria-controls="add_friend-tab"] { color: var(--theme-text) !important; }
+.theme-dark div[aria-controls="add_friend-tab"] { color: var(--theme-text); }
 div[data-item-id="ADD_FRIEND"] {
 	background-color: var(--theme-text-muted) !important;
 	transition: background 0.1s;
@@ -601,6 +601,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	right: 12px;
 	border-radius: 0.7rem 0 0 0.7rem;
 	float: right;
+	background-color: var(--theme-text-muted);
 }
 /* Inline with Messages */
 .unreadPill-3nEWYM, .unreadPillCapStroke-1nE1Q8 {
@@ -710,6 +711,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 /* >START> Cynthia */
 /* Improved user name + banner */
 /* Banner + avatar */
+/*
 #app-mount .userPopout-2j1gM4 .banner-1YaD3N { height: 124px; }
 #app-mount .userPopout-2j1gM4 .banner-1YaD3N div { display: none; }
 #app-mount .userPopout-2j1gM4 [class*="avatarPosition"] { top: 16px; }
@@ -720,10 +722,11 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 }
 
 /* Name display */
+/*
 #app-mount .userPopout-2j1gM4 .headerTop-3GPUSF {
 	padding: 8px 16px;
-	background-image: linear-gradient(to left, var(--background-floating), rgb(0, 0, 0, 0.2));    /* reduced opacity */
-	backdrop-filter: blur(3px);                                                                   /* Added blur */
+	background-image: linear-gradient(to left, var(--background-floating), rgb(0, 0, 0, 0.2));
+	backdrop-filter: blur(3px);
 	border-top-right-radius: inherit;
 	position: absolute;
 	display: flex;
@@ -734,6 +737,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 }
 
 /* Badges */
+/*
 #app-mount .userPopout-2j1gM4 .headerTop-3GPUSF .headerText-1-WmDq { margin: auto 0; }
 #app-mount .userPopout-2j1gM4 .headerTop-3GPUSF .profileBadges-2pItdR {
 	justify-content: flex-start;
@@ -744,11 +748,13 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 
 /* General profile padding changes */
 /* Body padding changes */
+/*
 #app-mount .userPopout-2j1gM4 { padding-bottom: 16px; }
 #app-mount .userPopout-2j1gM4 .body-2wLx-E > div { margin-bottom: 8px; }
 
 /* Profile info (Rolenames, activity, notes etc) */
 /* Stylized subtitles, divider style */
+/*
 #app-mount .userPopout-2j1gM4 .body-2wLx-E :is(h3, .activity-1gTu-L .headerContainer-1wJjOa) {
 	height: 1px;
 	background-color: var(--background-modifier-accent);
@@ -762,6 +768,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	font-size: 0px;
 }
 /* Server-side bio fix */
+/*
 #app-mount .userPopout-2j1gM4 .aboutMeSection-PUghFQ .icon-1zKOXL {
 	margin-left: 0px;
 	top: -8px;
@@ -771,12 +778,14 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 #app-mount .userPopout-2j1gM4 .divider-1wtgZ3 { display: none; }
 
 /* Roles */
+/*
 #app-mount .userPopout-2j1gM4 .body-2wLx-E .rolesList-3uZoaa { margin: 0 0 4px; }
 #app-mount .userPopout-2j1gM4 .body-2wLx-E 
 div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
 
 /* Activity, Spotify */
 /* TODO: Not 100% perfect, needs improvement */
+/*
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L { padding: 0; }
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L :is(.headerContainer-1wJjOa, .bodyNormal-250CQK) h3 { display: none; }
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L .headerContainer-1wJjOa ~ div {
@@ -786,12 +795,15 @@ div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L .platformIcon-k3yytQ { display: none; }
 
 /* User notes */
+/*
 #app-mount .userPopout-2j1gM4 .note-Go5ZP2 { margin: 0; }
 
 /* User DM */
+/*
 #app-mount .userPopout-2j1gM4 .footer-3naVBw { padding: 8px 16px 0; }
 
 /* PronounDB support - move pronouns up */
+/*
 #app-mount .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
 	margin-bottom: 0 !important;
 	display: flex;
