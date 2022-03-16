@@ -1,7 +1,7 @@
 # Discord Installation
 
 ### Powercord
-1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/latest/download/DarkVanilla_PC.zip) (From Releases page - *`DarkVanilla_PC.zip`*)
+1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/latest/download/Dark.Vanilla.zip) (From Releases page - *`Dark.Vanilla.zip`*)
 2. Go to themes folder and install folder (`powercord/src/Powercord/themes/`)
 
 ### BetterDiscord
