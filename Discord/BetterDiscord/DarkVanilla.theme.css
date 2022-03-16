@@ -1,8 +1,8 @@
 /**
  * @name Dark Vanilla
  * @author MintLily
- * @description Standard vanilla look, just a tad darker and Blurpurple replacement
- * @version 2.0.1
+ * @description Simplistic Vanilla-based theme with darker colors, with a few tweaks here and there.
+ * @version 2.4.0
  * @authorId 167335587488071682
  * @website https://mintlily.lgbt/
  * @source https://github.com/MintLily/Dark-Vanilla/blob/main/Discord/DarkVanilla.source.css
@@ -11,3 +11,19 @@
 */
 
 @import url("https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css");
+
+/* COLORS -- Just remove ONE of the "/*" at the end of the lines */
+/* Mint *//*
+@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/Mint.css");
+
+/* Blue - Slightly different from the vanilla color *//*
+@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/Blue.css");
+
+/* Green *//*
+@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/Green.css");
+
+/* Purple *//*
+@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/Purple.css");
+
+/* Red *//*
+@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/Red.css");
