@@ -1,7 +1,6 @@
-@-moz-document domain("api.potato.moe") {
 :root {
-    --theme: #EECCE0;
-    --theme-dark: #906D92;
+    --theme: #984fff;
+    --theme-dark: #7c6c93;
     --color: #eee;
     --bg-primary-color: #191F22;
     --bg-secondary-color: #1e2427;
@@ -9,7 +8,7 @@
     --blur: 8px;
     
     --author: "Lily (MintLily#0001)";
-    --version: "1.0.0";
+    --version: "1.1.0";
 }
 
 body {
@@ -21,11 +20,7 @@ body {
     background-color: var(--bg-tertiary-color);
 }
 
-.sidebar .nav-link {
-    color: var(--color);
-}
-
-.navbar-dark .navbar-brand, .sidebar .nav-link .feather, .h2, h2, .h4, h4, .modal-title {
+.navbar-dark .navbar-brand, .sidebar .nav-link .feather:not(svg), .h2, h2, .h4, h4, .modal-title {
     color: var(--theme);
 }
 
@@ -116,4 +111,39 @@ body {
 code {
     color: #9fffe3;
 }
+
+.fixed-bottom > div > div > p:after {
+    content: ' v' var(--version);
+    font-size: 10px;
+}
+
+li > h6.text-center {
+    padding-top: 35px;
+    font-weight: 700;
+}
+
+.sidebar .nav-link {
+    transition: 0.2s color;
+    color: var(--color);
+}
+
+.sidebar .nav-link:hover {
+    transition: 0.2s color;
+    color: var(--theme-dark);
+}
+
+.sidebar .nav-link .feather {
+    color: var(--theme);
+    transition: 0.2s color;
+}
+
+.sidebar .nav-link .feather:hover {
+    color: var(--color) !important;
+    transition: 0.2s color;
+}
+
+.form-control:focus {
+    color: var(--color);
+    background-color: var(--bg-tertiary-color);
+    border-color: var(--theme)
 }
