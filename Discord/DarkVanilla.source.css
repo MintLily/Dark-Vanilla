@@ -57,7 +57,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.5.0';
+	content: 'Dark Vanilla 2.5.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -470,6 +470,8 @@ svg.icon-2xnN2Y path.updateIconForeground-2V_zo4 { fill: var(--theme-text); }
 	border-radius: var(--soft-corner);
 }
 .metadata-1E7Z4i { color: #bbb; }
+/* slash message highlight */
+.selectedPill-3cOyS6 { border-color: var(--theme-text) !important; }
 
 /* Upload Popup */
 .theme-dark .uploadModal-2ie9O_ { background-color: var(--background-primary); }
