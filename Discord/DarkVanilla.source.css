@@ -57,7 +57,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.5.1';
+	content: 'Dark Vanilla 2.5.2';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -867,14 +867,14 @@ div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
 	to { left: 10px; top: 40px; opacity: 1; display: block; }
 }
 
-/* MintMod */
-[aria-label^="MintMod"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::before {
+/* Minty Labs */
+[aria-label^="Minty Labs"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::before {
 	content: "__";
 	background: url("https://mintlily.lgbt/assets/img/small/MintMod_sm.png") center / 100% no-repeat;
 	margin-right: 4px;
 	color: transparent;
 }
-[aria-label^="MintMod"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::after {
+[aria-label^="Minty Labs"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::after {
 	content: "Minty is the Best";
 	font-size: 12px;
 	position: absolute;
@@ -885,7 +885,7 @@ div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
 	display: none;
 	animation: tooltip 0.3s forwards;
 }
-[aria-label^="MintMod"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr:hover::after {
+[aria-label^="Minty Labs"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr:hover::after {
 	opacity: 1;
 	display: block;
 }
