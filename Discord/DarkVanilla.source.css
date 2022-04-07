@@ -57,7 +57,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.5.2';
+	content: 'Dark Vanilla 2.6.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -316,6 +316,14 @@ header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
 	box-shadow: var(--elevation-low);
 }
 .communityInfoVisible-3zc5_s:not(.hasBanner-2IrYih) ~ .scroller-1ox3I2 > .content-2a4AW9 > .containerDefault-3TQ5YN:first-of-type { padding-top: 0px; }
+/* Move Powercord icon back down */
+[data-guild-id="538759280057122817"]>.header-3OsQeK { display: flex !important; }
+[data-guild-id="538759280057122817"]>.header-3OsQeK>.headerContent-2SNbie { width: 100% !important; }
+.header-3OsQeK .powercord-badge.powercord-badge-cutie, .header-3OsQeK .powercord-badge.powercord-badge-cutie img {
+	width: 16px;
+	height: 16px;
+}
+.header-3OsQeK .powercord-badge { top: 5px; }
 
 /* Content Focus Backdrop Background Blur */
 #app-mount div > .layer-1Ixpg3 {
@@ -594,6 +602,32 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 .cameraWrapper-1hB0cM { background-color: var(--background-tertiary); }
 /* Activity Status */
 .theme-dark .addGamePopout-3yePJc { background-color: var(--background-fourth); }
+/* Separate Powercord Plugin Settings - Credits to Sans#0001 (366536353418182657) */
+[data-item-id="Overlay"] + .separator-2wx7h6 {
+	display: flex;
+	flex-direction: column;
+}
+[data-item-id="Overlay"] + .separator-2wx7h6::before {
+	content: '';
+	order: 1;
+	border: 1px solid var(--background-modifier-accent);
+	position: relative;
+	top: 182px;
+}
+[data-item-id="Overlay"] + .separator-2wx7h6::after {
+	content: 'PLUGIN SETTINGS';
+	order: 2;
+	color: var(--channels-default);
+	font-family: var(--font-display);
+	font-weight: 700;
+	font-size: 12px;
+	position: relative;
+	top: 197px;
+}
+[data-item-id="pc-updater"] ~ div {
+	position: relative;
+	top: 47px;
+}
 /* === END Settings Opened === */
 
 /* Server Opened */
