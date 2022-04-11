@@ -57,7 +57,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.6.1';
+	content: 'Dark Vanilla 2.6.2';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -237,6 +237,12 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	border: 0.01px solid transparent;
 	border-radius: 80px;
 }
+/* Plugin: Profile Stats */
+.githubStats {
+	border: 1px solid transparent;
+	border-radius: 12px;
+}
+
 /* Full Screen Popout */
 .body-1Ukv50, .topSection-13QKHs { background-color: var(--background-tertiary); }
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG:hover {
