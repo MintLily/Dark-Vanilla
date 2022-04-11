@@ -1,5 +1,5 @@
 # Currently OUTDATED
-
+This project will be updated in due time (when I am no longer lazy)
 
 # How to
 This is meant to be used for https://vrchat.com/home or https://vrchat.net/home with [Stylus](https://add0n.com/stylus.html)
