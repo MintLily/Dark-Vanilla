@@ -57,7 +57,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.6.0';
+	content: 'Dark Vanilla 2.6.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -275,6 +275,8 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 }*/
 /* Unclamp User About Me */
 .clamped-2ZePhX { -webkit-line-clamp: unset; }
+/* Nitro User Banner */
+.popoutBanner-3cqRD9 .pencilContainer-18TrEJ, .popoutBannerPremium-3i5EEI .pencilContainer-18TrEJ { display: none; }
 
 /* Shrink server banners to header instead of disappearing. */
 [class*="animatedContainer-"] {
@@ -765,116 +767,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 
 
 /* Snippets directly from the community */
-/* >START> Cynthia */
-/* Improved user name + banner */
-/* Banner + avatar */
-/*
-#app-mount .userPopout-2j1gM4 .banner-1YaD3N { height: 124px; }
-#app-mount .userPopout-2j1gM4 .banner-1YaD3N div { display: none; }
-#app-mount .userPopout-2j1gM4 [class*="avatarPosition"] { top: 16px; }
-#app-mount .userPopout-2j1gM4 .avatar-2Vndt_ {
-	filter: drop-shadow(0px 0px 5px black);
-	border: 6px solid transparent;
-	background-color: rgb(0, 0, 0, 0.25);
-}
-
-/* Name display */
-/*
-#app-mount .userPopout-2j1gM4 .headerTop-3GPUSF {
-	padding: 8px 16px;
-	background-image: linear-gradient(to left, var(--background-floating), rgb(0, 0, 0, 0.2));
-	backdrop-filter: blur(3px);
-	border-top-right-radius: inherit;
-	position: absolute;
-	display: flex;
-	flex-direction: column-reverse;
-	right: 0;
-	width: 144px;
-	height: 108px;
-}
-
-/* Badges */
-/*
-#app-mount .userPopout-2j1gM4 .headerTop-3GPUSF .headerText-1-WmDq { margin: auto 0; }
-#app-mount .userPopout-2j1gM4 .headerTop-3GPUSF .profileBadges-2pItdR {
-	justify-content: flex-start;
-	position: initial;
-}
-
-#app-mount .userPopout-2j1gM4 .body-2wLx-E { padding: 8px 16px 0px; }
-
-/* General profile padding changes */
-/* Body padding changes */
-/*
-#app-mount .userPopout-2j1gM4 { padding-bottom: 16px; }
-#app-mount .userPopout-2j1gM4 .body-2wLx-E > div { margin-bottom: 8px; }
-
-/* Profile info (Rolenames, activity, notes etc) */
-/* Stylized subtitles, divider style */
-/*
-#app-mount .userPopout-2j1gM4 .body-2wLx-E :is(h3, .activity-1gTu-L .headerContainer-1wJjOa) {
-	height: 1px;
-	background-color: var(--background-modifier-accent);
-	margin-bottom: 8px;
-	font-size: 0px;
-}
-#app-mount .userPopout-2j1gM4 .body-2wLx-E :is(h3, .activity-1gTu-L .headerContainer-1wJjOa) {
-	height: 1px;
-	background-color: var(--background-modifier-accent);
-	margin-bottom: 8px;
-	font-size: 0px;
-}
-/* Server-side bio fix */
-/*
-#app-mount .userPopout-2j1gM4 .aboutMeSection-PUghFQ .icon-1zKOXL {
-	margin-left: 0px;
-	top: -8px;
-	border: solid var(--background-modifier-accent);
-}
-#app-mount .userPopout-2j1gM4 .activity-1gTu-L :is(.headerContainer-1wJjOa, .bodyNormal-250CQK) h3 { display: none; }
-#app-mount .userPopout-2j1gM4 .divider-1wtgZ3 { display: none; }
-
-/* Roles */
-/*
-#app-mount .userPopout-2j1gM4 .body-2wLx-E .rolesList-3uZoaa { margin: 0 0 4px; }
-#app-mount .userPopout-2j1gM4 .body-2wLx-E 
-div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
-
-/* Activity, Spotify */
-/* TODO: Not 100% perfect, needs improvement */
-/*
-#app-mount .userPopout-2j1gM4 .activity-1gTu-L { padding: 0; }
-#app-mount .userPopout-2j1gM4 .activity-1gTu-L :is(.headerContainer-1wJjOa, .bodyNormal-250CQK) h3 { display: none; }
-#app-mount .userPopout-2j1gM4 .activity-1gTu-L .headerContainer-1wJjOa ~ div {
-	padding-bottom: 8px;
-	margin: 0;
-}
-#app-mount .userPopout-2j1gM4 .activity-1gTu-L .platformIcon-k3yytQ { display: none; }
-
-/* User notes */
-/*
-#app-mount .userPopout-2j1gM4 .note-Go5ZP2 { margin: 0; }
-
-/* User DM */
-/*
-#app-mount .userPopout-2j1gM4 .footer-3naVBw { padding: 8px 16px 0; }
-
-/* PronounDB support - move pronouns up */
-/*
-#app-mount .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
-	margin-bottom: 0 !important;
-	display: flex;
-	flex-direction: column;
-}
-#app-mount .userPopout-2j1gM4 .note-Go5ZP2 + .bodyTitle-2Az3VQ { display: none; }
-#app-mount .userPopout-2j1gM4 .bodyTitle-2Az3VQ + .size14-3fJ-ot {
-	order: -1;
-	margin-bottom: 8px;
-	color: var(--text-normal);
-}
-/* Cynthia <END< */
-/* Goes with above */
-/* >START> alex */
+/* >START> alex - modified */
 .pronoundb-pronouns.aboutMeBody-1J8rhz {
 	--separation: 10px 0;
 	--borders: 1px var(--background-modifier-accent) solid;
@@ -885,7 +778,9 @@ div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
 .pronoundb-pronouns.aboutMeBody-1J8rhz > span::before {
 	content: 'Pronouns: ';
 	font-weight: bold;
+	font-size: 14px;
 }
+.pronoundb-pronouns.aboutMeBody-1J8rhz > span { font-size: 14px; }
 /* alex <END< */
 
 
