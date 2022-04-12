@@ -57,7 +57,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.6.2';
+	content: 'Dark Vanilla 2.6.3';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -865,6 +865,28 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	animation: tooltip 0.3s forwards;
 }
 [aria-label^="Totally Wholesome"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr:hover::after {
+	opacity: 1;
+	display: block;
+}
+/* BunnyMod Dev */
+[aria-label^="BunnyMod Dev"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::before {
+	content: "__";
+	background: url("https://cdn.discordapp.com/attachments/914299304494129223/963250031593394176/Loading.png") center / 100% no-repeat;
+	margin-right: 4px;
+	color: transparent;
+}
+[aria-label^="BunnyMod Dev"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::after {
+	content: "Totally not 1¢ Client";
+	font-size: 12px;
+	position: absolute;
+	background-color: var(--background-floating);
+	padding: 5px 10px;
+	border-radius: 4px;
+	opacity: 0;
+	display: none;
+	animation: tooltip 0.3s forwards;
+}
+[aria-label^="BunnyMod Dev"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr:hover::after {
 	opacity: 1;
 	display: block;
 }
