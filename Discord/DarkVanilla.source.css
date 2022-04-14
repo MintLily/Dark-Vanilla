@@ -58,7 +58,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.7.1';
+	content: 'Dark Vanilla 2.7.2';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -481,7 +481,7 @@ div[class*="backgroundFlash"] {
 svg.icon-2xnN2Y path.updateIconForeground-2V_zo4 { fill: var(--theme-text); }
 
 /* Message Attachment */
-.container-2sjPya { display: block; }
+.container-2sjPya > *:not(.clickableSticker-3FN2_L):not(.embed-hKpSrO):not(.originalLink-Azwuo9) { justify-self: stretch; }
 .textContainer-36wgKK {
 	border: 1px solid transparent;
 	border-top-left-radius: var(--soft-corner);
