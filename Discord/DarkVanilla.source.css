@@ -58,7 +58,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.7.0';
+	content: 'Dark Vanilla 2.7.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -581,6 +581,12 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 .actionIcon-2sw4Sl { color: var(--theme-text); }
 .iconItem-1EjiK0 .actionIcon-2sw4Sl:hover { color: var(--theme-text-muted); }
 .iconItem-1EjiK0 .actionIcon-2sw4Sl:active { color: var(--theme-text-muted); }
+
+/* Auth Box */
+.theme-dark.authBox-1HR6Ha { background-color: #191F22; }
+.input-2g-os5 { background-color: #131719; }
+.lookLink-15mFoz.colorLink-1Md3RZ { color:  var(--theme-text); }
+.theme-dark.navRow-dG-XX8 { background-color: var(--background-fourth); }
 
 /* === Settings Opened === */
 /* My Account */
