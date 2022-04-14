@@ -44,6 +44,7 @@
 	--brand-experiment-200:                  hsl(325, calc(var(--saturation-factor, 1) * 85.6%), 97%);
 	--brand-experiment-600:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
 	--brand-experiment-560:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
+	--brand-experiment-500:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
 	--control-brand-foreground:             #906D92;
 	--divider-color:                        #EECCE0;
 	--text-brand:                           #EECCE0;
@@ -57,7 +58,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.6.3';
+	content: 'Dark Vanilla 2.7.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -268,7 +269,7 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	border: 0.025rem solid #ddd;
 	transition: background 0.1s;
 }
-/* Personal Roles 
+/* Personal Roles
 .aboutMeSection-PUghFQ > .markup-eYLPri code {
 	background-color: var(--background-tertiary);
 	border: 0.025rem solid #aaa;
@@ -363,7 +364,7 @@ div[class*="membersGroup"] + div[class*="member"] span[class*="roleColor"]::afte
 .activityText-1rR-8O strong, .activityText-ev7Z1T strong { color: var(--theme-text-muted); }
 svg.icon-Lupfh- path { fill: var(--theme-text); }
 
-/* Sidebar User Info 
+/* Sidebar User Info
 .container-YkUktl:last-of-type>.flex-2S1XBF.flex-3BkGQD :nth-child(3) {
 	position: fixed;
 	bottom: 10px;
@@ -480,6 +481,21 @@ div[class*="backgroundFlash"] {
 svg.icon-2xnN2Y path.updateIconForeground-2V_zo4 { fill: var(--theme-text); }
 
 /* Message Attachment */
+.container-2sjPya { display: block; }
+.textContainer-36wgKK {
+	border: 1px solid transparent;
+	border-top-left-radius: var(--soft-corner);
+	border-top-right-radius: var(--soft-corner);
+}
+.footer-GXWBBp {
+	border: 1px solid transparent;
+	border-bottom-left-radius: var(--soft-corner);
+	border-bottom-right-radius: var(--soft-corner);
+	border-top-color: var(--background-secondary-alt);
+	border-top-width: 1px;
+}
+.downloadSection-20OayS { color: #999; }
+.downloadButton-2PkwZg { color: var(--theme-text); }
 .attachment-1PZZB2 {
 	background-color: var(--background-tertiary);
 	border-color: transparent;
