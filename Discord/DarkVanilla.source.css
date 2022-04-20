@@ -58,7 +58,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.7.2';
+	content: 'Dark Vanilla 2.8.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -228,6 +228,11 @@ div[data-item-id="ADD_FRIEND"]:hover {
 	background-color: rgba(var(--background-tertiary-rgb), 0.6);
 	backdrop-filter: blur(var(--blur));
 }
+.avatar-2Vndt_{
+	border-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(var(--blur-mac));
+}
 .bodyInnerWrapper-2bQs1k { background-color: transparent; }
 /* Cuz who actually uses the quick message feature? */
 .userPopout-2j1gM4 .footer-3naVBw { display: none; }
@@ -238,10 +243,31 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	border: 0.01px solid transparent;
 	border-radius: 80px;
 }
-/* Plugin: Profile Stats */
-.githubStats {
-	border: 1px solid transparent;
-	border-radius: 12px;
+/* Grey Buttons */
+.lookFilled-yCfaCM.colorPrimary-2AuQVo {
+	border: 1px solid #111;
+	border-radius: 6px;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: background 0.1s;
+}
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+	border: 1px solid #111;
+	border-radius: 6px;
+	background-color: rgba(100, 100, 100, 0.2);
+	transition: background 0.1s;
+}
+/* White Activity Next/Prev Button */
+.lookOutlined-3yKVGo.colorWhite-1H92hK {
+	border: 1px solid #111;
+	border-radius: 6px;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: background 0.1s;
+}
+.lookOutlined-3yKVGo.colorWhite-1H92hK:hover {
+	border: 1px solid #111;
+	border-radius: 6px;
+	background-color: rgba(100, 100, 100, 0.2);
+	transition: background 0.1s;
 }
 
 /* Full Screen Popout */
@@ -254,36 +280,38 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 }
 /* Server Roles */
 .role-2TIOKu:not(.addButton-1_dZYu) {
-	background-color: var(--background-tertiary);
+	background-color: transparent;/*var(--background-tertiary)*/
 	border: 0.025rem solid currentColor;
 	border-radius: var(--soft-corner);
 }
 .addButton-1_dZYu {
-	background-color: var(--background-tertiary);
+	background-color: transparent;/*var(--background-tertiary)*/
 	border: 0.025rem solid #999;
 	border-radius: var(--soft-corner);
 	transition: background 0.1s;
 }
 .addButton-1_dZYu:hover {
-	background-color: #333;
+	background-color: rgba(255, 255, 255, 0.08);
 	border: 0.025rem solid #ddd;
 	transition: background 0.1s;
 }
-/* Personal Roles
-.aboutMeSection-PUghFQ > .markup-eYLPri code {
-	background-color: var(--background-tertiary);
-	border: 0.025rem solid #aaa;
-	border-radius: var(--soft-corner);
-	display: flex;
-	margin-bottom: 5px;
-}
-.aboutMeSection-PUghFQ > .markup-eYLPri code:nth-child(5) {
-	margin-bottom: 5px;
-}*/
 /* Unclamp User About Me */
 .clamped-2ZePhX { -webkit-line-clamp: unset; }
 /* Nitro User Banner */
 .popoutBanner-3cqRD9 .pencilContainer-18TrEJ, .popoutBannerPremium-3i5EEI .pencilContainer-18TrEJ { display: none; }
+/* Avatar pfp */
+.avatar-3QF_VA {
+	border-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(var(--blur-mac));
+}
+/* Connected Accounts */
+.connectedAccount-1xKpli {
+	background-color: var(--background-fourth);
+	border-color: transparent;
+	border-radius: 6px;
+}
+.connectedAccountOpenIcon-1yfBsb:hover { color: var(--theme-text); }
 
 /* Shrink server banners to header instead of disappearing. */
 [class*="animatedContainer-"] {
@@ -460,6 +488,29 @@ div[class*="backgroundFlash"] {
 	100%{background-position:0% 50%}
 }
 
+/* Mention @ Icon - Cynthia 🇨🇿 */
+@font-face {
+	font-family: Blank;
+	src: url("https://raw.githack.com/adobe-fonts/adobe-blank/master/AdobeBlank.ttf.woff");
+	unicode-range: U+40;
+}
+.mention:not(.iconMention-3WxjBe) {
+	font-family: Blank, var(--font-primary);
+	padding-left: 1.2rem !important;
+	white-space: nowrap;
+}
+.mention:not(.iconMention-3WxjBe)::before {
+	content: '';
+	width: 16px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	margin: 0 2px;
+	inset: 0;
+	background: currentColor;
+	-webkit-mask: center/contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24'><path d='M12 2C6.486 2 2 6.486 2 12C2 17.515 6.486 22 12 22C14.039 22 15.993 21.398 17.652 20.259L16.521 18.611C15.195 19.519 13.633 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12V12.782C20 14.17 19.402 15 18.4 15L18.398 15.018C18.338 15.005 18.273 15 18.209 15H18C17.437 15 16.6 14.182 16.6 13.631V12C16.6 9.464 14.537 7.4 12 7.4C9.463 7.4 7.4 9.463 7.4 12C7.4 14.537 9.463 16.6 12 16.6C13.234 16.6 14.35 16.106 15.177 15.313C15.826 16.269 16.93 17 18 17L18.002 16.981C18.064 16.994 18.129 17 18.195 17H18.4C20.552 17 22 15.306 22 12.782V12C22 6.486 17.514 2 12 2ZM12 14.599C10.566 14.599 9.4 13.433 9.4 11.999C9.4 10.565 10.566 9.399 12 9.399C13.434 9.399 14.6 10.565 14.6 11.999C14.6 13.433 13.434 14.599 12 14.599Z' /></svg>");
+}
+
 /* User Status / Server Info popout */
 .full-motion .scale-3UGUBw.didRender-2SiRlm, .fade-1ICjW8.didRender-2SiRlm {
 	border-width: 1px;
@@ -592,22 +643,24 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 /* My Account */
 .settingsBanner-1eDJ5w { height: 265px; }
 .avatar-3mTjvZ { top: 235px; }
+/* User Profile */
+.bioTextArea-dDGOeC { background-color: var(--background-tertiary); }
 /* Other */
 .cardPrimary-3qRT__ { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
 /* Authorized Apps */
-.authedApp-1tw-eT {
+div[class*="authedApp"] {
 	background-color: var(--background-tertiary);
 	border-color: transparent;
 	border-radius: var(--soft-corner);
 }
 /* Connections */
-.accountList-305sx3 {
+div[class*="accountList"] {
 	background-color: rgba(var(--theme-text-muted-rgb), 0.1);
 	border-color: transparent;
 	border-radius: var(--soft-corner);
 }
-.accountBtn-1YkMgV .accountBtnInner-3XK70s { background-color: rgba(var(--theme-text-muted-rgb), 0.2); }
-.connection-107AGH { background-color: var(--background-tertiary); }
+.accountBtn-3pgcgr .accountBtnInner-3ttD-i { background-color: rgba(var(--theme-text-muted-rgb), 0.2); }
+.connection-YOVI9j { background-color: var(--background-tertiary); }
 /* Server Boost */
 .guildSubscriptionSlots-1i_C21 { background-color: var(--background-tertiary); }
 /* Subscriptions */
@@ -619,7 +672,7 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 /* Billing */
 .theme-dark .bottomDivider-ZmTm-j { background-color: var(--background-tertiary); }
 .pageActions-1crTQL { background-color: var(--background-tertiary); }
-.theme-dark .codeRedemptionRedirect-3SBiCp { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
+.theme-dark .codeRedemptionRedirect-2hYMSQ { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
 /* Appearance */
 .preview-rua1rr {
 	border-width: 2px;
@@ -629,9 +682,9 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 /* Accessibility */
 .lookFilled-yCfaCM.colorBrandNew-2-gGsS { background-color: var(--theme-text-muted); }
 /* Voice Settins */
-.cameraWrapper-1hB0cM { background-color: var(--background-tertiary); }
+.cameraWrapper-3a7Ngv { background-color: var(--background-tertiary); }
 /* Activity Status */
-.theme-dark .addGamePopout-3yePJc { background-color: var(--background-fourth); }
+.theme-dark .addGamePopout-2SKNIV { background-color: var(--background-fourth); }
 /* Separate Powercord Plugin Settings - Credits to Sans#0001 (366536353418182657) */
 [data-item-id="Overlay"] + .separator-2wx7h6 {
 	display: flex;
@@ -658,6 +711,13 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 	position: relative;
 	top: 47px;
 }
+
+/* Left Options */
+/* Log Out */
+.tabBarItemContainer-2HdIlr,
+.sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG[aria-controls="Logout-tab" i]::before,
+.sidebar-nqHbhN .item-3XjbnG[aria-controls=logout-tab]::before { color: #D83C3E; }
+.tabBarItemContainer-2HdIlr > svg { margin-left: 5px; }
 /* === END Settings Opened === */
 
 /* Server Opened */
@@ -668,6 +728,7 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 .theme-dark .tierBody-1d3UiS { background-color: var(--background-fourth); }
 /* Audit Log */
 .theme-dark .headerClickable-zGQJz3, .theme-dark .headerDefault-1e6yjj { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
+.theme-dark .changeDetails-1kMZqI { background-color: var(--background-fourth); }
 /* Inegrations */
 .theme-dark .card-3JmxsM { background-color: rgba(var(--theme-text-muted-rgb), 0.1); }
 
