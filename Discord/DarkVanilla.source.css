@@ -53,12 +53,13 @@
 	--scrollbar-auto-track:                 #1e2427;
 	--scrollbar-auto-scrollbar-color-thumb: #131719;
 	--scrollbar-auto-scrollbar-color-track: #1e2427;
+	--background-floating:                  var(--background-tertiary);
 
 	--spotify-color:                        #EECCE0;
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.8.0';
+	content: 'Dark Vanilla 2.8.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
