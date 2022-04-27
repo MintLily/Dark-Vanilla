@@ -4,7 +4,7 @@ Simplistic Vanilla-based theme with darker colors, with a few tweaks here and th
 # Discord Installation
 
 ### Powercord (Updated for Canary update)
-1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/download/latest/Dark.Vanilla.zip) (From Releases page - *`Dark.Vanilla.zip`*)
+1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/download/2.4.0-Powercord/Dark.Vanilla.zip) (From Releases page - *`Dark.Vanilla.zip`*)
 2. Go to themes folder and install folder (`powercord/src/Powercord/themes/`)
 
 ### BetterDiscord
