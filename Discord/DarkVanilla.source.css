@@ -59,7 +59,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.8.1';
+	content: 'Dark Vanilla 2.8.2';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -142,6 +142,7 @@ div[data-item-id="ADD_FRIEND"]:hover {
 	background-color: transparent !important;
 	transition: background 0.1s;
 }
+section[class*="container"][class*="themed"] { background-color: #191F22; }
 /* Active Now Cards */
 .wrapper-2RrXDg { background-color: var(--background-tertiary); }
 
@@ -393,7 +394,7 @@ div[class*="membersGroup"] + div[class*="member"] span[class*="roleColor"]::afte
 .activityText-1rR-8O strong, .activityText-ev7Z1T strong { color: var(--theme-text-muted); }
 svg.icon-Lupfh- path { fill: var(--theme-text); }
 
-/* Sidebar User Info
+/* Sidebar User Info 
 .container-YkUktl:last-of-type>.flex-2S1XBF.flex-3BkGQD :nth-child(3) {
 	position: fixed;
 	bottom: 10px;
