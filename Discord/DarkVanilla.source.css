@@ -59,7 +59,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.8.2';
+	content: 'Dark Vanilla 2.9.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -271,6 +271,48 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	background-color: rgba(100, 100, 100, 0.2);
 	transition: background 0.1s;
 }
+
+/* User Popout and Status Popout */
+#popout_31.layer-2aCOJ3 {
+	position: fixed !important;
+	bottom: 57px !important;
+	left: 80px !important;
+}
+.profileGroup-1yKk23 { display: none; }
+.styleFixed-2_NfVL, .submenu-1apzyU { width: 220px; }
+/* Buttons */
+.scroller-1bVxF5 { padding: 6px 8px; }
+/* Separators */
+.separator-1So4YB {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 4px;
+	border-bottom: 1px solid var(--background-modifier-accent);
+}
+.separator-1So4YB:is(:nth-child(2)) { display: none; }
+.submenu-1apzyU .separator-1So4YB:is(:nth-child(2)) { display: flex; }
+/* Menu */
+.submenu-1apzyU .scroller-1bVxF5 { padding: 6px 6px 6px 8px; }
+.status-2xYiEF { padding-left: 4px; }
+.description-1Dd2kv {
+	padding-left: 4px;
+	margin-top: 2px;
+	margin-bottom: 0;
+}
+.iconContainerLeft-2NHJgN {
+	margin-left: -2px;
+	margin-right: 8px;
+}
+.iconContainerLeft-2NHJgN .mainStatusIcon-25wiNY {
+	width: 10px;
+	height: 10px;
+	margin-left: 2px;
+}
+.hintContainer-2UwhLP, .imageContainer-1wSPgI, #edit-custom-status svg {
+	width: 16px;
+	height: 16px;
+}
+.full-motion .scale-3UGUBw.didRender-2SiRlm, .fade-1ICjW8.didRender-2SiRlm .labelContainer-2vJzYL.item-1OdjEX::before { display: none; }
 
 /* Full Screen Popout */
 .body-1Ukv50, .topSection-13QKHs { background-color: var(--background-tertiary); }
