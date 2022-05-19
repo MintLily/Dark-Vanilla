@@ -59,7 +59,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.9.0';
+	content: 'Dark Vanilla 2.9.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -312,7 +312,7 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	width: 16px;
 	height: 16px;
 }
-.full-motion .scale-3UGUBw.didRender-2SiRlm, .fade-1ICjW8.didRender-2SiRlm .labelContainer-2vJzYL.item-1OdjEX::before { display: none; }
+.full-motion .fade-1ICjW8.didRender-2SiRlm .labelContainer-2vJzYL.item-1OdjEX::before { display: none; }
 
 /* Full Screen Popout */
 .body-1Ukv50, .topSection-13QKHs { background-color: var(--background-tertiary); }
