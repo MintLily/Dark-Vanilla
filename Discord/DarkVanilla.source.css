@@ -59,7 +59,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.9.2';
+	content: 'Dark Vanilla 2.9.3';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -437,6 +437,8 @@ header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
 .activityText-1rR-8O, .activityText-ev7Z1T { color: var(--theme-text); }
 .activityText-1rR-8O strong, .activityText-ev7Z1T strong { color: var(--theme-text-muted); }
 svg.icon-Lupfh- path { fill: var(--theme-text); }
+/* Container */
+.content-1jQy2l .container-2o3qEW { flex-direction: unset; }
 
 /* Sidebar User Info 
 .container-YkUktl:last-of-type>.flex-2S1XBF.flex-3BkGQD :nth-child(3) {
