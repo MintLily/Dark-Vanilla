@@ -59,7 +59,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.10.1';
+	content: 'Dark Vanilla 2.10.3';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -172,6 +172,9 @@ section[class*="container"][class*="themed"] { background-color: #191F22; }
 }
 .audioControls-3fmemK { border-radius: var(--soft-corner); }
 .audioMetadata-1Hrt8T .metadataSize-2A2s1T { color: #ddd; }
+
+/* Video Playback */
+.audioControls-3fmemK, .videoControls-2NzHnF { backdrop-filter: blur(var(--blur)); }
 
 /* Text Mention */
 .mentioned-Tre-dv {
@@ -382,12 +385,22 @@ div.powercord-badge.powercord-badge-cutie {
 	backdrop-filter: blur(var(--blur-mac));
 }
 /* Connected Accounts */
-.connectedAccount-1xKpli {
+.connectedAccountContainer-SlCC-S {
 	background-color: var(--background-fourth);
 	border-color: transparent;
-	border-radius: 6px;
+	border-radius: var(--soft-corner);
 }
-.connectedAccountOpenIcon-1yfBsb:hover { color: var(--theme-text); }
+.connectedAccount-2PrNaX, .connectedAccountChildren-1H5QGc {
+	width: 100%;
+	height: 27px;
+	flex-shrink: 0;
+}
+.connectedAccountIcon-1FXG0p {
+	width: 28px;
+	height: 28px;
+}
+.anchorUnderlineOnHover-2qPutX:hover { color: var(--theme-text); }
+.text-md-semibold-3xVVGu { font-weight: 500; }
 
 /* Shrink server banners to header instead of disappearing. */
 [class*="animatedContainer-"] {
@@ -595,7 +608,7 @@ div[class*="backgroundFlash"] {
 svg.icon-2xnN2Y path.updateIconForeground-2V_zo4 { fill: var(--theme-text); }
 
 /* Message Attachment */
-.container-2sjPya > *:not(.clickableSticker-3FN2_L):not(.embed-hKpSrO):not(.originalLink-Azwuo9) { justify-self: stretch; }
+.container-2sjPya > *:not(.clickableSticker-3FN2_L):not(.embed-hKpSrO):not(.originalLink-Azwuo9):not([aria-label="Spoiler"]) { justify-self: stretch; }
 .textContainer-36wgKK {
 	border: 1px solid transparent;
 	border-top-left-radius: var(--soft-corner);
