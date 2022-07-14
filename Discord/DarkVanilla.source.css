@@ -59,7 +59,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.10.3';
+	content: 'Dark Vanilla 2.10.4';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -456,6 +456,7 @@ header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
 	backdrop-filter: blur(var(--blur));
 	transition: opacity 0.5s;
 }
+.theme-dark .root-g14mjS { background-color: transparent !important; }
 
 .backdrop-2ByYRN.withLayer-2VVmpp {
 	opacity: 0.5 !important;
