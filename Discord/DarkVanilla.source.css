@@ -60,7 +60,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.11.0';
+	content: 'Dark Vanilla 2.11.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -281,10 +281,10 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 }
 
 /* User Popout and Status Popout */
-#account.menu-1QACrS {
+/* #account.menu-1QACrS {
 	background-color: rgba(var(--background-tertiary-rgb), 0.6);
     backdrop-filter: blur(var(--blur));
-}
+} */
 #account.menu-1QACrS .item-1OdjEX::before { content: unset; /*Context-Icons Fix*/ }
 #account.menu-1QACrS .headerTop-3GPUSF { padding: 16px; }
 #account.menu-1QACrS .avatarWrapper-eenWra {
