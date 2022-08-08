@@ -280,13 +280,30 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 }
 
 /* User Popout and Status Popout */
-#popout_31.layer-2aCOJ3 {
-	position: fixed !important;
-	bottom: 57px !important;
-	left: 80px !important;
+#account.menu-1QACrS {
+	background-color: rgba(var(--background-tertiary-rgb), 0.6);
+    backdrop-filter: blur(var(--blur));
 }
-.profileGroup-1yKk23 { display: none; }
-/*.styleFixed-2_NfVL, .submenu-1apzyU { width: 220px; }*/
+#account.menu-1QACrS .item-1OdjEX::before { content: unset; /*Context-Icons Fix*/ }
+#account.menu-1QACrS .headerTop-3GPUSF { padding: 16px; }
+#account.menu-1QACrS .avatarWrapper-eenWra {
+	left: unset;
+	right: 16px;
+}
+#account.menu-1QACrS .avatar-2Vndt_ svg foreignObject, #account.menu-1QACrS .avatarHint-k7pYop foreignObject { mask: none; }
+#account.menu-1QACrS .avatar-2Vndt_ svg rect { display: none; }
+#account.menu-1QACrS .avatar-2Vndt_ img, #account.menu-1QACrS .avatarHint-k7pYop { border-radius: 50%; }
+#account.menu-1QACrS .avatar-2Vndt_ {
+	border-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(var(--blur-mac));
+}
+#account.menu-1QACrS .profileBody-3QbfPe,
+#account.menu-1QACrS .separator-1So4YB,
+#account.menu-1QACrS .profileBadges-2pItdR,
+#account.menu-1QACrS .copiableWrapper-2IFENG > div:not(.childWrapper-2wlp_S),
+#account.menu-1QACrS .pencilContainer-18TrEJ/* ,
+#account.menu-1QACrS .description-1Dd2kv */ { display: none; }
 svg.activeIcon-1ykRnF path { fill: var(--theme-text-muted); }
 /* Buttons */
 .scroller-1bVxF5 { padding: 6px 8px; }
