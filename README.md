@@ -3,19 +3,21 @@ Simplistic Vanilla-based theme with darker colors, with a few tweaks here and th
 
 # Discord Installation
 
-### Powercord (Updated for Canary update)
+### Replugged (formerally Powercord)
 1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/download/2.4.0-Powercord/Dark.Vanilla.zip) (From Releases page - *`Dark.Vanilla.zip`*)
-2. Go to themes folder and install folder (`powercord/src/Powercord/themes/`)
+2. Go to themes folder and install folder (`replugged/src/Powercord/themes/`)
 
 ### BetterDiscord
 1. Click > [Download](https://raw.githubusercontent.com/MintLily/Dark-Vanilla/main/Discord/BetterDiscord/DarkVanilla.theme.css)
 2. Download Raw
 3. Go to themes and install `DarkVanilla.theme.css` file (`%appdata%/BetterDiscord/themes/`)
 
+### Goosemod
+1. Go to `Settings > Themes > Quick CSS`
+2. Paste this in the box `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css");` (Preferably without other themes active)
+
 <br>
-<img src="https://i.mintlily.lgbt/DarkVanilla_Mar2022_Preview.png" />
-<img src="https://mintlily.lgbt/img/upload/DarkVanilla_DiscordTheme_Preview%20_2.png" />
-<br><br>
+<img src="https://i.mintlily.lgbt/DarkVanilla_Aug2022_Preview.png" />
 
 # VRCX Installation
 
