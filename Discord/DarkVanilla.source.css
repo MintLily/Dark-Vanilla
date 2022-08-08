@@ -339,7 +339,7 @@ svg.activeIcon-1ykRnF path { fill: var(--theme-text-muted); }
 }
 .full-motion .fade-1ICjW8.didRender-2SiRlm .labelContainer-2vJzYL.item-1OdjEX::before { display: none; }
 /* User Status / Server Info popout */
-.full-motion .scale-3UGUBw.didRender-2SiRlm, .fade-1ICjW8.didRender-2SiRlm {
+.full-motion .scale-3UGUBw.didRender-2SiRlm {
 	border-width: 1px;
 	border-radius: 4px;
 	border-image-slice: 1;
@@ -473,7 +473,6 @@ header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
 	backdrop-filter: blur(var(--blur));
 	transition: opacity 0.5s;
 }
-.theme-dark .root-g14mjS { background-color: transparent !important; }
 
 .backdrop-2ByYRN.withLayer-2VVmpp {
 	opacity: 0.5 !important;
