@@ -60,7 +60,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.11.1';
+	content: 'Dark Vanilla 2.12.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -285,7 +285,7 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	background-color: rgba(var(--background-tertiary-rgb), 0.6);
     backdrop-filter: blur(var(--blur));
 } */
-#account.menu-1QACrS .item-1OdjEX::before { content: unset; /*Context-Icons Fix*/ }
+#account.menu-1QACrS .item-1OdjEX::before { content: unset; }
 #account.menu-1QACrS .headerTop-3GPUSF { padding: 16px; }
 #account.menu-1QACrS .avatarWrapper-eenWra {
 	left: unset;
@@ -926,10 +926,20 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 	100% { backdrop-filter: blur(5px); opacity: 1; transform: scale(1); }
 }
 
-
-
-
-
+/* Forums */
+/* Main Background */
+.theme-dark .container-3wLKDe { background-color: var(--background-tertiary); }
+/* Search Input Background */
+.input-2g-os5 { background-color: var(--background-secdonary); }
+/* New Badge */
+div[style*="background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.2%), 88.6%)"] { background-color: var(--theme-text) !important; }
+.newBadgeText-1y7fMO { color:  var(--theme-text-muted); }
+/* Tags */
+.pill-3pRQlO.clickable-3YTfAq:not(.disabled-3Rezaw) { transition: 0.2s; }
+.pill-3pRQlO.clickable-3YTfAq:not(.disabled-3Rezaw):hover {
+	background-color: var(--theme-text-muted);
+	transition: 0.2s;
+}
 
 
 
