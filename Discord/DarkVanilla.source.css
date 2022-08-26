@@ -60,7 +60,7 @@
 }
 
 .info-3pQQBb::after {
-	content: 'Dark Vanilla 2.12.0';
+	content: 'Dark Vanilla 2.13.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -474,7 +474,6 @@ header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
 
 /* Member List */
 /* Role Color Background */
-/*span[class*="roleColor"]::after {*/
 .username-i5-wv- span[style*="rgb("]::after {
 	content: '';
 	top: 0;
@@ -494,6 +493,29 @@ header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
 svg.icon-Lupfh- path { fill: var(--theme-text); }
 /* Container */
 .content-1jQy2l .container-2o3qEW { flex-direction: unset; }
+/* Sticky Role - snippet by Freeplay 158296466119458816 */
+[class*="members"]::before {
+	content: "";
+	position: sticky;
+	display: block;
+	top: 0px;
+	height: 35px;
+	margin-top: -40px;
+	margin-bottom: 10px;
+	background: inherit;
+	box-shadow: var(--elevation-medium);
+	z-index: 2;
+}
+[class*="membersGroup"] {
+	position: sticky;
+	top: -8px;
+	padding-top: 0;
+	padding-bottom: 4px !important;
+	background-color: inherit;
+	z-index: 3;
+	display: flex;
+	align-items: flex-end;
+}
 
 /* Sidebar User Info 
 .container-YkUktl:last-of-type>.flex-2S1XBF.flex-3BkGQD :nth-child(3) {
