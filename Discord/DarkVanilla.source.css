@@ -6,6 +6,10 @@
 	--background-secondary-alt:             #1e2427;
 	--background-tertiary:                  #131719;
 	--channeltextarea-background:           #131719;
+	--modal-background:                     #191F22;
+	--toast-background:                     #191F22;
+    --toast-header:                         #191F22;
+    --toast-contents:                       #1e2427;
 	--background-tertiary-rgb:              19, 23, 25;
 	--background-modifier-selected:         rgba(238, 204, 224, 0.2);
 	--background-modifier-hover:            rgba(238, 204, 224, 0.3);
@@ -16,7 +20,7 @@
 	--theme-text-muted-rgb:                 144, 109, 146;
 	--profile-border-width:                 2px;
 	--anim-speed:                           6s !important;
-	--soft-corner:                          0.45rem;
+	--soft-corner:                          0.6rem;
 
 	/* Discord Variable Overrides */
 	--text-link:                            #EECCE0;
@@ -45,6 +49,7 @@
 	--brand-experiment-600:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
 	--brand-experiment-560:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
 	--brand-experiment-500:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
+	--brand-experiment-400:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
 	--control-brand-foreground:             #906D92;
 	--divider-color:                        #EECCE0;
 	--text-brand:                           #EECCE0;
@@ -59,12 +64,17 @@
 	--spotify-color:                        #EECCE0;
 }
 
-.info-3pQQBb::after {
-	content: 'Dark Vanilla 2.13.0';
+.info-3pQQBb::before {
+	content: 'Dark Vanilla 2.14.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
 	line-height: 16px;
+}
+
+/* Quick Fix for something that is affecting me fo some unknown reason */
+svg > [d='M10 0C4.486 0 0 4.486 0 10C0 15.515 4.486 20 10 20C15.514 20 20 15.515 20 10C20 4.486 15.514 0 10 0ZM9 4H11V11H9V4ZM10 15.25C9.31 15.25 8.75 14.691 8.75 14C8.75 13.31 9.31 12.75 10 12.75C10.69 12.75 11.25 13.31 11.25 14C11.25 14.691 10.69 15.25 10 15.25Z'] {
+	display: none;
 }
 
 /* Just a little funny easter-egg-ish thing */
@@ -111,15 +121,31 @@ div[class*="wordmark-"]{
 .childWrapper-1j_1ub { background-color: rgba(var(--theme-text-rgb), 0.35); }
 
 
-/* Emoji Popup Box */
-/* Fotter Color fix */
+/* Emoji/Sticker/GIF Popup Box */
+/* Footer Color fix */
+.contentWrapper-3vHNP2 { background-color: var(--background-fourth); }
 div[class*="inspector-"] { background-color: var(--background-fourth) !important; }
 /* GIFs Stickers Emoji NavTab Buttons */
-.navButtonActive-1EqC5l { background: var(--background-modifier-selected); }
-.navButtonActive-1EqC5l:hover { background: var(--background-modifier-hover); }
-button[class*="navButton"][aria-controls*="tab-panel"]:hover {
-	background: var(--background-modifier-hover);
+.navButtonActive-1EqC5l, .navButtonActive-1EqC5l:hover { background: rgba(238, 204, 224, 0.2); }
+.navButton-1XuvI-:hover {
+	background: rgba(238, 204, 224, 0.2);
 	border-radius: 4px;
+}
+/* Input */
+.container-1SX9VC, .container-2oNtJn { background-color: #131719; }
+/* Emoji Category Header */
+.wrapper-1NNaWG { background-color: var(--background-fourth); }
+/* Left Server Select */
+.wrapper-22rqw6 { background-color: #191F22; }
+/* Sticker background */
+.stickerInspected-mwnU6w .inspectedIndicator-27zwNZ, .categoryItemDefaultCategorySelected-2YeRUu, .categoryItemDefaultCategorySelected-2YeRUu:hover {
+	background-color: rgba(238, 204, 224, 0.2);
+}
+/* Diversity Selection */
+.diversitySelectorOptions-3DhNYs {
+	background-color: #131719;
+	border: 0.1px solid transparent;
+	border-radius: var(--soft-corner);
 }
 
 /* Friends Online / Mutual Guilds */
@@ -281,10 +307,9 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 }
 
 /* User Popout and Status Popout */
-/* #account.menu-1QACrS {
-	background-color: rgba(var(--background-tertiary-rgb), 0.6);
-    backdrop-filter: blur(var(--blur));
-} */
+#account.menu-1QACrS {
+	background-color: #131719;
+}
 #account.menu-1QACrS .item-1OdjEX::before { content: unset; }
 #account.menu-1QACrS .headerTop-3GPUSF { padding: 16px; }
 #account.menu-1QACrS .avatarWrapper-eenWra {
@@ -474,6 +499,7 @@ header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
 
 /* Member List */
 /* Role Color Background */
+/*span[class*="roleColor"]::after {*/
 .username-i5-wv- span[style*="rgb("]::after {
 	content: '';
 	top: 0;
@@ -493,29 +519,6 @@ header[class*="header"] { backdrop-filter: blur(var(--blur)) !important; }
 svg.icon-Lupfh- path { fill: var(--theme-text); }
 /* Container */
 .content-1jQy2l .container-2o3qEW { flex-direction: unset; }
-/* Sticky Role - snippet by Freeplay 158296466119458816 */
-[class*="members"]::before {
-	content: "";
-	position: sticky;
-	display: block;
-	top: 0px;
-	height: 35px;
-	margin-top: -40px;
-	margin-bottom: 10px;
-	background: inherit;
-	box-shadow: var(--elevation-medium);
-	z-index: 2;
-}
-[class*="membersGroup"] {
-	position: sticky;
-	top: -8px;
-	padding-top: 0;
-	padding-bottom: 4px !important;
-	background-color: inherit;
-	z-index: 3;
-	display: flex;
-	align-items: flex-end;
-}
 
 /* Sidebar User Info 
 .container-YkUktl:last-of-type>.flex-2S1XBF.flex-3BkGQD :nth-child(3) {
@@ -902,11 +905,16 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 .theme-dark .tierBody-3ju-rc { background-color: var(--background-tertiary); }
 .barSecondary-VouwoY { background-color: var(--theme-text); }
 
-/* Pinned Messages Resize */
+/* Pinned Messages Box */
 .messagesPopoutWrap-3zryHW {
-	max-height: 70vh !important;
+	background-color: #131719;
+	max-height: 90vh !important;
 	width: 30vw;
+	border: 0.1px solid transparent;
+	border-radius: var(--soft-corner);
 }
+.header-1w9Q93 { background-color: #131719; }
+.messageGroupWrapper-1jf_7C { background-color: #191F22; }
 
 /* Are things offline? */
 .tipTitle-3FYEQp {
