@@ -12,6 +12,7 @@
 	--toast-contents:                       #1e2427;
 	--background-floating:                  #131719;
 	--activity-card-background:             #131719;
+	--profile-body-background-color:        #131719;
 	--background-tertiary-rgb:              19, 23, 25;
 	--background-modifier-selected:         rgba(238, 204, 224, 0.2);
 	--background-modifier-hover:            rgba(238, 204, 224, 0.3);
@@ -68,7 +69,7 @@
 }
 
 .info-3pQQBb::before {
-	content: 'Dark Vanilla 2.14.1';
+	content: 'Dark Vanilla 2.15.0';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -265,16 +266,31 @@ section[class*="container"][class*="themed"] { background-color: #191F22; }
 .wrapper-2vIMkT { background-color: var(--background-tertiary); }
 
 /* User Popout */
-.userPopout-2j1gM4 {
-	background-color: rgba(var(--background-tertiary-rgb), 0.6);
-	backdrop-filter: blur(var(--blur));
+#popout_128[class="theme-dark layer-2aCOJ3"] { box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.2); }
+/* Background (No profile color) */
+.userPopoutInnerWithBanner-wsoegj, .userPopoutInnerNonPremium-3zrFkp {
+	background: none;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	backdrop-filter: blur(var(--blur-mac));
 }
-.avatar-2Vndt_{
+.theme-dark.profileColors-3Y0XaR {
+	--profile-body-background-color: rgba(0, 0, 0, 0.2) !important;
+	backdrop-filter: blur(var(--blur-mac));
+}
+/* Notes */
+:not(.input-2g-os5) > .textarea-_59yqs { background-color: #191F22 !important; }
+/* Message */
+.messageInputContainer-2rGDH8 { border: none; }
+:not(.input-2g-os5) > .messageInput-1KI8l8 { background-color: #191F22 !important; }
+/* Inner Background */
+.profileBadges-31rDHI, .overlayBackground-arbZMT { background-color: #131719; }
+.avatar-2OC07D {
 	border-color: rgba(0, 0, 0, 0.2);
 	background-color: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(var(--blur-mac));
 }
-.bodyInnerWrapper-2bQs1k { background-color: transparent; }
+/* Beta Tag, Banner Edit Button */
+.betaTagHidden-3QLtKR, .betaTag-2bWvGF, .pencilContainer-11Kuga { display: none; }
 /* Cuz who actually uses the quick message feature? */
 .userPopout-2j1gM4 .footer-3naVBw { display: none; }
 /* Pfp Hover */
