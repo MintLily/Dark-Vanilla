@@ -871,6 +871,14 @@ div[class*="accountList"] {
 /* Activity Status */
 .theme-dark .addGamePopout-2SKNIV { background-color: var(--background-fourth); }
 
+/* Other General Things */
+/* Dropdown List */
+.popout-1KHNAq {
+	background-color: #1E2427;
+	border-color: #131719;
+}
+.option-2eIyOn[aria-selected=true]:not(.option-2eIyOn.multi-1HXDiv) { background-color: var(--background-modifier-selected_); }
+.option-2eIyOn.focused-ODgjnC, .option-2eIyOn:focus, .option-2eIyOn:hover { background-color: var(--background-modifier-hover_); }
 .side-2ur1Qk > div[data-item-id="pc-updater"], .side-2ur1Qk > div[data-item-id="pc-updater"] ~ div { order: 6 }
 .side-2ur1Qk > div[data-item-id="pc-moduleManager-plugins"] { order: 1 !important; }
 .side-2ur1Qk > div[data-item-id="pc-moduleManager-themes"] { order: 2 !important; }
