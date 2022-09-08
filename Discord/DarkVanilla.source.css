@@ -25,6 +25,7 @@
 	--profile-border-width:                 2px;
 	--anim-speed:                           6s !important;
 	--soft-corner:                          0.6rem;
+	--soft-corner-roles:                    0.45rem;
 
 	/* Discord Variable Overrides */
 	--text-link:                            #EECCE0;
@@ -300,31 +301,52 @@ foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
 	border-radius: 80px;
 }
 /* Grey Buttons */
-.lookFilled-yCfaCM.colorPrimary-2AuQVo {
-	border: 1px solid #111;
-	border-radius: 6px;
-	background-color: rgba(0, 0, 0, 0.2);
+.buttonColor-XIRMbp {
+	border: 1px solid #191F22;
+	border-radius: var(--soft-corner);
+	background-color: rgba(25, 31, 34, 0.8);
 	transition: background 0.1s;
 }
-.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
-	border: 1px solid #111;
-	border-radius: 6px;
-	background-color: rgba(100, 100, 100, 0.2);
+.buttonColor-XIRMbp:hover {
+	border: 1px solid #191F22;
+	border-radius: var(--soft-corner);
+	background-color: rgba(25, 31, 34, 0.2);
 	transition: background 0.1s;
 }
 /* White Activity Next/Prev Button */
-.lookOutlined-3yKVGo.colorWhite-1H92hK {
-	border: 1px solid #111;
-	border-radius: 6px;
-	background-color: rgba(0, 0, 0, 0.2);
+.lookFilled-yCfaCM.colorPrimary-2AuQVo {
+	border: 1px solid #191F22;
+	border-radius: var(--soft-corner);
+	background-color: rgba(19, 23, 25, 0.8);
 	transition: background 0.1s;
 }
-.lookOutlined-3yKVGo.colorWhite-1H92hK:hover {
-	border: 1px solid #111;
-	border-radius: 6px;
-	background-color: rgba(100, 100, 100, 0.2);
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+	border: 1px solid #191F22;
+	border-radius: var(--soft-corner);
+	background-color: rgba(19, 23, 25, 0.2);
 	transition: background 0.1s;
 }
+.theme-dark .fieldButton-14lHvK.lookLink-15mFoz.colorPrimary-2AuQVo {
+	border: 1px solid var(--button-danger-background);
+	border-radius: var(--soft-corner);
+	background-color: rgba(19, 23, 25, 0.8);
+	transition: 0.1s;
+}
+.theme-dark .fieldButton-14lHvK.lookLink-15mFoz.colorPrimary-2AuQVo:hover {
+	border: 1px solid #131719;
+	border-radius: var(--soft-corner);
+	background-color: rgba(19, 23, 25, 0.8);
+	color: var(--button-danger-background);
+	transition: 0.1s;
+}
+/* Other Buttons */
+.theme-dark .lookLink-15mFoz.colorPrimary-2AuQVo { border-radius: var(--soft-corner); }
+.lookOutlined-3yKVGo.colorRed-rQXKgM, .lookFilled-yCfaCM.colorRed-rQXKgM, .lookOutlined-3yKVGo.colorBrand-I6CyqQ, .lookInverted-2mDUMi.colorBrand-I6CyqQ { border-radius: var(--soft-corner); }
+.lookFilled-yCfaCM.colorBrand-I6CyqQ {
+	border: 0.1px solid transparent;
+	border-radius: var(--soft-corner);
+}
+
 
 /* User Popout and Status Popout */
 #account.menu-1QACrS {
@@ -424,12 +446,12 @@ div.powercord-badge.powercord-badge-cutie {
 .role-2TIOKu:not(.addButton-1_dZYu) {
 	background-color: transparent;/*var(--background-tertiary)*/
 	border: 0.025rem solid currentColor;
-	border-radius: var(--soft-corner);
+	border-radius: var(--soft-corner-roles);
 }
 .addButton-1_dZYu {
 	background-color: transparent;/*var(--background-tertiary)*/
 	border: 0.025rem solid #999;
-	border-radius: var(--soft-corner);
+	border-radius: var(--soft-corner-roles);
 	transition: background 0.1s;
 }
 .addButton-1_dZYu:hover {
