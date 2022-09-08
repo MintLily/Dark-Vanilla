@@ -268,17 +268,16 @@ section[class*="container"][class*="themed"] { background-color: #191F22; }
 /* User Popout */
 #popout_128[class="theme-dark layer-2aCOJ3"] { box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.2); }
 /* Background (No profile color) */
-.userPopoutInnerWithBanner-wsoegj, .userPopoutInnerNonPremium-3zrFkp {
-	background: none;
-	background-color: rgba(0, 0, 0, 0.2) !important;
-	backdrop-filter: blur(var(--blur-mac));
-}
-.theme-dark.profileColors-3Y0XaR {
-	--profile-body-background-color: rgba(0, 0, 0, 0.2) !important;
-	backdrop-filter: blur(var(--blur-mac));
-}
+.userPopoutInnerWithBanner-wsoegj:not(div[class*="userPopoutInnerWithTheme"]) { background: none; background-color: #191F22; }
+.userPopoutInnerNonPremium-3zrFkp { background: none; background-color: #191F22; }
+.userPopoutInnerPremiumWithoutBanner-na5t_W { background: none; background-color: #191F22; }
+.theme-dark.profileColors-3Y0XaR { background-color: #191F22 !important; }
 /* Notes */
-:not(.input-2g-os5) > .textarea-_59yqs { background-color: #191F22 !important; }
+:not(.input-2g-os5) > .textarea-_59yqs {
+	background-color: #191F22 !important;
+	padding-top: 6px;
+	padding-left: 6px;
+}
 /* Message */
 .messageInputContainer-2rGDH8 { border: none; }
 :not(.input-2g-os5) > .messageInput-1KI8l8 { background-color: #191F22 !important; }
