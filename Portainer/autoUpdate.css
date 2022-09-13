@@ -1,0 +1,199 @@
+:root {
+    --_dark1:                  #191F22;
+    --_dark2:                  #1e2427;
+    --_dark3:                  #131719;
+    --theme-text:              #EECCE0;
+    --theme-text-muted:        #906D92;
+    --ttm-rgb:                 144, 109, 146;
+    --soft-corner:             0.6rem;
+    --hover:                   rgba(238, 204, 224, 0.3);
+    
+    --bg-body-color:           var(--_dark3);
+    --bg-card-color:           var(--_dark1);
+    --bg-widget-color:         var(--_dark1);
+    --border-blocklist:        var(--theme-text-muted);
+    --bg-dropdown-menu-color:  var(--_dark2);
+    --ui-blue-8:               var(--theme-text-muted);
+}
+
+a, a.hyperlink, .btn.btn-link:is([theme=dark] *) {
+    color: var(--theme-text);
+}
+a:hover, a.hyperlink:hover, .btn.btn-link:hover:is([theme=dark] *) {
+    color: var(--theme-text);
+    font-weight: 600;
+}
+
+div[class="app-react-sidebar-Footer-Footer-module__root text-center"]:after {
+    content: 'Dark Vanilla v1.0.0';
+    padding-left: 3px;
+    font-size: 8pt;
+    color: var(--theme-text-muted);
+}
+
+.th-dark\:bg-gray-warm-10:is([theme=dark] *) {
+    background-color: var(--_dark1);
+}
+
+button[title="Clear environment"] { display: none; }
+
+.th-dark\:bg-gray-warm-11:is([theme=dark] *) {
+    background-color: var(--_dark2);
+}
+button.th-dark\:bg-gray-warm-11:is([theme=dark] *):hover {
+    background-color: var(--hover);
+}
+.th-dark\:border-gray-warm-9:is([theme=dark] *) {
+    border-color: transparent;
+    border-radius: var(--soft-corner);
+}
+.be\:hover\:bg-gray-9:hover:is([data-edition=BE] *) {
+    background-color: var(--hover);
+}
+
+.th-dark\:bg-gray-9:is([theme=dark] *) {
+    background-color: var(--theme-text-muted);
+}
+
+div[class="uppercase text-[9.4px] space-x-1 tracking-[.28em] pt-3 text-gray-3 th-dark:text-gray-warm-6"] {
+    display: none;
+}
+
+.widget .widget-icon:is([theme=dark] *) {
+    background-color: var(--theme-text-muted);
+}
+.widget .widget-icon:is([theme=dark] *) > svg {
+    color: var(--theme-text);;
+}
+
+.widget {
+    border: 0.1px solid transparent;
+    border-radius: var(--soft-corner);
+}
+
+.datatable .footer {
+    border-color: var(--_dark2);
+}
+
+.blocklist-item:hover {
+    background-color: var(--_dark2);
+    border-color: var(--theme-text);
+}
+button > .icon {
+    color: var(--theme-text);
+}
+
+.slider:is([theme=dark] *) {
+    background-color: #111;
+}
+input:checked+.slider:is([theme=dark] *) {
+    background-color: var(--theme-text-muted);
+}
+
+.btn.btn-secondary:is([theme=dark] *), .app-react-components-datatables-SortbySelector-module__sort-button {
+    background-color: var(--_dark3);
+    border-color: rgba(var(--ttm-rgb), 0.7);
+    color: #eee;
+    border-radius: var(--soft-corner);
+}
+
+.datatable .searchBar {
+    background-color: var(--_dark3) !important;
+    border-color: rgba(var(--ttm-rgb), 0.7);
+    border-radius: var(--soft-corner);
+}
+
+.app-react-components-form-components-ReactSelect-module__root .selector__control {
+    background-color: var(--_dark2) !important;
+    border-color: rgba(var(--ttm-rgb), 0.3);
+    border-radius: var(--soft-corner);
+}
+
+.app-react-components-PageHeader-HeaderTitle-module__menu-list {
+    border: 0.1px solid transparent !important;
+    border-radius: var(--soft-corner);
+}
+.app-react-components-PageHeader-HeaderTitle-module__menu-link:hover {
+    background-color: var(--hover);
+}
+
+.th-dark\:bg-gray-iron-10:is([theme=dark] *) {
+    background-color: var(--_dark1);
+}
+.th-dark\:border-gray-neutral-8:is([theme=dark] *) {
+    border-color: var(--_dark2) !important;
+    border-radius: var(--soft-corner);
+}
+
+.th-dark\:bg-blue-3:is([theme=dark] *) {
+    background-color: var(--theme-text-muted);
+}
+.th-dark\:text-blue-8:is([theme=dark] *) {
+    color: var(--theme-text);
+}
+.th-dark\:hover\:bg-gray-10:hover:is([theme=dark] *) {
+    background-color: var(--_dark2);
+}
+
+.widget .widget-body table thead {
+    border-top-color: var(--_dark2);
+    background-color: var(--_dark2);
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: var(--_dark2);
+}
+
+.btn.btn-default:is([theme=dark] *), .btn.btn-light:is([theme=dark] *) {
+    background-color: var(--_dark3);
+    border-color: rgba(var(--ttm-rgb), 0.8);
+    border-radius: var(--soft-corner);
+    font-weight: 500;
+}
+.btn.btn-default:hover:is([theme=dark] *), .btn.btn-light:hover:is([theme=dark] *), .btn.btn-default:hover:is([theme=dark] *), .btn.btn-light:hover:is([theme=dark] *) {
+    background-color: #444;
+    border-color: var(--theme-text-muted);
+}
+
+.form-control {
+    background-color: var(--_dark3);
+    border-color: rgba(var(--ttm-rgb), 0.8);
+    border-radius: var(--soft-corner);
+}
+.form-control:focus {
+    border-color: var(--theme-text);
+}
+.input-group-addon {
+    background-color: var(--_dark2);
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-left-radius: var(--soft-corner);
+    border-top-left-radius: var(--soft-corner);
+}
+
+.app-react-components-LicenseInfoPanel-LicenseInfoPanel-module__license-info-panel {
+    border-color: transparent
+}
+.app-react-components-LicenseInfoPanel-LicenseInfoPanel-module__divider {
+    border-color: var(--_dark2);
+}
+div[role="progressbar"] {
+    background-color: var(--theme-text) !important;
+}
+.app-react-components-ProgressBar-ProgressBar-module__progress-info, .progress-bar {
+    color: var(--theme-text) !important;
+}
+.progress {
+    background-color: var(--_dark3);
+}
+
+.box-selector-item input[type=radio]:checked+label:is([theme=dark] *), .boxselector_wrapper input[type=radio]:checked+label:is([theme=dark] *) {
+    background-color: rgba(var(--ttm-rgb), 0.7);
+    border-color: var(--theme-text);
+    border-radius: var(--soft-corner);
+}
+.box-selector-item input[type=radio]:not(:disabled)~label, .boxselector_wrapper input[type=radio]:not(:disabled)~label {
+    background-color: rgba(var(--ttm-rgb), 0.2);
+    border-color: var(--theme-text-muted);
+    border-radius: var(--soft-corner);
+}
