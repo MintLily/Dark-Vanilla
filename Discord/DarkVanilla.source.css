@@ -75,7 +75,7 @@
 }
 
 .info-3pQQBb::before {
-	content: 'Dark Vanilla 2.16.0';
+	content: 'Dark Vanilla 2.16.1';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -1042,7 +1042,7 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 /* Main Background */
 .theme-dark .container-3wLKDe { background-color: var(--background-tertiary); }
 /* Search Input Background */
-/* .input-2g-os5 { background-color: var(--background-secdonary); } */
+textarea[style^="padding-right: 31.69px"] { background-color: var(--_dark1) !important; }
 /* New Badge */
 div[style*="background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.2%), 88.6%)"] { background-color: var(--theme-text) !important; }
 .newBadgeText-1y7fMO { color:  var(--theme-text-muted); }
@@ -1052,7 +1052,20 @@ div[style*="background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.2%)
 	background-color: var(--theme-text-muted);
 	transition: 0.2s;
 }
-
+/* See More Drop List */
+.container-2O1UgZ { background-color: var(--_dark2); }
+.focused-qp-W9B, .item-1BCeuB:hover:not(.disabled-Mmpvl7) { background-color: var(--background-modifier-hover_); }
+/* Edit */
+/* Overview */
+.forumGuidelines-1U9ThN { background-color: var(--_dark3); }
+.addTags-26suzl {
+	background-color: var(--theme-text-muted);
+	transition: 0.2s;
+}
+.addTags-26suzl:not(.disabled-1fO3As):hover {
+	background-color: var(--theme-text);
+	transition: 0.2s;
+}
 
 
 /* Snippets directly from the community */
