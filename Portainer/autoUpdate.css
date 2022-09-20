@@ -11,6 +11,8 @@
     --bg-body-color:           var(--_dark3);
     --bg-card-color:           var(--_dark1);
     --bg-widget-color:         var(--_dark1);
+    --bg-sidebar-color:        var(--_dark1);
+    --bg-sidebar-nav-color:    var(--_dark3);
     --border-blocklist:        var(--theme-text-muted);
     --bg-dropdown-menu-color:  var(--_dark2);
     --ui-blue-8:               var(--theme-text-muted);
@@ -21,11 +23,11 @@ a, a.hyperlink, .btn.btn-link:is([theme=dark] *) {
 }
 a:hover, a.hyperlink:hover, .btn.btn-link:hover:is([theme=dark] *) {
     color: var(--theme-text);
-    font-weight: 600;
+    font-weight: 410;
 }
 
 div[class="app-react-sidebar-Footer-Footer-module__root text-center"]:after {
-    content: 'Dark Vanilla v1.0.0';
+    content: 'Dark Vanilla v1.1.0';
     padding-left: 3px;
     font-size: 8pt;
     color: var(--theme-text-muted);
@@ -40,7 +42,7 @@ button[title="Clear environment"] { display: none; }
 .th-dark\:bg-gray-warm-11:is([theme=dark] *) {
     background-color: var(--_dark2);
 }
-button.th-dark\:bg-gray-warm-11:is([theme=dark] *):hover {
+button.th-dark\:bg-gray-warm-11:is([theme=dark] *):hover, .th-dark\:bg-gray-true-8:is([theme=dark] *) {
     background-color: var(--hover);
 }
 .th-dark\:border-gray-warm-9:is([theme=dark] *) {
