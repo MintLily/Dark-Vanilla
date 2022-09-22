@@ -495,6 +495,22 @@ div[class*="connectedAccountIcon"] {
 }
 .anchorUnderlineOnHover-2qPutX:hover { color: var(--theme-text); }
 .text-md-semibold-3xVVGu { font-weight: 500; }
+svg[class*="discordMemberCreatedAtIconContainer"] {
+	padding: 0px;
+	background: none;
+}
+svg[class*="discordMemberCreatedAtIcon"] {
+	/* width: 28px; */
+	height: 28px;
+}
+div[class*="discordMemberCreatedAtText"] > div { display: none; }
+div[class*="discordMemberCreatedAt"] > div[class*="discordMemberCreatedAtText"] > h3 {
+	padding-top: 2px;
+	font-size: 16px;
+	font-family: inherit;
+	font-weight: 600;
+	user-select: text;
+}
 
 /* Shrink server banners to header instead of disappearing. */
 [class*="animatedContainer-"] {
