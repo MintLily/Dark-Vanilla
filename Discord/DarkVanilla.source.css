@@ -75,7 +75,7 @@
 }
 
 .info-3pQQBb::before {
-	content: 'Dark Vanilla 2.16.2';
+	content: 'Dark Vanilla 2.16.3';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -295,10 +295,13 @@ circle[style="opacity: 0.45;"] { display: none; }
 .avatarWrapperNormal-ahVUaC { top: 76px; }
 .focusLock-2tveLW .bannerSVGWrapper-qc0szY { height: 240px !important; } */
 /* Background (No profile color) */
-.userPopoutInnerWithBanner-wsoegj:not(div[class*="userPopoutInnerWithTheme"]) { background: none; background-color: var(--_dark1); }
-.userPopoutInnerNonPremium-3zrFkp { background: none; background-color: var(--_dark1); }
-.userPopoutInnerPremiumWithoutBanner-na5t_W { background: none; background-color: var(--_dark1); }
-.userPopoutInnerWithBanner-24GX6I { background: none; background-color: var(--_dark1); }
+div[class*="userPopoutInnerNonPremium"],
+div[class*="userPopoutInnerPremiumWithoutBanner"],
+div[class*="userPopoutInnerWithBanner"],
+div[class*="userPopoutInnerWithBanner"]:not(div[class*="userPopoutInnerWithTheme"]) {
+	background: none;
+	background-color: var(--_dark1);
+}
 .theme-dark.profileColors-3Y0XaR { background-color: var(--_dark1) !important; }
 /* Notes */
 :not(.input-2g-os5) > .textarea-_59yqs {
