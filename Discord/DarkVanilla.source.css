@@ -277,6 +277,7 @@ section[class*="container"][class*="themed"] { background-color: var(--_dark1); 
 .userPopoutInnerWithBanner-wsoegj:not(div[class*="userPopoutInnerWithTheme"]) { background: none; background-color: var(--_dark1); }
 .userPopoutInnerNonPremium-3zrFkp { background: none; background-color: var(--_dark1); }
 .userPopoutInnerPremiumWithoutBanner-na5t_W { background: none; background-color: var(--_dark1); }
+.userPopoutInnerWithBanner-24GX6I { background: none; background-color: var(--_dark1); }
 .theme-dark.profileColors-3Y0XaR { background-color: var(--_dark1) !important; }
 /* Notes */
 :not(.input-2g-os5) > .textarea-_59yqs {
@@ -288,7 +289,7 @@ section[class*="container"][class*="themed"] { background-color: var(--_dark1); 
 .messageInputContainer-2rGDH8 { border: none; }
 :not(.input-2g-os5) > .messageInput-1KI8l8 { background-color: var(--_dark1) !important; }
 /* Inner Background */
-.profileBadges-31rDHI, .overlayBackground-arbZMT { background-color: var(--_dark3); }
+.profileBadges-31rDHI, div[class*="overlayBackground"] { background-color: var(--_dark3); }
 .avatar-2OC07D {
 	border-color: rgba(0, 0, 0, 0.2);
 	background-color: rgba(0, 0, 0, 0.2);
@@ -299,7 +300,7 @@ section[class*="container"][class*="themed"] { background-color: var(--_dark1); 
 /* Cuz who actually uses the quick message feature? */
 .userPopout-2j1gM4 .footer-3naVBw { display: none; }
 /* Pfp Hover */
-foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
+foreignObject[mask="url(#svg-mask-avatar-status-round-80)"], foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"] {
 	background-color: rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(3px);
 	border: 0.01px solid transparent;
@@ -478,17 +479,17 @@ div.powercord-badge.powercord-badge-cutie {
 	backdrop-filter: blur(var(--blur-mac));
 }
 /* Connected Accounts */
-.connectedAccountContainer-SlCC-S {
+div[class*="connectedAccountContainer"] {
 	background-color: var(--background-fourth);
 	border-color: transparent;
 	border-radius: var(--soft-corner);
 }
-.connectedAccount-2PrNaX, .connectedAccountChildren-1H5QGc {
+div[class*="connectedAccount-"] {
 	width: 100%;
 	height: 27px;
 	flex-shrink: 0;
 }
-.connectedAccountIcon-1FXG0p {
+div[class*="connectedAccountIcon"] {
 	width: 28px;
 	height: 28px;
 }
