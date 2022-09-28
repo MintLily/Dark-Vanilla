@@ -74,7 +74,7 @@
 }
 
 .info-3pQQBb::before {
-	content: 'Dark Vanilla 2.16.4';
+	content: 'Dark Vanilla 2.16.5';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
@@ -288,7 +288,7 @@ section[class*="container"][class*="themed"] { background-color: var(--_dark1); 
 
 /* User Popout */
 #popout_128[class="theme-dark layer-2aCOJ3"] { box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.2); }
-div[class*="statusDotBackground-"][style="background-color: white;opacity: 0.7;"] { display: none; }
+div[class*="statusDotBackground-"][style="background-color: white;opacity: 0.7;"], circle[style="opacity: 0.45;"] { display: none; }
 /* Background (No profile color) */
 div[class*="userPopoutInnerNonPremium"],
 div[class*="userPopoutInnerPremiumWithoutBanner"],
