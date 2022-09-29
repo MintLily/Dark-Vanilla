@@ -1,5 +1,5 @@
-# Currently OUTDATED
-This project will be updated in due time (when I am no longer lazy)
+# Currently ~~OUTDATED~~ Discontinued
+This project (for VRChat's website) will no longer be updated.
 
 # How to
 This is meant to be used for https://vrchat.com/home or https://vrchat.net/home with [Stylus](https://add0n.com/stylus.html)
