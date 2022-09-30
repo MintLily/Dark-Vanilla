@@ -288,12 +288,12 @@ section[class*="container"][class*="themed"] { background-color: var(--_dark1); 
 
 /* User Popout */
 #popout_128[class="theme-dark layer-2aCOJ3"] { box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.2); }
-div[class*="statusDotBackground-"][style="background-color: white;opacity: 0.7;"], circle[style="opacity: 0.45;"] { display: none; }
+div[class*="statusDotBackground-"][style="background-color: white;opacity: 0.7;"] { display: none; }
 /* Background (No profile color) */
-div[class*="userPopoutInnerNonPremium"],
-div[class*="userPopoutInnerPremiumWithoutBanner"],
-div[class*="userPopoutInnerWithBanner"],
-div[class*="userPopoutInnerWithBanner"]:not(div[class*="userPopoutInnerWithTheme"]) {
+div[class*="userProfileInnerNonPremium"],
+div[class*="userProfileInnerPremiumWithoutBanner"],
+div[class*="userProfileInnerWithBanner"],
+div[class*="userProfileInnerWithBanner"]:not(div[class*="userProfileInnerWithTheme"]) {
 	background: none;
 	background-color: var(--_dark1);
 }
@@ -526,7 +526,7 @@ div[class*="discordMemberCreatedAtIcon"] { /* Guild Icon */
 	height: 28px;
 }
 div[class*="discordMemberCreatedAtText"] > div { display: none; }
-div[class*="discordMemberCreatedAt"] > div[class*="discordMemberCreatedAtText"] > h3 {
+div[class*="discordMemberCreatedAt"] > div[class*="discordMemberCreatedAtText"] > h2 {
 	padding-top: 2px;
 	font-size: 16px;
 	font-family: inherit;
