@@ -161,8 +161,9 @@
 }
 
 * { font-family: 'Baloo 2' !important; }
+
 .info-3pQQBb::before {
-	content: 'Dark Vanilla 2.16.5';
+	content: 'Dark Vanilla 2.16.7';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
