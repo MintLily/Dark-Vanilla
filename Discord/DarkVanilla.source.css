@@ -344,7 +344,7 @@ section[class*="container"][class*="themed"] { background-color: var(--_dark1); 
 #popout_128[class="theme-dark layer-2aCOJ3"] { box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.2); }
 div[class*="statusDotBackground-"][style="background-color: white;opacity: 0.7;"] { display: none; }
 /* Background (No profile color) */
-div[class*="userProfileInnerNonPremium"],
+div[class*="userProfileInnerThemedNonPremium"],
 div[class*="userProfileInnerPremiumWithoutBanner"],
 div[class*="userProfileInnerWithBanner"],
 div[class*="userProfileInnerWithBanner"]:not(div[class*="userProfileInnerWithTheme"]) {
@@ -352,22 +352,30 @@ div[class*="userProfileInnerWithBanner"]:not(div[class*="userProfileInnerWithThe
 	background-color: var(--_dark1);
 }
 .theme-dark.profileColors-3Y0XaR { background-color: var(--_dark1) !important; }
+div[class*="userPopoutOverlayBackground"] > div div[class*="messageInputContainer"] { opacity: 0.5; }
 /* Notes */
 :not(.input-2g-os5) > .textarea-_59yqs {
 	background-color: var(--_dark1) !important;
 	padding-top: 6px;
 	padding-left: 6px;
+    opacity: 0.5;
 }
 /* Message */
 .messageInputContainer-2rGDH8 { border: none; }
 :not(.input-2g-os5) > .messageInput-1KI8l8 { background-color: var(--_dark1) !important; }
 /* Inner Background */
-.profileBadges-31rDHI, div[class*="overlayBackground"] { background-color: var(--_dark3); }
+/*.profileBadges-31rDHI, div[class*="overlayBackground"] { background-color: var(--_dark3); }*/
+.profileBadges-31rDHI {
+    padding-right: 6px;
+    padding-left: 6px;
+}
 .avatar-2OC07D {
 	border-color: rgba(0, 0, 0, 0.2);
 	background-color: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(var(--blur-mac));
 }
+/* Profile Link Verified Badge */
+svg[class*="flowerStar"] path { fill: var(--theme-text-muted); }
 /* Beta Tag, Banner Edit Button */
 .betaTagHidden-3QLtKR, .betaTag-2bWvGF, .pencilContainer-11Kuga { display: none; }
 /* Cuz who actually uses the quick message feature? */
@@ -921,7 +929,6 @@ svg.addButtonIcon-3rJeaD polygon { fill: var(--theme-text); }
 }
 /* My Account */
 .settingsBanner-1eDJ5w { height: 265px; }
-.avatar-3mTjvZ { top: 235px; }
 /* User Profile */
 .bioTextArea-dDGOeC { background-color: var(--background-tertiary); }
 /* Other */
