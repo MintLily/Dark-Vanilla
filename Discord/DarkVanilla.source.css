@@ -125,6 +125,10 @@
 
 	/* nolongerPowercord - Replugged Variables */
 	--spotify-color:                        var(--theme-text);
+    
+    --font-primary: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-headline: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* devanagari */
@@ -160,10 +164,8 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-* { font-family: 'Baloo 2' !important; }
-
 .info-3pQQBb::before {
-	content: 'Dark Vanilla 2.16.7';
+	content: 'Dark Vanilla 2.16.8';
 	color: var(--theme-text-muted);
 	font-size: 12px;
 	font-weight: bold;
