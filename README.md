@@ -4,9 +4,10 @@ Simplistic Vanilla-based theme with darker colors, with a few tweaks here and th
 # Discord Installation
 
 ### OpenAsar
+0. Download [OpenAsar](https://openasar.dev/)
 1. Open OpenAsar settings
 2. Go to 'Theme' tab
-3. Paste in this ` @import url("https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css");`
+3. Paste in this `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css");`
 
 ### ~~Replugged (formerally Powercord)~~
 1. ~~Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/download/2.4.0-Powercord/Dark.Vanilla.zip) (From Releases page - *`Dark.Vanilla.zip`*)~~
