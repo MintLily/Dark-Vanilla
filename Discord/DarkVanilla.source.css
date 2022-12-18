@@ -1102,6 +1102,8 @@ div[class*="container-"][style*="hsl(139"] { background-color: var(--theme-text-
 /* Spoiler */
 .theme-dark .spoilerText-27bIiA.hidden-3B-Rum { background-color: var(--background-tertiary); }
 
+/* channelTextArea */
+[class^="channelTextArea"] [class^="buttons-"] > div:not(.expression-picker-chat-input-button):not([class^="separator-"]) { display: none !important; }
 /* Send Button */
 .sendIcon-1HcEzu {
 	color: var(--theme-text);
