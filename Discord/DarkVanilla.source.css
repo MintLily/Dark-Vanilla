@@ -1148,6 +1148,13 @@ button[class*="lookFilled"][class*="colorBrandNew"] { background-color: var(--th
 	transition: color 0.2s ;
 }
 
+/* Channel Text Area */
+div[class^="channelTextArea-"] { background: transparent !important; }
+div[class^="scrollableContainer-"] {
+    background-color: var(--_dark2);
+    border-radius: 18px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
+}
 
 /* Buttons */
 /*div[class^="inner-"] > div[class^="buttons-"] > */button[aria-label="Send a gift"] { display: none; }
