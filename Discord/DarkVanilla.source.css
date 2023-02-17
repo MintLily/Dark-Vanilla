@@ -1,5 +1,5 @@
 :root {
-    --xtheme-version:                       '2.17.0';
+    --xtheme-version:                       '2023.2.1r1'; /* Year, month, major, [r = revision] */
 	/* Self defined Variables */
 	--blur:                                 8px;
 	--blur-mac:                             18px;
@@ -125,13 +125,12 @@
 	--context-menu-radius:                  var(--soft-corner);
     --text-positive:                        var(--theme-text);
     --input-background:                     var(--_dark3);
+    --font-primary:                         "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display:                         "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-headline:                        "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 	/* nolongerPowercord - Replugged Variables */
 	--spotify-color:                        var(--theme-text);
-    
-    --font-primary: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-display: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-headline: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* devanagari */
@@ -715,6 +714,7 @@ div[class^="avatarWrapper-"]:hover {
     border-radius: var(--soft-corner);
     background-color: var(--background-modifier-selected_);
 }
+div[class^="flex-"][class*="alignStretch-"] > button:hover { background-color: var(--background-modifier-selected_); }
 
 /* Member List */
 /* Role Color Background */
@@ -1149,7 +1149,7 @@ button[class*="lookFilled"][class*="colorBrandNew"] { background-color: var(--th
 }
 
 /* Reply */
-.attachedBars-2BCP3l, .channelTextArea-1FufC0 { background: transparent !important; }
+div[class*="attachedBars-"] { background: transparent !important; }
 .replyBar-1oi75v, .threadSuggestionBar-3ExSyc {
 	background: rgba(var(--background-tertiary-rgb), 0.4);
 	backdrop-filter: blur(var(--blur));
