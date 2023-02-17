@@ -1148,6 +1148,10 @@ button[class*="lookFilled"][class*="colorBrandNew"] { background-color: var(--th
 	transition: color 0.2s ;
 }
 
+
+/* Buttons */
+/*div[class^="inner-"] > div[class^="buttons-"] > */button[aria-label="Send a gift"] { display: none; }
+
 /* Reply */
 div[class*="attachedBars-"] { background: transparent !important; }
 .replyBar-1oi75v, .threadSuggestionBar-3ExSyc {
