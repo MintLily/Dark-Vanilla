@@ -715,6 +715,13 @@ div[class^="avatarWrapper-"]:hover {
     background-color: var(--background-modifier-selected_);
 }
 div[class^="flex-"][class*="alignStretch-"] > button:hover { background-color: var(--background-modifier-selected_); }
+/* Voice Connected */
+section[class^="panels-"] > div > div[class^="container-"] { background-color: transparent; }
+div[class^="animatorTop-"] > div[class^="container-"] {
+    background-color: var(--_dark2);
+    border-radius: var(--soft-corner);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
+}
 
 /* Member List */
 /* Role Color Background */
