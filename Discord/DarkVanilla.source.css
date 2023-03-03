@@ -1,5 +1,5 @@
 :root {
-    --xtheme-version:                       '2023.3.1'; /* Year, month, major, [r = revision] */
+    --xtheme-version:                       '2023.3.1r1'; /* Year, month, major, [r = revision] */
 	/* Self defined Variables */
 	--blur:                                 8px;
 	--blur-mac:                             18px;
@@ -1251,17 +1251,18 @@ div[data-list-id="for-you"] { background-color: var(--_dark1); }
 .theme-dark .bodySection-3iDdop, .theme-light .bodySection-3iDdop, .theme-dark .row-2qQ--F { background-color: var(--background-primary); }
 
 /* Media Opening */
-@keyframes mediapopup {
+/* @keyframes mediapopup {
 	0% { backdrop-filter: blur(0px); transform: scale(0.65); opacity: 0; }
-    20% { backdrop-filter: blur(1.2px); opacity: 0.2; }
+	20% { backdrop-filter: blur(1.2px); opacity: 0.2; }
 	70% { backdrop-filter: blur(5px); transform: scale(1.012); opacity: 1; }
 	100% { backdrop-filter: blur(5px); transform: scale(1); opacity: 1; }
-}
+} */
 div[class^="backdrop-"][class*="withLayer-"][style="opacity: 0.85; background: rgb(0, 0, 0);"] { background-color: rgba(0, 0, 0, 0.45) !important; }
 div[class^="layer-"] {
-    opacity: 1;
-    animation: mediapopup 190ms ease-in-out forwards;
-	animation-delay: 80ms;
+	/* opacity: 1;
+	animation: mediapopup 190ms ease-in-out forwards;
+	animation-delay: 80ms; */
+	backdrop-filter: blur(5px);
 }
 
 /* Forums */
