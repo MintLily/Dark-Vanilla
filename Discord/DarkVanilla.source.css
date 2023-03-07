@@ -1,5 +1,5 @@
 :root {
-    --xtheme-version:                       '2023.3.1r1'; /* Year, month, major, [r = revision] */
+    --xtheme-version:                       '2023.3.2'; /* Year, month, major, [r = revision] */
 	/* Self defined Variables */
 	--blur:                                 8px;
 	--blur-mac:                             18px;
@@ -233,6 +233,12 @@ div[class*="interactiveSelected-"][class*="selected-"] {
 div[class*="interactive-"]:focus-within, div[class*="interactive-"]:hover {
     background: var(--background-modifier-hover_);
     border-radius: var(--soft-corner);
+}
+/* Guild Header Menu (Expanded) */
+div[class^="menu-"][class*="fixed-"] {
+	background-color:  var(--_dark2) !important;
+	border-radius: var(--soft-corner);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
 }
 
 /* Top Left Discord Logo Background Inactive */
@@ -568,7 +574,7 @@ svg.activeIcon-1ykRnF path { fill: var(--theme-text-muted); }
     height: 16px;
 }
 .full-motion .fade-1ICjW8.didRender-2SiRlm .labelContainer-2vJzYL.item-1OdjEX::before { display: none; }
-/* User Status / Server Info popout */
+/* User Status / Server Info popout 
 .full-motion .scale-3UGUBw.didRender-2SiRlm {
 	border-width: 1px;
 	border-radius: 4px;
@@ -583,11 +589,17 @@ svg.activeIcon-1ykRnF path { fill: var(--theme-text-muted); }
 	initial-value: 0deg;
 	inherits: false;
 }
-@keyframes border-anim { to { --angle: 360deg; } }
-/* Spotify Panel Edits */
-.powercord-spotify .spotify-seek-bar-progress { box-shadow: 0px 5px 10px var(--theme-text); }
-.powercord-spotify .spotify-seek-bar-cursor, .barInner-3dHef4 { box-shadow: 0px 0px 10px #fff; }
-img[class*="assetsLargeImageSpotify-"] { border-radius: var(--soft-corner); }
+@keyframes border-anim { to { --angle: 360deg; } }*/
+
+/* Spotify Panel / Plugin / Vanilla Things Edits */
+#vc-spotify-progress-bar > div > div > div > div[class^="barFill-"] { box-shadow: 0px 5px 10px var(--theme-text); }
+div[class*="barInner"] { box-shadow: 0px 0px 10px #fff; }
+img[class*="assetsLargeImageSpotify-"], #vc-spotify-album-image { border-radius: var(--soft-corner) !important; }
+.vc-spotify-button:hover {
+  background-color: var(--background-modifier-selected_) !important;
+  border-radius: var(--soft-corner);
+  transition: border-radius 0.1s;
+}
 
 /* Full Screen Popout */
 .body-1Ukv50, .topSection-13QKHs { background-color: var(--background-tertiary); }
@@ -1004,6 +1016,7 @@ div[class*="header-"] > div[class*="eyebrow-"] {
     font-size: 13px;
     text-decoration: underline;
 }
+div[class*="headerText-"] { overflow-x: unset; }
 /* User Profile */
 .bioTextArea-dDGOeC { background-color: var(--background-tertiary); }
 /* Other */
@@ -1251,19 +1264,9 @@ div[data-list-id="for-you"] { background-color: var(--_dark1); }
 .theme-dark .bodySection-3iDdop, .theme-light .bodySection-3iDdop, .theme-dark .row-2qQ--F { background-color: var(--background-primary); }
 
 /* Media Opening */
-/* @keyframes mediapopup {
-	0% { backdrop-filter: blur(0px); transform: scale(0.65); opacity: 0; }
-	20% { backdrop-filter: blur(1.2px); opacity: 0.2; }
-	70% { backdrop-filter: blur(5px); transform: scale(1.012); opacity: 1; }
-	100% { backdrop-filter: blur(5px); transform: scale(1); opacity: 1; }
-} */
-div[class^="backdrop-"][class*="withLayer-"][style="opacity: 0.85; background: rgb(0, 0, 0);"] { background-color: rgba(0, 0, 0, 0.45) !important; }
-div[class^="layer-"] {
-	/* opacity: 1;
-	animation: mediapopup 190ms ease-in-out forwards;
-	animation-delay: 80ms; */
-	backdrop-filter: blur(5px);
-}
+div[class^="backdrop-"][class*="withLayer-"][style="opacity: 0.85; background: rgb(0, 0, 0);"],
+div[class^="backdrop-"][class*="withLayer-"][style="opacity: 0.85; background: var(--black-500);"] { background-color: rgba(0, 0, 0, 0.45) !important; }
+div[class^="layer-"] { backdrop-filter: blur(5px); }
 
 /* Forums */
 /* Main Background */
