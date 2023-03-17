@@ -2,6 +2,7 @@
 Simplistic Vanilla-based theme with darker colors, with a few tweaks here and there.
 
 # Discord Installation
+(Not compatible with Nitro Themes)
 
 ### Vencord
 0. Download [Vencord](https://github.com/Vencord/Installer)
