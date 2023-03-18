@@ -57,62 +57,6 @@
 	--brand-experiment-90a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.9);
 	--brand-experiment-95a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.95);
 	--brand-experiment-200:                  hsl(325, calc(var(--saturation-factor, 1) * 85.6%), 97%);
-	--brand-experiment-600:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
-	--brand-experiment-560:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
-	--brand-experiment-500:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
-	--brand-experiment-400:                  hsl(297, calc(var(--saturation-factor, 1) * 15%), 50%);
-    /*--brand-100:                             hsl(240, calc(var(--saturation-factor, 1) * 77.8%), 98.2%);
-    --brand-130:                             hsl(236, calc(var(--saturation-factor, 1) * 87.5%), 96.9%);
-    --brand-160:                             hsl(235, calc(var(--saturation-factor, 1) * 84.6%), 94.9%);
-    --brand-200:                             hsl(236, calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
-    --brand-230:                             hsl(236, calc(var(--saturation-factor, 1) * 87%), 91%);*/
-    --brand-260:                             hsl(325, calc(var(--saturation-factor, 1) * 50%), 87%);
-    /*--brand-300:                             hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 85.9%);
-    --brand-330:                             hsl(235, calc(var(--saturation-factor, 1) * 85.1%), 81.6%);
-    --brand-345:                             hsl(235, calc(var(--saturation-factor, 1) * 85.2%), 78.8%);
-    --brand-360:                             hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
-    --brand-400:                             hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
-    --brand-430:                             hsl(235, calc(var(--saturation-factor, 1) * 85.7%), 69.8%);
-    --brand-460:                             hsl(235, calc(var(--saturation-factor, 1) * 85.5%), 67.5%);
-    --brand-500:                             hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
-    --brand-530:                             hsl(235, calc(var(--saturation-factor, 1) * 66.7%), 58.8%);
-    --brand-560:                             hsl(235, calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
-    --brand-600:                             hsl(235, calc(var(--saturation-factor, 1) * 46.7%), 44.1%);
-    --brand-630:                             hsl(235, calc(var(--saturation-factor, 1) * 46.7%), 38.2%);
-    --brand-660:                             hsl(235, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
-    --brand-700:                             hsl(235, calc(var(--saturation-factor, 1) * 47%), 25.9%);
-    --brand-730:                             hsl(235, calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
-    --brand-760:                             hsl(234, calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
-    --brand-800:                             hsl(235, calc(var(--saturation-factor, 1) * 47.5%), 19.4%);
-    --brand-830:                             hsl(235, calc(var(--saturation-factor, 1) * 47.4%), 14.9%);
-    --brand-860:                             hsl(235, calc(var(--saturation-factor, 1) * 46.9%), 9.6%);
-    --brand-900:                             hsl(233, calc(var(--saturation-factor, 1) * 50%), 3.1%);
-    --brand-new-100:                         hsl(240, calc(var(--saturation-factor, 1) * 77.8%), 98.2%);
-    --brand-new-130:                         hsl(236, calc(var(--saturation-factor, 1) * 87.5%), 96.9%);
-    --brand-new-160:                         hsl(235, calc(var(--saturation-factor, 1) * 84.6%), 94.9%);
-    --brand-new-200:                         hsl(236, calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
-    --brand-new-230:                         hsl(236, calc(var(--saturation-factor, 1) * 87%), 91%);
-    --brand-new-260:                         hsl(235, calc(var(--saturation-factor, 1) * 86.2%), 88.6%);
-    --brand-new-300:                         hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 85.9%);
-    --brand-new-330:                         hsl(235, calc(var(--saturation-factor, 1) * 85.1%), 81.6%);
-    --brand-new-345:                         hsl(235, calc(var(--saturation-factor, 1) * 85.2%), 78.8%);
-    --brand-new-360:                         hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
-    --brand-new-400:                         hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
-    --brand-new-430:                         hsl(235, calc(var(--saturation-factor, 1) * 85.7%), 69.8%);
-    --brand-new-460:                         hsl(235, calc(var(--saturation-factor, 1) * 85.5%), 67.5%);
-    --brand-new-500:                         hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
-    --brand-new-530:                         hsl(235, calc(var(--saturation-factor, 1) * 66.7%), 58.8%);
-    --brand-new-560:                         hsl(235, calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
-    --brand-new-600:                         hsl(235, calc(var(--saturation-factor, 1) * 46.7%), 44.1%);
-    --brand-new-630:                         hsl(235, calc(var(--saturation-factor, 1) * 46.7%), 38.2%);
-    --brand-new-660:                         hsl(235, calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
-    --brand-new-700:                         hsl(235, calc(var(--saturation-factor, 1) * 47%), 25.9%);
-    --brand-new-730:                         hsl(235, calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
-    --brand-new-760:                         hsl(234, calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
-    --brand-new-800:                         hsl(235, calc(var(--saturation-factor, 1) * 47.5%), 19.4%);
-    --brand-new-830:                         hsl(235, calc(var(--saturation-factor, 1) * 47.4%), 14.9%);
-    --brand-new-860:                         hsl(235, calc(var(--saturation-factor, 1) * 46.9%), 9.6%);
-    --brand-new-900:                         hsl(233, calc(var(--saturation-factor, 1) * 50%), 3.1%);*/
     --mention-background:                   rgba(var(--theme-text-muted-rgb), 0.3);
 	--control-brand-foreground:             var(--theme-text-muted);
 	--divider-color:                        var(--theme-text);
@@ -173,14 +117,6 @@
 	font-weight: bold;
 	line-height: 16px;
 }
-
-/* Quick Fix for something that is affecting me fo some unknown reason */
-svg > [d='M10 0C4.486 0 0 4.486 0 10C0 15.515 4.486 20 10 20C15.514 20 20 15.515 20 10C20 4.486 15.514 0 10 0ZM9 4H11V11H9V4ZM10 15.25C9.31 15.25 8.75 14.691 8.75 14C8.75 13.31 9.31 12.75 10 12.75C10.69 12.75 11.25 13.31 11.25 14C11.25 14.691 10.69 15.25 10 15.25Z'] {
-	display: none;
-}
-
-/* Just a little funny easter-egg-ish thing 
-.powercord-account-item:not(a)::after { content: ' - The Mega Cutie~'; }*/
 
 /* Windows 10 TitleBar */
 div[class*="titleBar-"] {
@@ -574,22 +510,6 @@ svg.activeIcon-1ykRnF path { fill: var(--theme-text-muted); }
     height: 16px;
 }
 .full-motion .fade-1ICjW8.didRender-2SiRlm .labelContainer-2vJzYL.item-1OdjEX::before { display: none; }
-/* User Status / Server Info popout 
-.full-motion .scale-3UGUBw.didRender-2SiRlm {
-	border-width: 1px;
-	border-radius: 4px;
-	border-image-slice: 1;
-	border-image-source: linear-gradient(var(--angle), #51FF3B, #9fffe3, #9fffe3, #EECCE0);
-	border-style: solid;
-	margin-bottom: 20px;
-	animation: border-anim var(--anim-speed) ease infinite;
-}
-@property --angle {
-	syntax: '<angle>';
-	initial-value: 0deg;
-	inherits: false;
-}
-@keyframes border-anim { to { --angle: 360deg; } }*/
 
 /* Spotify Panel / Plugin / Vanilla Things Edits */
 #vc-spotify-progress-bar > div > div > div > div[class^="barFill-"] { box-shadow: 0px 5px 10px var(--theme-text); }
