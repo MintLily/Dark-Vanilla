@@ -8,7 +8,6 @@
 	--_dark3:                               #131719;
 	--theme-text:                           #EECCE0;
 	--theme-text-muted:                     #906D92;
-	--anim-speed:                           6s !important;
 	--soft-corner:                          0.6rem;
 	--soft-corner-roles:                    0.45rem;
 	--background-primary-rgb:               25, 31, 34;
@@ -759,7 +758,8 @@ div[class*="backgroundFlash"] {
 
 /* Pill Color Anim */
 .item-2LIpTv {
-	background: linear-gradient(270deg, #51ff3b, #9fffe3, #eecce0);
+	background-color: var(--theme-text);
+	/* background: linear-gradient(270deg, #51ff3b, #9fffe3, #eecce0);
 	background-size: 600% 600%;
 
 	-webkit-animation: pill-anim 30s ease infinite;
@@ -780,7 +780,7 @@ div[class*="backgroundFlash"] {
 @keyframes pill-anim {
 	0%{background-position:0% 50%}
 	50%{background-position:100% 50%}
-	100%{background-position:0% 50%}
+	100%{background-position:0% 50%} */
 }
 
 /* Mention @ Icon - Cynthia 🇨🇿 */
