@@ -57,6 +57,12 @@
 	--brand-experiment-90a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.9);
 	--brand-experiment-95a:                 hsla(325, calc(var(--saturation-factor, 1) * 85.6%), 87%, 0.95);
 	--brand-experiment-200:                  hsl(325, calc(var(--saturation-factor, 1) * 85.6%), 97%);
+	--brand-experiment-600:                  hsl(297, calc(var(--saturation-factor, 1) * 15%),   50%);
+	--brand-experiment-560:                  hsl(297, calc(var(--saturation-factor, 1) * 15%),   50%);
+	--brand-experiment-500:                  hsl(297, calc(var(--saturation-factor, 1) * 15%),   50%);
+	--brand-experiment-400:                  hsl(297, calc(var(--saturation-factor, 1) * 15%),   50%);
+    --brand-260:                             hsl(325, calc(var(--saturation-factor, 1) * 50%),   87%);
+    --brand-260-hsl:                             335  calc(var(--saturation-factor, 1) * 86.2%)  88.6%;
     --mention-background:                   rgba(var(--theme-text-muted-rgb), 0.3);
 	--control-brand-foreground:             var(--theme-text-muted);
 	--divider-color:                        var(--theme-text);
@@ -170,11 +176,15 @@ div[class*="interactive-"]:focus-within, div[class*="interactive-"]:hover {
     background: var(--background-modifier-hover_);
     border-radius: var(--soft-corner);
 }
-/* Guild Header Menu (Expanded) */
-div[class^="menu-"][class*="fixed-"] {
+/* Guild Header Menu, Guild, Message, Message, User, Channel Context Menu */
+div[class^="menu-"][class*="fixed-"],
+div[class^="menu-"]#guild-context,
+div[class^="menu-"]#message,
+div[class^="menu-"]#user-context,
+div[class^="menu-"]#channel-context {
 	background-color:  var(--_dark2) !important;
 	border-radius: var(--soft-corner);
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
 }
 
 /* Top Left Discord Logo Background Inactive */
@@ -403,7 +413,7 @@ svg[class*="flowerStar"] path { fill: var(--theme-text-muted); }
 /* Pfp Hover */
 foreignObject[mask="url(#svg-mask-avatar-status-round-80)"], foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"] {
 	background-color: rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(3px);
+	backdrop-filter: blur(var(--blur));
 	border: 0.01px solid transparent;
 	border-radius: 80px;
 }
@@ -653,7 +663,10 @@ div[class^="avatarWrapper-"]:hover {
     border-radius: var(--soft-corner);
     background-color: var(--background-modifier-selected_);
 }
-div[class^="flex-"][class*="alignStretch-"] > button:hover { background-color: var(--background-modifier-selected_); }
+div[class^="flex-"][class*="alignStretch-"] > button:hover {
+	border-radius: var(--soft-corner);
+    background-color: var(--background-modifier-selected_);
+}
 /* Voice Connected */
 section[class^="panels-"] > div > div[class^="container-"] { background-color: transparent; }
 div[class^="animatorTop-"] > div[class^="container-"] {
@@ -1151,7 +1164,6 @@ div[data-list-id="for-you"] { background-color: var(--_dark1); }
 .theme-dark .header-145e10 .tabBar-1qdMr5 .tab-TRrPC8.active-1grPyy { background: var(--background-modifier-selected_); }
 .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP) {
     background: var(--background-modifier-hover_);
-    
 	border-radius: var(--soft-corner);
 }
 
@@ -1174,7 +1186,7 @@ div[data-list-id="for-you"] { background-color: var(--_dark1); }
 .problems-CvGwpb.slideIn-VAD-dp, .tip-1AwED_ > .keybindShortcut-3zF1P9.keybind-2rkdVo { display: none; }
 .container-2RRFHK.fixClipping-3GOd_d {
 	background: rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(var(--blur));
 }
 
 /* Discord Game Store Preview */
@@ -1186,7 +1198,7 @@ div[data-list-id="for-you"] { background-color: var(--_dark1); }
 /* Media Opening */
 div[class^="backdrop-"][class*="withLayer-"][style="opacity: 0.85; background: rgb(0, 0, 0);"],
 div[class^="backdrop-"][class*="withLayer-"][style="opacity: 0.85; background: var(--black-500);"] { background-color: rgba(0, 0, 0, 0.45) !important; }
-div[class^="layer-"] { backdrop-filter: blur(5px); }
+div[class^="layer-"] { backdrop-filter: blur(var(--blur)); }
 
 /* Forums */
 /* Main Background */
@@ -1247,6 +1259,29 @@ img[src="/assets/9a43e631d506ae4818ecefc825dc02ad.svg"],button[data-name~=heavy_
 	to { left: 10px; top: 40px; opacity: 1; display: block; }
 }
 
+/* Lily's Comfi Corner */
+[aria-label^="Lily's Comfi Corner"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::before {
+	content: "__";
+	background: url("https://i.mintlily.lgbt/MintMod_sm.png") center / 100% no-repeat;
+	margin-right: 4px;
+	color: transparent;
+}
+[aria-label^="Lily's Comfi Corner"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::after {
+	content: "Mint is the Best - Elly is best girl~";
+	font-size: 12px;
+	position: absolute;
+	background-color: var(--background-floating);
+	padding: 5px 10px;
+	border-radius: 4px;
+	opacity: 0;
+	display: none;
+	animation: tooltip 0.3s forwards;
+}
+[aria-label^="Lily's Comfi Corner"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr:hover::after {
+	opacity: 1;
+	display: block;
+}
+
 /* Minty Labs */
 [aria-label^="Minty Labs"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::before {
 	content: "__";
@@ -1269,6 +1304,7 @@ img[src="/assets/9a43e631d506ae4818ecefc825dc02ad.svg"],button[data-name~=heavy_
 	opacity: 1;
 	display: block;
 }
+
 /* BTK */
 [aria-label^="Bono's Tool Kit"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::before {
 	content: "__";
@@ -1291,6 +1327,7 @@ img[src="/assets/9a43e631d506ae4818ecefc825dc02ad.svg"],button[data-name~=heavy_
 	opacity: 1;
 	display: block;
 }
+
 /* Totally Wholesome */
 [aria-label^="Totally Wholesome"] .container-1-ERn5 .header-3OsQeK .name-3Uvkvr::before {
 	content: "__";
