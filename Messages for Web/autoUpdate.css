@@ -1,9 +1,8 @@
 :root {
     --blur: 8px;
-    
     --ThemeName: "Dark Vanilla";
-    --author: "Lily (MintLily#0001)";
-    --version: "1.0.0";
+    --author: "Lily (Discord: mintlily)";
+    --version: "1.1.0";
 }
 
 body.dark-theme {
@@ -13,6 +12,13 @@ body.dark-theme {
     --mat-menu-color: #EECCE0;
     --voip-audio-controls-dropdown-accent-color: #EECCE0;
     --mat-snackbar-border-color: #fff;
+}
+
+.logo-link[_ngcontent-ng-c3253505235]:after {
+    content: '' var(--ThemeName) ' v' var(--version);
+    /*white-space: pre-wrap;*/
+    font-size: 8pt;
+    color: #906D92;
 }
 
 body .mat-menu-panel {
@@ -67,6 +73,7 @@ body.dark-theme mw-main-nav{
 
 body.dark-theme mw-main-landing {
     --main-landing-image-fill-color: #EECCE0;
+    --main-landing-host-bg-color: #191F22;
 }
 
 body.dark-theme mws-conversation-list-item-menu {
@@ -124,6 +131,55 @@ body.dark-theme mws-picker-wrapper {
     --picker-tab-label-active-color: #EECCE0;
     --tab-header-border-color: #5f6368;
 }
+
+.dark-theme .mdc-menu-surface {
+    background-color: rgba(19, 23, 25, 0.6);
+    backdrop-filter: blur(var(--blur));
+    padding: 15px;
+    border-radius: 1rem;
+}
+.dark-theme .mat-mdc-menu-item-highlighted:not([disabled]), .dark-theme .mat-mdc-menu-item.cdk-keyboard-focused:not([disabled]), .dark-theme .mat-mdc-menu-item.cdk-program-focused:not([disabled]), .dark-theme .mat-mdc-menu-item:hover:not([disabled]) {
+    background-color: rgba(238, 204, 224, 0.3);
+    border-radius: 1rem;
+    
+}
+
+.cdk-overlay-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(var(--blur));
+}
+
+body .mat-mdc-dialog-container.mat-mdc-dialog-container {
+    --mdc-dialog-container-color: #191F22;
+}
+
+body.dark-theme mws-dialog {
+    --dialog-confirm-bg-color: #906D92;
+    --dialog-confirm-color: #EECCE0;
+    --dialog-content-link-color: #EECCE0;
+}
+
+.dark-theme .gmat-mdc-button.mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: #906D92;
+    color: #eee;
+    border-radius: 0.785rem;
+}
+.add-people-icon[_ngcontent-ng-c134966928] {
+    fill: #EECCE0;
+    border-color: #EECCE0;
+}
+
+.list-item.selected[_ngcontent-ng-c3948761306]:focus, .list-item.selected[_ngcontent-ng-c3948761306]:hover, .selected[_ngcontent-ng-c3948761306] {
+    background-color: rgba(238, 204, 224, 0.2);
+}
+[_nghost-ng-c3948761306] .list-item[_ngcontent-ng-c3948761306]:focus:not(.selected), body:not([input-type="TOUCH"]) [_nghost-ng-c3948761306] .list-item[_ngcontent-ng-c3948761306]:hover:not(.selected) {
+    background-color: rgba(238, 204, 224, 0.3);
+}
+
+.lightbox-dialog-container .mat-mdc-dialog-container.mat-mdc-dialog-container {
+    background-color: transparent;
+}
+
 /* Blur did not work
 .picker-wrapper.box-styled {
     backdrop-filter: blur(var(--blur)) !important;
