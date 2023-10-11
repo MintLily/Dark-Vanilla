@@ -6,5 +6,10 @@
 4. Reload VRCX
 5. And you're done
 
+## Method 2
+1. Go to Settings
+2. Appearance
+3. Theme mode: Dark Vanilla
+
 ### Note
 This version will pull my latest updates from GitHub, therefore you dont have to update the file ever time.

@@ -4,7 +4,7 @@ Simplistic Vanilla-based theme with darker colors, with a few tweaks here and th
 # Discord Installation
 *(Not fully compatible with Nitro Themes)*
 
-### Vencord
+### Vencord (Developement Focus)
 0. Download and Install [Vencord](https://github.com/Vencord/Installer)
 1. Open Discord Settings then **Themes** under the Vencord section
 2. Input this URL in the URL textbox `https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css`
@@ -34,12 +34,17 @@ Simplistic Vanilla-based theme with darker colors, with a few tweaks here and th
 <img src="https://i.mintlily.lgbt/DarkVanilla_Aug2022_Preview.png" />
 
 # VRCX Installation
-
+## Method 1
 1. Save the File [here](https://raw.githubusercontent.com/MintLily/Dark-Vanilla/main/VRCX/custom.css) as `custom.css`
 2. Open your File Explorer and go to `%AppData%\VRCX\`
 3. Place the `custom.css` in that folder (the final path will be `%AppData%\VRCX\custom.css`
 4. Reload VRCX
 5. And you're done
+
+## Method 2
+1. Go to Settings
+2. Appearance
+3. Theme mode: Dark Vanilla
 
 <img src="https://i.mintlily.lgbt/VRCX_jSgTVS0sz8.png" />
 

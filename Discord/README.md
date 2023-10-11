@@ -1,7 +1,7 @@
 # Discord Installation
-(Not compatible with Nitro Themes)
+(Not fully compatible with Nitro Themes)
 
-### Vencord
+### Vencord (Developement Focus)
 0. Download [Vencord](https://github.com/Vencord/Installer)
 1. Open Discord Settings then **Themes** under the Vencord section
 2. Input this URL in the URL textbox `https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css`
