@@ -756,7 +756,7 @@ ul[class*="channelAttachmentArea_"] {
 	font-size: 0;
 	color: transparent;
 	transition: font-size 0.2s 0.1s, color 0.2s, padding 0.4s 0.1s;
-	background-color: rgba(var(var(--_dark3)-rgb), 0.6);
+	background-color: rgba(var(--background-tertiary-rgb), 0.6);
 	backdrop-filter: blur(var(--blur-mac));
 	z-index: 100;
 }
@@ -1068,7 +1068,7 @@ div[class^="imageWrapper_"][class*="clickable_"] {
 }
 
 div[class^="hoverButtonGroup_"] {
-	background-color: rgba(var(var(--_dark3)-rgb), 0.6);
+	background-color: rgba(var(--background-tertiary-rgb), 0.6);
 	backdrop-filter: blur(var(--blur));
 	border-radius: var(--soft-corner);
 }
@@ -1148,7 +1148,7 @@ div[class*="attachedBars_"] {
 
 .replyBar_b64d74,
 .threadSuggestionBar_b633f7 {
-	background: rgba(var(var(--_dark3)-rgb), 0.4);
+	background: rgba(var(--background-tertiary-rgb), 0.4);
 	backdrop-filter: blur(var(--blur));
 }
 
