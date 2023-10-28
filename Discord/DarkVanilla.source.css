@@ -1084,7 +1084,7 @@ div[class^="markup_"]>pre>div {
 
 /* Video Playback */
 div[class^="audioControls_"],
-div[class^="videoControls_"] {
+div[class^="videoControls_"]:not(.videoControls__40f61) {
 	backdrop-filter: blur(var(--blur));
 }
 
