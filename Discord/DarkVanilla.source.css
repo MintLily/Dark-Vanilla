@@ -1,5 +1,5 @@
 :root {
-	--xtheme-version: '2023.10.4';
+	--xtheme-version: '4.1.0';
 	/* Year, month, major, [r = revision] */
 	/* Self defined Variables */
 	--blur: 8px;
@@ -66,6 +66,7 @@
 	--brand-500: var(--theme-text);
 	--brand-260: hsl(325, calc(var(--saturation-factor, 1) * 50%), 87%);
 	--brand-260-hsl: 335 calc(var(--saturation-factor, 1) * 86.2%) 88.6%;
+	--primary-630: var(--_dark2);
 	--mention-background: rgba(var(--theme-text-muted-rgb), 0.3);
 	--control-brand-foreground: var(--theme-text-muted);
 	--divider-color: var(--theme-text);
@@ -245,7 +246,8 @@ div[class^="menu_"]#channel-context {
 }
 
 /* Top Left Discord Logo Background Inactive */
-div[class^="childWrapper_"] {
+div[data-list-item-id="guildsnav___home"]>div[class^="childWrapper_"],
+div[data-list-item-id="guildsnav___favorites"]>div[class^="childWrapper_"] {
 	background-color: rgba(var(--theme-text-rgb), 0.35);
 }
 
@@ -373,8 +375,6 @@ div[role=listbox][class*="popout"]>div[role="option"][aria-selected="true"] {
 	background-color: var(--background-modifier-selected_);
 }
 
-
-
 /* Switch Toggles */
 div[class*="container_"][class*="checked_"] {
 	background-color: var(--theme-text-muted) !important;
@@ -392,6 +392,8 @@ div[class*="container_"]>svg>svg>path {
 #popout_4397[class="theme-dark layer_ec16dd"] {
 	box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.2);
 }
+
+/* Normal */
 
 /* Background (No profile color) */
 div[class*="userProfileInnerThemedNonPremium_"] {
@@ -460,10 +462,63 @@ img[class*="assetsLargeImageSpotify_"],
 	transition: border-radius 0.1s;
 }
 
+#vc-spotify-player {
+	background: transparent !important;
+	position: relative;
+}
+
+#vc-spotify-player::before,
+#vc-spotify-player::after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-color: transparent;
+}
+
+#vc-spotify-player::before {
+	background: var(--vc-spotify-track-image);
+	background-size: cover;
+	background-position: center;
+}
+
+#vc-spotify-player::after {
+	backdrop-filter: blur(var(--blur)) brightness(40%);
+}
+
+#vc-spotify-player .barFill__30e17 {
+	background: var(--vc-spotify-track-image);
+	background-size: contain;
+	backdrop-filter: blur(var(--blur)) brightness(250%);
+	opacity: 0.4;
+	border-radius: var(--soft-corner);
+}
+
+#vc-spotify-player .grabber_d2868c {
+	opacity: 1 !important;
+}
+
+#vc-spotify-player .grabber_d2868c::after {
+	position: absolute;
+	background: var(--vc-spotify-track-image);
+	background-size: 10px 10px;
+	backdrop-filter: blur(var(--blur));
+	overflow: hidden !important;
+}
+
 /* Server Roles */
 .role__631a3:not(.addButton_c648bf) {
-	background-color: var(--_dark2);
-	border: 0.025rem solid var(--_dark2);
+	background:
+		linear-gradient(var(--_dark2) 0 0) padding-box,
+		linear-gradient(to right, var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color)) border-box;
+	border: 0.025rem solid transparent;
 	border-radius: var(--soft-corner-roles);
 }
 
@@ -484,6 +539,20 @@ img[class*="assetsLargeImageSpotify_"],
 div[class*="connectedAccountContainer"] {
 	background-color: rgba(255, 255, 255, 0.05);
 	border-color: transparent;
+	border-radius: var(--soft-corner);
+}
+
+/* User Popout Outer (Bottom Left) */
+div[class^="userPopoutOverlayBackground_"]>.menu_dc52c6 {
+	background-color: transparent;
+}
+
+.menu__5cf7f .menuItemFocused__1490f {
+	background-color: var(--background-modifier-hover_);
+	border-radius: var(--soft-corner);
+}
+
+.menu_dc52c6 {
 	border-radius: var(--soft-corner);
 }
 
@@ -1073,6 +1142,16 @@ div[class^="hoverButtonGroup_"] {
 	border-radius: var(--soft-corner);
 }
 
+/* Re-enable size changing videos */
+.attachmentContentItem_ef9fc2 {
+	width: unset !important;
+	height: unset !important;
+}
+
+.loadingOverlay__4d818 {
+	aspect-ratio: unset !important
+}
+
 /* Code Markup */
 div[class^="markup_"]>pre {
 	border-radius: var(--soft-corner);
@@ -1130,8 +1209,28 @@ div[class^="channelTextArea_"] {
 	background: transparent !important;
 }
 
-div[class^="scrollableContainer_"] {
+div[class^="scrollableContainer_"]:not(div[class^="vc-rdb-input"] > div) {
 	background-color: var(--_dark2);
+	border-radius: 18px;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
+}
+
+div[class^="section_"]>div[class*="messageInputContainer_"] {
+	margin-top: 6px;
+	margin-bottom: 12px;
+	resize: none;
+	overflow: hidden;
+	background: transparent;
+	border: 1px solid var(--profile-message-input-border-color);
+	border-radius: 8px;
+}
+
+.divider__2bbbc {
+	background-color: var(--profile-message-input-border-color);
+}
+
+/* Inline Emoji Suggestion */
+.autocomplete__0c75a {
 	border-radius: 18px;
 	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
 }
@@ -1160,6 +1259,10 @@ div[class^="messagesPopoutWrap_"] {
 	width: 30vw;
 	border: 0.1px solid transparent;
 	border-radius: var(--soft-corner);
+}
+
+.messageGroupWrapper_f8c6e9 {
+	background-color: var(--_dark1);
 }
 
 .header_f5cc88 {
@@ -1232,38 +1335,32 @@ textarea[style^="padding-right: 31.69px"] {
 	border-radius: var(--soft-corner);
 }
 
-/* Custom Server Icons */
-@keyframes tooltip {
-	from {
-		left: 5px;
-		top: 35px;
-		opacity: 0;
-		display: none;
-	}
-
-	to {
-		left: 10px;
-		top: 40px;
-		opacity: 1;
-		display: block;
-	}
+/* Channels & Roles Menu Page */
+.theme-dark .container__10dc7,
+.theme-dark .header__60bef,
+.theme-dark .scrollerContainer_bf5dbd,
+.theme-dark .emptyPage__3e15d {
+	background-color: var(--_dark3);
 }
 
+/* Custom Server Icons */
 /* Lily's Comfy Corner */
-[aria-label^="Lily's Comfy Corner"] .name_c08dbc::before {
+[aria-label^="The Lily Pad"] .name_c08dbc::before {
 	content: "__";
 	background: url("https://i.mintlily.lgbt/MintMod_sm.png") center / 100% no-repeat;
 	margin-right: 4px;
 	color: transparent;
 }
 
+/* Minty Labs */
 [aria-label^="Minty Labs"] .name_c08dbc::before {
 	content: "__";
-	background: url("https://mintylabs.dev/assets/img/Minty%20Labs_Final_512x.png") center / 100% no-repeat;
+	background: url("https://i.mintlily.lgbt/MintMod_sm.png") center / 100% no-repeat;
 	margin-right: 4px;
 	color: transparent;
 }
 
+/* Totally Wholesome */
 [aria-label^="Totally Wholesome"] .name_c08dbc::before {
 	content: "__";
 	background: url("https://i.mintlily.lgbt/TW_Logo.png") center / 100% no-repeat;
