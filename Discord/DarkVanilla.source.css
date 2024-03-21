@@ -1,5 +1,5 @@
 :root {
-	--xtheme-version: '4.1.0';
+	--xtheme-version: '4.1.1';
 	/* Year, month, major, [r = revision] */
 	/* Self defined Variables */
 	--blur: 8px;
@@ -1142,7 +1142,7 @@ div[class^="hoverButtonGroup_"] {
 	border-radius: var(--soft-corner);
 }
 
-/* Re-enable size changing videos */
+/* Re-enable size changing videos 
 .attachmentContentItem_ef9fc2 {
 	width: unset !important;
 	height: unset !important;
@@ -1150,7 +1150,7 @@ div[class^="hoverButtonGroup_"] {
 
 .loadingOverlay__4d818 {
 	aspect-ratio: unset !important
-}
+}*/
 
 /* Code Markup */
 div[class^="markup_"]>pre {
