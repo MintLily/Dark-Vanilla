@@ -18,8 +18,8 @@
 	--dv_soft-corner-roles: 0.45rem;
 	--background-primary-rgb: 25, 31, 34;
 	--background-tertiary-rgb: 19, 23, 25;
-	--background-modifier-selected_: rgba(var(--dv_theme-text-rgb), 0.2);
-	--background-modifier-hover_: rgba(var(--dv_theme-text-rgb), 0.3);
+	--dv_background-modifier-selected: rgba(var(--dv_theme-text-rgb), 0.2);
+	--dv_background-modifier-hover: rgba(var(--dv_theme-text-rgb), 0.3);
 	--font-primary: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-display: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-headline: "Baloo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -231,13 +231,13 @@ a[href]:not(a[aria-label], a[data-list-item-id]):hover {
 
 /* Private Channel Selection */
 div[class*="interactiveSelected_"][class*="selected_"] {
-	background: var(--background-modifier-selected_);
+	background: var(--dv_background-modifier-selected);
 	border-radius: var(--dv_soft-corner);
 }
 
 div[class*="interactive_"]:focus-within,
 div[class*="interactive_"]:hover {
-	background: var(--background-modifier-hover_);
+	background: var(--dv_background-modifier-hover);
 	border-radius: var(--dv_soft-corner);
 }
 
@@ -278,11 +278,11 @@ div[class*="inspector_"] {
 /* GIFs Stickers Emoji NavTab Buttons */
 button[class*="navButtonActive_"],
 button[class*="navButtonActive_"]:hover {
-	background: var(--background-modifier-selected_);
+	background: var(--dv_background-modifier-selected);
 }
 
 button[class*="navButton_"]:hover {
-	background: var(--background-modifier-selected_);
+	background: var(--dv_background-modifier-selected);
 	border-radius: 4px;
 }
 
@@ -302,7 +302,7 @@ button[class*="navButton_"]:hover {
 div[class*="categoryItemDefaultCategorySelected_"],
 div[class*="categoryItemDefaultCategorySelected_"]:hover,
 .emojiItem_b15dee.emojiItemSelected__1a09a {
-	background-color: var(--background-modifier-selected_);
+	background-color: var(--dv_background-modifier-selected);
 }
 
 /* Diversity Selection */
@@ -374,11 +374,11 @@ div[role=listbox][class*="popout"] {
 }
 
 div[role=listbox][class*="popout"]>div[role="option"]:hover {
-	background-color: var(--background-modifier-hover_);
+	background-color: var(--dv_background-modifier-hover);
 }
 
 div[role=listbox][class*="popout"]>div[role="option"][aria-selected="true"] {
-	background-color: var(--background-modifier-selected_);
+	background-color: var(--dv_background-modifier-selected);
 }
 
 /* Switch Toggles */
@@ -467,7 +467,7 @@ img[class*="assetsLargeImageSpotify_"],
 }
 
 .vc-spotify-button:hover {
-	background-color: var(--background-modifier-selected_) !important;
+	background-color: var(--dv_background-modifier-selected) !important;
 	border-radius: var(--dv_soft-corner);
 	transition: border-radius 0.1s;
 }
@@ -540,8 +540,8 @@ button[class*="addButton_"] {
 }
 
 button[class*="addButton_"]:hover {
-	background-color: var(--background-modifier-hover_);
-	border: 0.025rem solid var(--background-modifier-hover_);
+	background-color: var(--dv_background-modifier-hover);
+	border: 0.025rem solid var(--dv_background-modifier-hover);
 	transition: background 0.1s;
 }
 
@@ -563,7 +563,7 @@ div[class^="userPopoutOverlayBackground_"]>.menu_dc52c6 {
 }
 
 div[class*="menuItemFocused__"] {
-	background-color: var(--background-modifier-hover_);
+	background-color: var(--dv_background-modifier-hover);
 	border-radius: var(--dv_soft-corner);
 }
 
@@ -611,7 +611,7 @@ header[class*="header"] {
 div[class*="modeSelected"]>div>a[data-list-item-id^="channels"][class^="link"],
 /* Server Page Menus */
 li[class*="modeSelected"]>div[class^="link"] {
-	background-color: var(--background-modifier-selected_);
+	background-color: var(--dv_background-modifier-selected);
 	border-radius: var(--dv_soft-corner);
 }
 
@@ -619,7 +619,7 @@ div[class*="wrapper"]:hover>div>a[data-list-item-id^="channels"][class^="link"],
 div[class*="typeThread"]:hover>div[data-list-item-id^="channels"][class^="link"],
 /* Server Page Menus */
 li[class*="wrapper"]:hover>div[class^="link"] {
-	background-color: var(--background-modifier-hover_);
+	background-color: var(--dv_background-modifier-hover);
 	border-radius: var(--dv_soft-corner);
 }
 
@@ -640,12 +640,12 @@ section[class^="panels_"]>div {
 
 div[class^="avatarWrapper_"]:hover {
 	border-radius: var(--dv_soft-corner);
-	background-color: var(--background-modifier-selected_);
+	background-color: var(--dv_background-modifier-selected);
 }
 
 div[class^="flex_"][class*="alignStretch_"]>button:hover {
 	border-radius: var(--dv_soft-corner);
-	background-color: var(--background-modifier-selected_);
+	background-color: var(--dv_background-modifier-selected);
 }
 
 /* Voice Connected */
@@ -878,7 +878,7 @@ div[class*="tierHeaderLocked_"] {
 
 div[class]>div[class^="grid_"]>div[class^="wrapper_"]:focus-within,
 div[class]>div[class^="grid_"]>div[class^="wrapper_"]:hover {
-	background-color: var(--background-modifier-hover_);
+	background-color: var(--dv_background-modifier-hover);
 }
 
 div[class*="tierBody_"],
@@ -974,13 +974,13 @@ div[class^="changeDetails_"] {
 /* === Settings Opened === */
 .topPill__63ad4 .themed_b957e8.selected_a523ff.item__48dda,
 .side_b4b3f6 .themed_b957e8.selected_a523ff.item__48dda {
-	background: var(--background-modifier-selected_);
+	background: var(--dv_background-modifier-selected);
 	border-radius: var(--dv_soft-corner);
 }
 
 .topPill__0cdf1 .themed_b957e8.item__48dda:hover:not(.disabled__85bca),
 .side_b4b3f6 .themed_b957e8.item__48dda:hover:not(.disabled__85bca) {
-	background: var(--background-modifier-hover_);
+	background: var(--dv_background-modifier-hover);
 	border-radius: var(--dv_soft-corner);
 }
 
@@ -1001,7 +1001,7 @@ div[class*="headerText_"] {
 
 /* Privacy & Safety */
 div[class*="itemFilled_"][aria-checked=true] {
-	background-color: var(--background-modifier-selected_);
+	background-color: var(--dv_background-modifier-selected);
 }
 
 /* Authorized Apps */
@@ -1146,7 +1146,7 @@ div[class*="audioControls_"] {
 
 div[class^="hoverButtonGroup__"],
 div[class^="hoverButtonGroup__"][class*="nonMediaAttachment_"] {
-	background-color: var(--background-modifier-hover_);
+	background-color: var(--dv_background-modifier-hover);
 }
 
 /* Images in Message */

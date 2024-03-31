@@ -2,7 +2,7 @@
 Simplistic Vanilla-based theme with darker colors, with a few tweaks here and there.
 
 # Discord Installation
-*(Not fully compatible with Nitro Themes)*
+*(Not fully compatible with Default Nitro Themes)*
 
 ### Vencord/Vesktop (Developement Focus)
 0. Download and Install [Vencord](https://github.com/Vencord/Installer)
@@ -23,6 +23,15 @@ Simplistic Vanilla-based theme with darker colors, with a few tweaks here and th
 OR<br>
 - Paste (below) into your Quick CSS
 - - `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css");` 
+
+### Color Addons
+1. Go to your Quick CSS panel or window and add the line below
+2. `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/CHOOSE_YOUR_COLOR.css");`
+3. Replace "CHOOSE_YOUR_COLOR" with one of these available colors below:
+- Blue, Cyan, Green, Magenta, Mint, Orange, Purple, Red, Yellow
+- - These words are case-sensitive; meaning, if you put `red`, it will not load, your need to put `Red`.
+- - Make sure you keep the `.css` part
+- - - As an example it should be like `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/Mint.css");`
 
 <br>
 <img src="https://i.mintlily.lgbt/WR6TB6es6xNE.png" />

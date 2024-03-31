@@ -1,0 +1,8 @@
+:root {
+	--dv_theme-text: #e31ee6;
+	--dv_theme-text-muted: #926c93;
+	--dv_hsl_theme-value: 299;
+	--dv_hsl_theme-muted-value: 299;
+	--dv_theme-text-rgb: 227, 30, 230;
+	--dv_theme-text-muted-rgb: 146, 108, 147;
+}

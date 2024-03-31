@@ -1,5 +1,5 @@
 # Discord Installation
-(Not fully compatible with Nitro Themes)
+*(Not fully compatible with Default Nitro Themes)*
 
 ### Vencord (Developement Focus)
 0. Download [Vencord](https://github.com/Vencord/Installer)
@@ -15,17 +15,20 @@
 
 ### Replugged
 0. Download [Replugged](https://replugged.dev/download)
-1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/download/2.4.0-Powercord/Dark.Vanilla.zip) (From Releases page - *`Dark.Vanilla.zip`*)
+1. Click > [Download](https://github.com/MintLily/Dark-Vanilla/releases/download/2.11.0-Replugged/Dark.Vanilla.zip) (From Releases page - *`Dark.Vanilla.zip`*)
 2. Go to themes folder and install folder (`replugged/src/Powercord/themes/`)
+OR<br>
+- Paste (below) into your Quick CSS
+- - `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css");` 
 
-### ~~BetterDiscord~~
-1. ~~Click > [Download](https://raw.githubusercontent.com/MintLily/Dark-Vanilla/main/Discord/BetterDiscord/DarkVanilla.theme.css)~~
-2. ~~Download Raw~~
-3. ~~Go to themes and install `DarkVanilla.theme.css` file (`%appdata%/BetterDiscord/themes/`)~~
-
-### ~~Goosemod~~ (RIP)
-1. ~~Go to `Settings > Themes > Quick CSS`~~
-2. ~~Paste this in the box `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/DarkVanilla.source.css");` (Preferably without other themes active)~~
+### Color Addons
+1. Go to your Quick CSS panel or window and add the line below
+2. `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/CHOOSE_YOUR_COLOR.css");`
+3. Replace "CHOOSE_YOUR_COLOR" with one of these available colors below:
+- Blue, Cyan, Green, Magenta, Mint, Orange, Purple, Red, Yellow
+- - These words are case-sensitive; meaning, if you put `red`, it will not load, your need to put `Red`.
+- - Make sure you keep the `.css` part
+- - - As an example it should be like `@import url("https://mintlily.github.io/Dark-Vanilla/Discord/colors/Mint.css");`
 
 <br>
-<img src="https://i.mintlily.lgbt/DarkVanilla_Aug2022_Preview.png" />
+<img src="https://i.mintlily.lgbt/WR6TB6es6xNE.png" />
