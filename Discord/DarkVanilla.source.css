@@ -1270,6 +1270,16 @@ div[class^="replyBar_"] {
 	backdrop-filter: blur(var(--dv_blur));
 }
 
+/* Message Actions */
+div[aria-label="Message Actions"]>div[class^="buttonsInner"] {
+	background-color: var(--dv_dark_background_3);
+	border-radius: var(--dv_soft-corner);
+}
+
+div[aria-label="Message Actions"]>div[class^="buttonsInner"]>div:hover {
+	background-color: var(--dv_background-modifier-hover);
+}
+
 /* Top Bar Guild Buttons */
 /* Pinned Messages Box */
 div[class^="messagesPopoutWrap_"] {
