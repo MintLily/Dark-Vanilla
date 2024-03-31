@@ -1095,7 +1095,7 @@ path[class^="unreadPillCapStroke"] {
 	color: var(--dv_theme-text);
 }
 
-div[class^="divider__"]:not(div[class^="card_"] > div[class^="divider__"]) {
+ol[class^="scrollerInner"]>div[class^="divider__"] {
 	border-color: var(--dv_theme-text);
 }
 
