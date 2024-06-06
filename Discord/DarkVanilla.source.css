@@ -1,5 +1,5 @@
 :root {
-	--dv_theme-version: '4.3.0';
+	--dv_theme-version: '4.3.1';
 	/* RewriteNumber.Major/Feature.Minor/Bugfix.Hotfix */
 
 	/* Self defined Variables */
@@ -71,7 +71,7 @@
 	--brand-experiment-560: hsl(var(--dv_hsl_theme-muted-value) calc(var(--saturation-factor, 1) * 15%), 50%) !important;
 	--brand-experiment-400: hsl(var(--dv_hsl_theme-muted-value) calc(var(--saturation-factor, 1) * 15%), 50%) !important;
 	--brand-experiment-430: hsl(var(--dv_hsl_theme-muted-value) calc(var(--saturation-factor, 1) * 15%), 50%) !important;
-	--brand-500: var(--dv_theme-text) !important;
+	--brand-500: var(--dv_theme-text-muted) !important;
 	--brand-260: hsl(var(--dv_hsl_theme-value) calc(var(--saturation-factor, 1) * 50%), 87%) !important;
 	--brand-260-hsl: 335 calc(var(--saturation-factor, 1) * 86.2%) 88.6% !important;
 	--primary-630: var(--dv_dark_background_2) !important;
@@ -340,6 +340,12 @@ div[class^="diversitySelectorOptions_"] {
 	background-color: var(--dv_dark_background_2);
 }
 
+/* Main Page */
+div[class^=peopleListItem_]:hover {
+	background-color: var(--dv_background-modifier-hover);
+	transition: 0.05s;
+}
+
 /* Friends Tab Selected: x */
 /* x = Online */
 .theme-dark #online-tab {
@@ -362,22 +368,25 @@ div[class^="diversitySelectorOptions_"] {
 }
 
 /* x = Add Friend */
-.theme-dark #add_friend-tab {
-	background-color: var(--background-secondary);
-}
-
-.theme-dark div[aria-controls="add_friend-tab"] {
-	color: var(--dv_theme-text);
-}
-
-div[data-item-id="ADD_FRIEND"] {
+div[aria-label="Add Friend"] {
+	border-radius: calc(var(--dv_soft-corner) / 1.25) !important;
 	background-color: var(--dv_theme-text-muted) !important;
-	transition: background 0.1s;
+	transition: 0.1s;
 }
 
-div[data-item-id="ADD_FRIEND"]:hover {
-	background-color: transparent !important;
-	transition: background 0.1s;
+div[aria-label="Add Friend"]:hover {
+	background-color: var(--dv_theme-text) !important;
+	color: var(--dv_dark_background_2) !important;
+	transition: 0.1s;
+}
+
+div[aria-label="Add Friend"][aria-selected="true"] {
+	color: #eee !important;
+	border: 2px solid var(--text-positive);
+}
+
+div[aria-label="Add Friend"][aria-selected="true"]:hover {
+	color: var(--dv_dark_background_2) !important;
 }
 
 section[class*="container"][class*="themed"] {
@@ -530,6 +539,13 @@ svg[class*="flowerStar"] path {
 [class*="lookFilled_"],
 [class*="lookOutlined_"] {
 	border-radius: var(--dv_soft-corner);
+}
+
+[class*="lookLink_"]:hover,
+[class*="lookInverted_"]:hover,
+[class*="lookFilled_"]:hover {
+	background-color: var(--dv_theme-text) !important;
+	color: var(--dv_dark_background_2);
 }
 
 /* Lily's Website Icons */
@@ -759,6 +775,7 @@ div[class^="avatarWrapper_"]:hover {
 div[class^="flex_"][class*="alignStretch_"]>button:hover {
 	border-radius: var(--dv_soft-corner);
 	background-color: var(--dv_background-modifier-selected);
+	color: var(--dv_dark_background_2);
 }
 
 /* Voice Connected */
