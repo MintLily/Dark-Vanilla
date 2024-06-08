@@ -830,6 +830,14 @@ div[class^="membersListNotices_"] {
 	width: 0px;
 }
 
+/* App/Official Text/Badge */
+span[class*=botText] {
+	font-weight: 500;
+	font-size: 10px !important;
+}
+
+/*-------------*/
+
 /* Reply Click Background flash */
 div[class*="backgroundFlash"] {
 	background: linear-gradient(270deg, var(--dv_theme-text-muted), transparent);
