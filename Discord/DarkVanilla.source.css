@@ -1,5 +1,5 @@
 :root {
-	--dv_theme-version: '4.3.3';
+	--dv_theme-version: '4.3.4';
 	/* RewriteNumber.Major/Feature.Minor/Bugfix.Hotfix */
 
 	/* Self defined Variables */
@@ -71,12 +71,15 @@
 	--brand-experiment-560: hsl(var(--dv_hsl_theme-muted-value) calc(var(--saturation-factor, 1) * 15%), 50%) !important;
 	--brand-experiment-400: hsl(var(--dv_hsl_theme-muted-value) calc(var(--saturation-factor, 1) * 15%), 50%) !important;
 	--brand-experiment-430: hsl(var(--dv_hsl_theme-muted-value) calc(var(--saturation-factor, 1) * 15%), 50%) !important;
-	--brand-500: var(--dv_theme-text-muted) !important;
 	--brand-260: hsl(var(--dv_hsl_theme-value) calc(var(--saturation-factor, 1) * 50%), 87%) !important;
 	--brand-260-hsl: 335 calc(var(--saturation-factor, 1) * 86.2%) 88.6% !important;
+	--brand-500: var(--dv_theme-text-muted) !important;
+	--brand-530: var(--dv_theme-text-muted) !important;
+	--brand-600: var(--dv_theme-text-muted) !important;
 	--primary-630: var(--dv_dark_background_2) !important;
 	--mention-background: rgba(var(--dv_theme-text-muted-rgb), 0.3);
 	--control-brand-foreground: var(--dv_theme-text-muted);
+	--background-message-highlight: color-mix(in oklab, hsl(var(--dv_hsl_theme-value) calc(var(--saturation-factor, 1) * 86.1%) 77.5% / 0.2) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-base-color-amount, 0%)) !important;
 	--divider-color: var(--dv_theme-text);
 	--text-brand: var(--dv_theme-text);
 	--scrollbar-thin-thumb: var(--dv_dark_background_3);
@@ -262,6 +265,10 @@ div[class*="interactive_"]:focus-within,
 div[class*="interactive_"]:hover {
 	background: var(--dv_background-modifier-hover);
 	border-radius: var(--dv_soft-corner);
+}
+
+div[class*="interactive_"]:hover>a>div>div[class^=content]>div {
+	color: #aaa;
 }
 
 /* Guild Header Menu, Guild, Message, Message, User, Channel Context Menu */
