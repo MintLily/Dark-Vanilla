@@ -1,5 +1,5 @@
 :root {
-	--dv_theme-version: '4.3.5';
+	--dv_theme-version: '4.3.6';
 	/* RewriteNumber.Major/Feature.Minor/Bugfix.Hotfix */
 
 	/* Self defined Variables */
@@ -95,6 +95,7 @@
 
 	/* Client Mod Variables */
 	--spotify-color: var(--dv_theme-text);
+	--vc-spotify-green: var(--dv_theme-text);
 }
 
 /* devanagari */
@@ -233,7 +234,9 @@ div[class^="layer_"] {
 
 /* Anything Main and or Global */
 /* Right Click Context Menu */
-div[class*="menu_"]:not(div[class^="userPopoutOverlayBackground_"] > div[class*="menu_"]) {
+div[class*="menu_"]:not(div[class^="userPopoutOverlayBackground_"] > div[class*="menu_"]),
+/* Misc */
+div[id^=popout]>div[class*=anim]>div[class^=container] {
 	background-color: var(--dv_dark_background_2) !important;
 	border-radius: var(--dv_soft-corner);
 	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
@@ -323,12 +326,6 @@ button[class*="navButton_"]:hover {
 	margin-top: 10px;
 }
 
-/* Input 
-.container_ec5ce2 {
-	background-color: var(--dv_dark_background_3);
-	border-radius: var(--dv_soft-corner);
-}*/
-
 /* Emoji/Sticker background */
 .stickerInspected__1c897 .inspectedIndicator_f00108,
 div[class*="categoryItemDefaultCategorySelected_"],
@@ -345,8 +342,14 @@ div[class^="diversitySelectorOptions_"] {
 }
 
 /* Message React Emoji Picker Backgrounds */
-.contentWrapper_eab878 {
-	background-color: var(--dv_dark_background_2);
+div[id="emoji-picker-tab-panel"]>div[class^=wrapper] {
+	background-color: var(--dv_dark_background_3);
+}
+
+/* search bar */
+div[class^=emojiPicker]>div>div[class*=container] {
+	background-color: var(--dv_dark_background_3) !important;
+	border-radius: var(--dv_soft-corner);
 }
 
 /* Main Page */
@@ -615,6 +618,7 @@ img[class*="assetsLargeImageSpotify_"],
 	background-color: var(--dv_background-modifier-selected) !important;
 	border-radius: var(--dv_soft-corner);
 	transition: border-radius 0.1s;
+	backdrop-filter: blur(var(--dv_blur));
 }
 
 #vc-spotify-player {
@@ -645,27 +649,26 @@ img[class*="assetsLargeImageSpotify_"],
 }
 
 #vc-spotify-player::after {
+	background-color: rgba(0, 0, 0, 0.01);
 	backdrop-filter: blur(var(--dv_blur)) brightness(50%);
 }
 
 #vc-spotify-player div[class^=bar_] {
-	background: var(--vc-spotify-track-image);
-	background-size: contain;
-	backdrop-filter: blur(var(--dv_blur)) brightness(100%) !important;
 	border-radius: var(--dv_soft-corner);
+	background-color: var(--dv_dark_background_2);
 }
 
 #vc-spotify-player div[class^=track_]>div[class^=grabber] {
 	opacity: 1 !important;
 }
 
-#vc-spotify-player div[class^=track_]>div[class^=grabber]::after {
+/*#vc-spotify-player div[class^=track_]>div[class^=grabber]::after {
 	position: absolute;
 	background: var(--vc-spotify-track-image);
 	background-size: contain;
 	backdrop-filter: blur(var(--dv_blur));
 	overflow: hidden !important;
-}
+}*/
 
 /* Server Roles */
 div[class^="role_"][class*="pill_"]:not(button[class^="compactButton__"]) {
@@ -686,14 +689,14 @@ div[class^="showMoreButton__"][class*="pill_"] {
 }
 
 /* Add Button */
-button[class^="compactButton__"] {
+.custom-profile-theme button[class^="button"] {
 	background-color: var(--dv_dark_background_2) !important;
 	border: 0.025rem solid var(--dv_dark_background_2);
 	border-radius: calc(var(--dv_soft-corner-roles) * 1.1489786518);
 	transition: 0.1s;
 }
 
-button[class^="compactButton__"]:hover {
+.custom-profile-theme button[class^="button"]:hover {
 	background-color: var(--dv_background-modifier-hover) !important;
 	border: 0.025rem solid var(--dv_background-modifier-hover);
 	transition: 0.1s;
@@ -1509,7 +1512,7 @@ div[role="dialog"]>div>div[class^="list_"]>div>div[role="button"] {
 	border-color: transparent;
 }
 
-div[role="dialog"]>div>div[class^="header_"]>div[class^="searchBox"] {
+div[role="dialog"]>div>div[class^="header_"]>div[class^="searchBar"] {
 	background-color: var(--dv_dark_background_1);
 	padding: 5px;
 	border-radius: var(--dv_soft-corner);
