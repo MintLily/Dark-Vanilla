@@ -49,7 +49,7 @@ OR<br>
 2. Appearance
 3. Theme mode: Dark Vanilla
 
-<img src="https://i.mintlily.lgbt/VRCX_jSgTVS0sz8.png" />
+<img src="https://img.mili.lgbt/Tw6YeLBsumwQzhsQEf.png" />
 
 ### Note
 This version will pull my latest updates from GitHub, therefore you dont have to update the file ever time.
