@@ -13,4 +13,4 @@
 
 ### Notes
 - This `custom.css` version will pull my latest updates from GitHub, therefore you dont have to update the file ever time.
-- This Theme uses the [Ecoded Sans](https://fonts.google.com/specimen/Encode+Sans) font family, provided by [Google Fonts](https://fonts.google.com/) and is licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
+- This Theme uses the [Encoded Sans](https://fonts.google.com/specimen/Encode+Sans) font family, provided by [Google Fonts](https://fonts.google.com/) and is licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
