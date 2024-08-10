@@ -1,3 +1,9 @@
+/*
+ * VRCX Dark-Vanilla theme by MintLily
+ * https://github.com/MintLily/Dark-Vanilla
+ */
+@import 'theme.dark.scss';
+
 :root {
     --ThemeName: "Dark Vanilla";
     --ThemeVers: "2.0";
@@ -206,6 +212,23 @@ table.el-table__body[style^="width:"] tr[class="el-table__row"]:hover td[class^=
 table.el-table__body[style^="width:"] tr[class="el-table__row el-table__row--striped"]:hover td[class^="el-table_1_column_5"] {
     border-top-right-radius: var(--dv_md-rounded);
     border-bottom-right-radius: var(--dv_md-rounded);
+}
+
+tr[class="el-table__row"]:hover .el-table__expand-icon,
+tr[class="el-table__row el-table__row--striped"]:hover .el-table__expand-icon {
+    color: #eee;
+}
+
+.el-table__expanded-cell:hover {
+    background-color: var(--dv_background-modifier-hover) !important;
+    transition: 0.1s;
+    border-bottom-left-radius: var(--dv_md-rounded);
+    border-bottom-right-radius: var(--dv_md-rounded);
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td.el-table__cell {
+    background-color: var(--dv_background-modifier-selected);
+    transition: 0.1s;
 }
 
 .el-pagination {
@@ -486,11 +509,7 @@ div.options-container[style="margin-top: 45px; border-top: 1px solid rgb(238, 23
 
 img.x-link,
 img.friends-list-avatar {
-    border-radius: var(--dv_lg-rounded);
-}
-
-.el-popover {
-    height: 71.5%;
+    border-radius: var(--dv_lg-rounded) !important;
 }
 
 .el-tag--mini {
