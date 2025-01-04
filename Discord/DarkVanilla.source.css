@@ -1,5 +1,5 @@
 :root {
-	--dv_theme-version: '4.3.6';
+	--dv_theme-version: '4.4.0';
 	/* RewriteNumber.Major/Feature.Minor/Bugfix.Hotfix */
 
 	/* Self defined Variables */
@@ -158,13 +158,10 @@ div[class^=clickTarget]>div>div>div::before {
 }
 
 /* Windows 10/11 TitleBar */
-div[class*="titleBar_"] {
-	height: 28px;
-}
-
 div[class*="withFrame_"] {
 	height: 32px;
 	margin-top: 0px;
+	background-color: var(--dv_dark_background_3);
 }
 
 div[class*="winButton_"] {
@@ -508,7 +505,8 @@ div[class*="userProfileInnerThemedNonPremium_"] {
 
 /* Unclamp Bio */
 [class*='descriptionClamp_'] {
-	-webkit-line-clamp: 10
+	-webkit-line-clamp: 10;
+	max-height: unset;
 }
 
 /*[class*='viewFullBio__'] {display: none;}  */
@@ -576,16 +574,16 @@ div[aria-label="More"]>button:hover {
 }
 
 /* Lily's Website Icons */
-img[aria-label="mili.lgbt"] {
+a img[aria-label="mili.lgbt"] {
 	content: url("https://i.mintlily.lgbt/MintMod_flat.png");
 }
 
-img[aria-label="mintlily.lgbt"] {
+a:not([href*="bsky"]) img[aria-label="mintlily.lgbt"] {
 	content: url("https://mintlily.lgbt/assets/img/Lily.png");
 	border-radius: 50%;
 }
 
-img[aria-label="mintylabs.dev"] {
+a:not([href*="bsky"]) img[aria-label="mintylabs.dev"] {
 	content: url("https://mintylabs.dev/assets/img/favicon.png");
 }
 
@@ -605,8 +603,9 @@ a[href^="https://twitter.com"][title=Twitter]>svg>path {
 	box-shadow: 0px 5px 10px var(--dv_theme-text);
 }
 
-div[class*="barInner"] {
-	box-shadow: 0px 0px 10px #fff;
+div[class*="bar"]>[class^="progress"]:not([style*="background-color: hsl(235"],
+	div[class^="progressBarContainer_"][class*="bar_"]>[class^="progressBar"]) {
+	box-shadow: 0px 0px 6px #fff;
 }
 
 img[class*="assetsLargeImageSpotify_"],
@@ -736,6 +735,12 @@ div[class*="menuItemFocused__"] {
 	border-color: var(--dv_theme-text-muted);
 }
 
+/* Server Selection List */
+/* Discovery */
+div[class^="itemsContainer"]>div[class^="footer"] {
+	background-color: var(--dv_dark_background_3);
+}
+
 /* Shrink server banners to header instead of disappearing. */
 [class*="animatedContainer_"] {
 	opacity: 1 !important;
@@ -762,6 +767,11 @@ header[class*="header"] {
 [class*="hasBanner"] [class*="header"],
 [class*="hasBanner"] [class*="header"]:hover {
 	backdrop-filter: blur(0px) !important;
+}
+
+/* Server Name Tooltip */
+[class^=tooltip] {
+	max-width: unset !important;
 }
 
 /* Server Channel Selection */
@@ -804,6 +814,24 @@ div[class^="flex_"][class*="alignStretch_"]>button:hover {
 	border-radius: var(--dv_soft-corner);
 	background-color: var(--dv_background-modifier-selected);
 	color: var(--dv_theme-text);
+}
+
+[class^=panels]>[class^=container] {
+	height: unset !important;
+	align-items: unset !important;
+	padding: 6px 8px !important;
+	flex-direction: column-reverse !important;
+	gap: 2px !important;
+}
+
+[class^=avatarWrapper] {
+	margin-right: unset !important;
+	margin-left: unset !important;
+	padding-left: 4px !important;
+}
+
+[class^=container]>[class*=buttons] {
+	justify-content: space-evenly !important;
 }
 
 /* Voice Connected */
@@ -1448,6 +1476,17 @@ div[class^="section_"]>div[class*="messageInputContainer_"] {
 	border-radius: 8px;
 }
 
+[class^=channelAppLauncher_] {
+	background-color: var(--dv_dark_background_3);
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.35);
+	border-radius: 18px;
+}
+
+[class^=channelAppLauncher_] button {
+	background-color: var(--dv_dark_background_2);
+	border-radius: 18px;
+}
+
 /* Inline Emoji Suggestion */
 div[class^="autocomplete__"] {
 	border-radius: 18px;
@@ -1502,9 +1541,10 @@ div[class^="messagesPopoutWrap_"]>.footer_a3029c {
 }
 
 /* Threads */
-div[role="dialog"]>div[class*="container_"],
-div[role="dialog"]>div>div[class^="header_"] {
-	background-color: var(--dv_dark_background_3);
+div[style="position: relative;"]>div[class^="chat"],
+div[class^="chat"]>div[class^="content"]>div[class^="container"] {
+	background: none !important;
+	background-color: var(--dv_dark_background_3) !important;
 }
 
 div[role="dialog"]>div>div[class^="list_"]>div>div[role="button"] {
@@ -1512,10 +1552,23 @@ div[role="dialog"]>div>div[class^="list_"]>div>div[role="button"] {
 	border-color: transparent;
 }
 
-div[role="dialog"]>div>div[class^="header_"]>div[class^="searchBar"] {
-	background-color: var(--dv_dark_background_1);
+div[class*="mainCard"][class*="header"],
+div[class^="formContainer"]>textarea {
+	background-color: var(--dv_dark_background_1) !important;
 	padding: 5px;
 	border-radius: var(--dv_soft-corner);
+}
+
+li[class*="mainCard"] {
+	background-color: var(--dv_dark_background_1);
+}
+
+li[class*="mainCard"]:hover {
+	background-color: var(--dv_dark_background_2);
+
+	div[class^=footer] {
+		background-color: var(--dv_dark_background_2);
+	}
 }
 
 /* Inbox */
