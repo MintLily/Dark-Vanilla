@@ -1,5 +1,5 @@
 :root {
-	--dv_theme-version: '4.4.0';
+	--dv_theme-version: '4.4.1';
 	/* RewriteNumber.Major/Feature.Minor/Bugfix.Hotfix */
 
 	/* Self defined Variables */
@@ -847,6 +847,12 @@ div[class^="animatorTop_"]>div[class^="container_"] {
 
 /* Member List */
 /* Role Color Background */
+div[class^="memberInner_"][class*="layout_"] {
+	width: unset;
+	padding-left: 8px !important;
+	padding-right: 10px !important;
+}
+
 div[class^="member_"] span[style*="rgb("]::after {
 	content: '';
 	top: 0;
